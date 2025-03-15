@@ -145,7 +145,7 @@ ura0206 = Class(CAirUnit) {
             self:SetMaintenanceConsumptionActive() 
             self:EnableUnitIntel('Cloak') 
             self:SetMaintenanceConsumptionActive()
-            self:SetMesh('/mods/4th_Dimension_212/units/ura0206/ura0206_stealth_mesh', true)
+            self:SetMesh('/mods/4th_Dimension_302/units/ura0206/ura0206_stealth_mesh', true)
         end
     end,    
     
@@ -155,7 +155,7 @@ ura0206 = Class(CAirUnit) {
             self:SetMaintenanceConsumptionInactive() 
             self:DisableUnitIntel('Cloak') 
             self:SetMaintenanceConsumptionInactive() 
-            self:SetMesh('/mods/4th_Dimension_212/units/ura0206/ura0206_standard_mesh', true)         
+            self:SetMesh('/mods/4th_Dimension_302/units/ura0206/ura0206_standard_mesh', true)         
         end
     end,     
         

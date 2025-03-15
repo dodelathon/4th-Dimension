@@ -24,18 +24,6 @@ local DepthCharge = import('/lua/defaultantiprojectile.lua').DepthCharge
 local util = import('utilities.lua')
 local DefaultExplosion = import('defaultexplosions.lua')
 
-TIFMissileNuke = Class(SingleBeamProjectile) {
-    BeamName = '/effects/emitters/missile_exhaust_fire_beam_01_emit.bp',
-    FxImpactUnit = {},
-    FxImpactLand = {},
-    FxImpactUnderWater = {},
-}
-
-TIFTacticalNuke = Class(EmitterProjectile) {
-    FxImpactUnit = {},
-    FxImpactLand = {},
-    FxImpactUnderWater = {},
-}
 
 #--------------------------------------
 # UEF GINSU RAPID PULSE BEAM PROJECTILE
@@ -292,34 +280,6 @@ THeavyPlasmaCannonProjectile = Class(MultiPolyTrailProjectile) {
 #------------------------------
 #  UEF SMALL YIELD NUCLEAR BOMB
 #------------------------------
-TIFSmallYieldNuclearBombProjectile = Class(EmitterProjectile) {
-    FxTrails = {},
-    FxImpactUnit = EffectTemplate.TSmallYieldNuclearBombHit01,
-    FxImpactProp = EffectTemplate.TSmallYieldNuclearBombHit01,
-    FxImpactLand = EffectTemplate.TSmallYieldNuclearBombHit01,
-    FxImpactUnderWater = {},
-
-    OnImpact = function(self, TargetType, TargetEntity)
-        local army = self:GetArmy()
-        CreateLightParticle( self, -1, army, 8, 4, 'glow_03', 'ramp_fire_01' )
-        if TargetType == 'Terrain' then
-            CreateSplat( self:GetPosition(), 0, 'scorch_008_albedo', 6, 6, 250, 200, army )
-
-            #local blanketSides = 12
-            #local blanketAngle = (2*math.pi) / blanketSides
-            #local blanketStrength = 1
-            #local blanketVelocity = 2.25
-
-            #for i = 0, (blanketSides-1) do
-            #    local blanketX = math.sin(i*blanketAngle)
-            #    local blanketZ = math.cos(i*blanketAngle)
-            #    local Blanketparts = self:CreateProjectile('/effects/entities/DestructionDust01/DestructionDust01_proj.bp', blanketX, 0.5, blanketZ, blanketX, 0, blanketZ)
-            #        :SetVelocity(blanketVelocity):SetAcceleration(-0.3)
-            #end
-        end
-        EmitterProjectile.OnImpact( self, TargetType, TargetEntity )
-    end,
-}
 
 #------------------------------------------------------------------------
 #  TERRAN BOT LASER PROJECTILES

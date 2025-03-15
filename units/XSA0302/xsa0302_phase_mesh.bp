@@ -4,8 +4,8 @@ MeshBlueprint {
         {
             AlbedoName = '/units/XSA0302/XSA0302_Albedo.dds',
             MeshName = '/units/XSA0302/XSA0302_lod0.scm',
-            SpecularName = '/mods/4th_Dimension_212/units/XSA0302/XSA0302_phase_texture.dds',
-            NormalsName = '/mods/4th_Dimension_212/units/XSA0302/XSA0302_phase_texture.dds',            
+            SpecularName = '/mods/4th_Dimension_302/units/XSA0302/XSA0302_phase_texture.dds',
+            NormalsName = '/mods/4th_Dimension_302/units/XSA0302/XSA0302_phase_texture.dds',            
             LookupName = '/effects/entities/PhaseShield/PhaseShieldLookup.dds',
             ShaderName = 'ShieldSeraphim', 
             LODCutoff = 130,
@@ -13,8 +13,8 @@ MeshBlueprint {
         {
             AlbedoName = '/units/XSA0302/XSA0302_Albedo.dds',
             MeshName = '/units/XSA0302/XSA0302_lod1.scm',            
-            SpecularName = '/mods/4th_Dimension_212/units/XSA0302/XSA0302_phase_texture.dds',
-            NormalsName = '/mods/4th_Dimension_212/units/XSA0302/XSA0302_phase_texture.dds',                 
+            SpecularName = '/mods/4th_Dimension_302/units/XSA0302/XSA0302_phase_texture.dds',
+            NormalsName = '/mods/4th_Dimension_302/units/XSA0302/XSA0302_phase_texture.dds',                 
             LookupName = '/effects/entities/PhaseShield/PhaseShieldLookup.dds',
             ShaderName = 'ShieldSeraphim',          
             LODCutoff = 215,            

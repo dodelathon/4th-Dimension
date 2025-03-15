@@ -8,7 +8,7 @@
 #*************************************************************************
 
 local TAirUnit = import('/lua/terranunits.lua').TAirUnit
-TAirUnit = import('/mods/4th_Dimension_212/hook/lua/AdvancedJamming.lua').AdvancedJammerHologram( TAirUnit )
+TAirUnit = import('/mods/4th_Dimension_302/hook/lua/AdvancedJamming.lua').AdvancedJammerHologram( TAirUnit )
 
 t2_gunship_blip = Class(TAirUnit) {}
 

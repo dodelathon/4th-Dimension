@@ -88,34 +88,34 @@ UnitBlueprint {
         AnimationDeath = {
            {
            -- Knocked back and falls forward...one leg lingers then falls
-               Animation = '/mods/4th_Dimension_212/units/ual0310/ual0310_Adeath01.sca',
+               Animation = '/mods/4th_Dimension_302/units/ual0310/ual0310_Adeath01.sca',
                AnimationRateMax = 1.75,
                AnimationRateMin = 1.15,
                Weight = 25,
            },
            {
            -- Knocked on back with legs sticking up.
-               Animation = '/mods/4th_Dimension_212/units/ual0310/ual0310_Adeath02.sca',
+               Animation = '/mods/4th_Dimension_302/units/ual0310/ual0310_Adeath02.sca',
                AnimationRateMax = 1.25,
                AnimationRateMin = 0.75,
                Weight = 25,
            },
            {
            -- Falls forward, face plants.
-               Animation = '/mods/4th_Dimension_212/units/ual0310/ual0310_Adeath03.sca',
+               Animation = '/mods/4th_Dimension_302/units/ual0310/ual0310_Adeath03.sca',
                AnimationRateMax = 1.15,
                AnimationRateMin = 0.75,
                Weight = 25,
            },
            {
            -- Falls to the side
-               Animation = '/mods/4th_Dimension_212/units/ual0310/ual0310_Adeath04.sca',
+               Animation = '/mods/4th_Dimension_302/units/ual0310/ual0310_Adeath04.sca',
                AnimationRateMax = 1.45,
                AnimationRateMin = 1.35,
                Weight = 25,
            },
        },
-       AnimationWalk = '/mods/4th_Dimension_212/units/ual0310/ual0310_walk.sca',
+       AnimationWalk = '/mods/4th_Dimension_302/units/ual0310/ual0310_walk.sca',
        AnimationWalkRate = 1.5,
        Mesh = {
            IconFadeInZoom = 130,
@@ -398,7 +398,7 @@ UnitBlueprint {
            MuzzleSalvoDelay = 0,
            MuzzleSalvoSize = 1,
            MuzzleVelocity = 10,
-           ProjectileId = '/mods/4th_Dimension_212/hook/projectiles/AIFMissileArrow01/AIFMissileArrow01_proj.bp',
+           ProjectileId = '/mods/4th_Dimension_302/hook/projectiles/AIFMissileArrow01/AIFMissileArrow01_proj.bp',
            ProjectileLifetime = 10,
            ProjectilesPerOnFire = 1,
            RackBones = {
@@ -447,7 +447,7 @@ UnitBlueprint {
            Turreted = false,
            WeaponCategory = 'Anti Air',
            WeaponRepackTimeout = 3,
-           WeaponUnpackAnimation = '/mods/4th_Dimension_212/units/ual0310/UAL0310_rearHatchOpen.sca',
+           WeaponUnpackAnimation = '/mods/4th_Dimension_302/units/ual0310/UAL0310_rearHatchOpen.sca',
            WeaponUnpackAnimationRate = 0.5,
            WeaponUnpackAnimatorPrecedence = 0,
            WeaponUnpackLocksMotion = false,
@@ -487,7 +487,7 @@ UnitBlueprint {
            MuzzleSalvoDelay = 0,
            MuzzleSalvoSize = 1,
            MuzzleVelocity = 60,
-           ProjectileId = '/mods/4th_Dimension_212/hook/projectiles/ALaserPhalanx/ALaserPhalanx_proj.bp',
+           ProjectileId = '/mods/4th_Dimension_302/hook/projectiles/ALaserPhalanx/ALaserPhalanx_proj.bp',
            ProjectileLifetime = 1.0,
            ProjectilesPerOnFire = 1,
            RackBones = {
@@ -525,7 +525,7 @@ UnitBlueprint {
            Turreted = true,
            WeaponCategory = 'Defense',
            WeaponRepackTimeout = 2,
-           WeaponUnpackAnimation = '/mods/4th_Dimension_212/units/ual0310/ual0310_topGunOpen.sca',
+           WeaponUnpackAnimation = '/mods/4th_Dimension_302/units/ual0310/ual0310_topGunOpen.sca',
            WeaponUnpackAnimationRate = 2,
            WeaponUnpackAnimatorPrecedence = 0,
            WeaponUnpackLocksMotion = false,

@@ -22,10 +22,10 @@ local CreateDeathExplosion = explosion.CreateDefaultHitExplosionAtBone
 
 #Weapon local files
 
-local PlasmaRepeaterWeapon = import('/mods/4th_Dimension_212/hook/lua/rampage_weapons.lua').Rapid_PlasmaProjectile
-local MissileWeapon =  import('/mods/4th_Dimension_212/hook/lua/rampage_weapons.lua').NapalmMissileProjectile
+local PlasmaRepeaterWeapon = import('/mods/4th_Dimension_302/hook/lua/rampage_weapons.lua').Rapid_PlasmaProjectile
+local MissileWeapon =  import('/mods/4th_Dimension_302/hook/lua/rampage_weapons.lua').NapalmMissileProjectile
 local TDFGaussCannonWeapon = WeaponsFile.TDFGaussCannonWeapon
-local Over_Charge = import('/mods/4th_Dimension_212/hook/lua/rampage_weapons.lua').Over_ChargeProjectile
+local Over_Charge = import('/mods/4th_Dimension_302/hook/lua/rampage_weapons.lua').Over_ChargeProjectile
 local TANTorpedoAngler = WeaponsFile.TANTorpedoAngler
 
 uel0402 = Class(TWalkingLandUnit) {

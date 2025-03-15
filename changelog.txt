@@ -1,5 +1,43 @@
 Changelog for "4th Dimension" - Forged Alliance
 
+3.02	- Vampire buffed to allow to compete (Forgot to update in the initial round)
+        - Reduced Vulcanizer Mass cost
+	- Increased Overlord buildtime
+	- Increased Hellhounds Speed to from 3 to 5, and turn rate from 60 to 75, Giving substance to it's description.
+	- Increased Overlord Laser Range to 32
+	- Buffed Hellhound Muzzle Velocity from 55 to 65
+	- Hellhound now Teleports, Adding to Hunter role
+	- Hellhound health reduced from 3200 to 2100
+	- Hellhound range reduced from 32 to 28
+	- Hellhound damage reduced from 70 to 50
+	- Hellhound ROF reduced from 3 to 2.4
+	- Buffed Banger Normal and burst mode damage from 30 to 38
+	- Reduced Termite build time from 2000 to 1800
+	- Termite stealth energy set to 25/sec
+	- Added Termite stealth Toggle button
+	- Buffed Megalith AA gun Damage, Fire-rate, and muzzle velocity
+	- Fixed issue stopping commanders from using overcharge
+	- Aeon T3 AA Turret buffed damage from 600 to 1200
+	- Fixed Teleporting Issue that stopped the production of sprite striker/Units with teleport command cap set to true
+
+3.01	- Fixed Path Issue that broke the entire mod
+
+3.0:	- Aeon Czar Does not rotate with Blackops Unleashed	
+	- fixed Tempest not overshooting its targets	
+	- Improved compatibility with FAF
+	- Units make correct calls where required
+	- Retribution moved to T4 and buffed accordingly
+	- Mosquito drones now pass veterancy correctly to the main carrier
+	- Mosquito drones no longer gain veterancy (Limited lifespans means veterancy makes little difference)
+	- Mosquito drones damage increased from 15 to 50
+	- Mosquito drones now spawn and guard carrier correctly 
+	- Added small view range for Mosquito Drones
+	- Mosquito Drones no longer venture too far from the carrier
+	- Balance changes made to air units removed, And appropriate changes made to Mod Units
+	- increased damage of stationary T2 AA by 10%
+	- Vulcanizer now works again
+	- Sprite striker re-added, now teleports to compensate for the fact the T2 predator does more damage. 
+
 2.12:	- Aeon Czar rotates again	
 	- fixed Tempest not overshooting its targets	
 	- Cybran Drone Carrier now auto attacks with its main cannons, which also got an increased firing arc (86° instead of 76°)

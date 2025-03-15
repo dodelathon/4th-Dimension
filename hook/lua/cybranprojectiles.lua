@@ -251,7 +251,7 @@ CDisintegratorLaserProjectile = Class(MultiPolyTrailProjectile) {
 
 CDisintegratorLaserProjectile2 = Class(MultiPolyTrailProjectile) {
     PolyTrails = {
-		'/mods/4th_Dimension_212/hook/effects/Emitters/disintegrator_polytrail_06_emit.bp',
+		'/mods/4th_Dimension_302/hook/effects/Emitters/disintegrator_polytrail_06_emit.bp',
 		
 	},
 	PolyTrailOffset = {0,0},    
@@ -272,7 +272,7 @@ CDisintegratorLaserProjectile2 = Class(MultiPolyTrailProjectile) {
 
 CDisintegratorLaserProjectile3 = Class(MultiPolyTrailProjectile) {
     PolyTrails = {
-		'/Mods/4th_Dimension_212/hook/effects/Emitters/disintegrator_polytrail_07_emit.bp',
+		'/Mods/4th_Dimension_302/hook/effects/Emitters/disintegrator_polytrail_07_emit.bp',
 		
 	},
 	PolyTrailOffset = {0,0},    
@@ -322,31 +322,6 @@ CHeavyElectronBolterProjectile = Class(MultiPolyTrailProjectile) {
     FxImpactUnit = EffectTemplate.CElectronBolterHit04,
     FxImpactProp = EffectTemplate.CElectronBolterHit04,
     FxImpactLand = EffectTemplate.CElectronBolterHit04,
-}
-
-#------------------------------------------------------------------------
-#  TERRAN SUB-LAUNCHED CRUISE MISSILE PROJECTILES
-#------------------------------------------------------------------------
-CEMPFluxWarheadProjectile = Class(SingleBeamProjectile) {
-    BeamName = '/effects/emitters/missile_exhaust_fire_beam_01_emit.bp',
-    FxInitialAtEntityEmitter = {},
-    FxUnderWaterTrail = {'/effects/emitters/missile_cruise_munition_underwater_trail_01_emit.bp',},
-    FxOnEntityEmitter = {},
-    FxExitWaterEmitter = EffectTemplate.DefaultProjectileWaterImpact,
-    FxSplashScale = 0.65,
-    ExitWaterTicks = 9,
-    FxTrailOffset = -0.5,
-
-    # LAUNCH TRAILS
-    FxLaunchTrails = {},
-
-    # TRAILS
-    FxTrails = {'/effects/emitters/missile_cruise_munition_trail_01_emit.bp',},
-
-    # Hit Effects
-    FxImpactUnit = {},
-    FxImpactLand = {},
-    FxImpactUnderWater = {},
 }
 
 #------------------------------------------------------------------------

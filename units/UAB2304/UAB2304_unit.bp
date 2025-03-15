@@ -208,7 +208,7 @@ UnitBlueprint {
             AimsStraightOnDisable = true,
             BallisticArc = 'RULEUBA_None',
             CollideFriendly = false,
-            Damage = 260,
+            Damage = 1200,
             DamageRadius = 0,
             DamageType = 'Normal',
             DisplayName = 'Zealot AA Missile',

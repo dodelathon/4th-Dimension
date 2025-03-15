@@ -11,7 +11,7 @@ local TConstructionUnit = import('/lua/terranunits.lua').TConstructionUnit
 local EffectTemplate = import('/lua/EffectTemplates.lua')
 local TDFRiotWeapon = import('/lua/terranweapons.lua').TDFRiotWeapon
 
-TConstructionUnit = import('/mods/4th_Dimension_212/hook/lua/AdvancedJamming.lua').AdvancedJamming( TConstructionUnit )
+TConstructionUnit = import('/mods/4th_Dimension_302/hook/lua/AdvancedJamming.lua').AdvancedJamming( TConstructionUnit )
 
 XEL0209 = Class(TConstructionUnit) {
     Weapons = {

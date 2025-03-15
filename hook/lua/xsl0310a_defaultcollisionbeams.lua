@@ -9,7 +9,7 @@
 
 local CollisionBeam = import('/lua/sim/CollisionBeam.lua').CollisionBeam
 local EffectTemplate = import('/lua/EffectTemplates.lua')
-local xsl0310a_EffectTemplate = import('/mods/4th_Dimension_212/hook/lua/xsl0310a_EffectTemplates.lua')
+local xsl0310a_EffectTemplate = import('/mods/4th_Dimension_302/hook/lua/xsl0310a_EffectTemplates.lua')
 local Util = import('/lua/utilities.lua')
 EmtBpPath = '/effects/emitters/'
 

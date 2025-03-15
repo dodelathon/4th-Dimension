@@ -8,7 +8,7 @@
 #*************************************************************************
 
 local THoverLandUnit = import('/lua/terranunits.lua').THoverLandUnit
-THoverLandUnit = import('/mods/4th_Dimension_212/hook/lua/AdvancedJamming.lua').AdvancedJammerHologram( THoverLandUnit )
+THoverLandUnit = import('/mods/4th_Dimension_302/hook/lua/AdvancedJamming.lua').AdvancedJammerHologram( THoverLandUnit )
 
 t2_amphibious_tank_blip = Class(THoverLandUnit) {}
 

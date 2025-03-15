@@ -108,8 +108,8 @@ UnitBlueprint {
         Abilities = {
             'Transforming',
         },      
-        AnimationXformLand = '/mods/4th_Dimension_212/units/XSL0310b/XSL0310b_Aflytowalk.sca', 
-        AnimationXformFly = '/mods/4th_Dimension_212/units/XSL0310b/XSL0310b_Awalktofly.sca',                    
+        AnimationXformLand = '/mods/4th_Dimension_302/units/XSL0310b/XSL0310b_Aflytowalk.sca', 
+        AnimationXformFly = '/mods/4th_Dimension_302/units/XSL0310b/XSL0310b_Awalktofly.sca',                    
         LayerChangeEffects = {
             AirLand = {
                 Effects = {
@@ -174,7 +174,7 @@ UnitBlueprint {
         TeleportTimeMod = 0.01,
     },
     General = {
-        Category = 'Gunship',
+        Category = 'Fighter',
         Classification = 'RULEUC_MilitaryAircraft',
         CommandCaps = {
             RULEUCC_Attack = false,

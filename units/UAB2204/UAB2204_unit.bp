@@ -223,7 +223,7 @@ UnitBlueprint {
             AimsStraightOnDisable = true,
             BallisticArc = 'RULEUBA_None',
             CollideFriendly = false,
-            Damage = 4.5,
+            Damage = 150,
             DamageFriendly = false,
             DamageRadius = 1.0,
             DamageType = 'Normal',

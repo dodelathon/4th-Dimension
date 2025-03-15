@@ -612,21 +612,6 @@ AAAQuantumDisplacementCannonProjectile = Class(NullShell) {
     end,
 }
 
-
-#------------------------------------------------------------------------
-#  AEON QUANTUM DISTORTION NUCLEAR WARHEAD PROJECTILES
-#------------------------------------------------------------------------
-AQuantumWarheadProjectile = Class(MultiCompositeEmitterProjectile) {
-
-    Beams = {'/effects/emitters/aeon_nuke_exhaust_beam_01_emit.bp',},
-    PolyTrails = {'/effects/emitters/aeon_nuke_trail_emit.bp',},
-
-    # Hit Effects
-    FxImpactUnit = {},
-    FxImpactLand = {},
-    FxImpactUnderWater = {},
-}
-
 #------------------------------------------------------------------------
 #  AEON QUARK BOMB
 #------------------------------------------------------------------------

@@ -3,7 +3,7 @@
 #**  File     :  /cdimage/units/UAL0401/UAL0401_script.lua
 #**  Author(s):  John Comes
 #**
-#**  Summary  :  Aeon Galactic Colossus Script
+#**  Summary  :  Aeon Overlord Script
 #**
 #**  Copyright © 2005 Gas Powered Games, Inc.  All rights reserved.
 #****************************************************************************
@@ -99,7 +99,7 @@ UAL0402 = Class(AWalkingLandUnit) {
             velocity.y = velocity.y + utilities.GetRandomFloat( 0.0, 0.45)
             proj = self:CreateProjectile('/effects/entities/DestructionFirePlume01/DestructionFirePlume01_proj.bp', offset.x, offset.y + yBoneOffset, offset.z, velocity.x, velocity.y, velocity.z)
             proj:SetBallisticAcceleration(utilities.GetRandomFloat(-1, 1)):SetVelocity(utilities.GetRandomFloat(1, 2)):SetCollision(false)           
-            local emitter = CreateEmitterOnEntity(proj, Army, '/mods/4th_Dimension_212/hook/effects/emitters/destruction_explosion_fire_plume_03_emit.bp')
+            local emitter = CreateEmitterOnEntity(proj, Army, '/mods/4th_Dimension_302/hook/effects/emitters/destruction_explosion_fire_plume_03_emit.bp')
             local lifetime = utilities.GetRandomFloat( 5, 25 )
         end
     end,

@@ -51,11 +51,11 @@
    Description['url0102'] = "<LOC Unit_Description_4102>With it's twin Gatling lasers, the Cutter is able to target multiple opponents simultaneously and slice thru them with frightening ease."
    Description['url0204'] = "<LOC Unit_Description_4303>Termits are stealthed and strong combat units, as long as the economy allows to build them."
    Description['url0302'] = "<LOC Unit_Description_4301>Half tank, half robot - the Chimera is one of the strongest cybran land units. Mounted with two reacton cannons and a laser, this monster is a real danger on the battlefield. This unit can not be transported."
-   Description['url0305'] = "<LOC Unit_Description_4305>The Hellhound uses its superior speed and firepower to truly bring hell to it's opponents door."
+   Description['url0305'] = "<LOC Unit_Description_4311>The Hellhound uses its superior speed and firepower to truly bring hell to it's opponents door."
    Description['url0403'] = "<LOC Unit_Description_4406>The word Overkill, accurately describe this cannons level of firepower and rate of fire. Fielding a quad barrel cannon, a selectable rate of fire and a secondary turret for close encounters."
 
    ## Air
-   Description['ura0305'] = "<LOC Unit_Description_4407>Whoever coined the Phrase, Death From above, must of seen this Drone Carrier in action. The Retribution is armed with a green laser, tri-artillery cannons, and a multiple anti-air missiles."
+   Description['ura0405'] = "<LOC Unit_Description_4407>Whoever coined the Phrase 'Death From above', must of seen this Drone Carrier in action. The Retribution is armed with twin Dual Boltor cannons, multiple anti-air missiles along with a swarm of dangerous drones!"
    Description['ura0206'] = "<LOC Unit_Description_4216>Stealthed and cloaked, this aircraft is a destructive hunter in the sky. Hint: decloaks when attacking."
 
    ## Buildings

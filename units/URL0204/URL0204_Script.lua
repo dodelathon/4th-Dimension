@@ -14,6 +14,11 @@ URL0204 = Class(CWalkingLandUnit) {
     Weapons = {
         MainGun = Class(CDFLaserHeavyWeapon) {},
     },
+	
+	OnStopBeingBuilt = function(self,builder,layer)
+        CWalkingLandUnit.OnStopBeingBuilt(self,builder,layer)
+        self:SetScriptBit('RULEUTC_StealthToggle', true)
+    end,
 }
 
 TypeClass = URL0204

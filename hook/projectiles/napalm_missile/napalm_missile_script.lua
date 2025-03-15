@@ -1,7 +1,7 @@
 #
 # Terran Napalm Missile
 #
-local NapalmMissileProjectile = import('/mods/4th_Dimension_212/hook/lua/rampage_projectiles.lua').NapalmMissileProjectile
+local NapalmMissileProjectile = import('/mods/4th_Dimension_302/hook/lua/rampage_projectiles.lua').NapalmMissileProjectile
 
 #Misc Local files
 local EffectTemplate = import('/lua/EffectTemplates.lua')
@@ -23,7 +23,7 @@ Napalm_Missile = Class(NapalmMissileProjectile) {
 
     UpdateThread = function(self)
         WaitSeconds(0.5)
-        self:SetMesh('/mods/4th_Dimension_212/hook/projectiles/napalm_missile/napalm_missile_UnPacked01_mesh')
+        self:SetMesh('/mods/4th_Dimension_302/hook/projectiles/napalm_missile/napalm_missile_UnPacked01_mesh')
         local army = self:GetArmy()
 
         # Polytrails offset to wing tips

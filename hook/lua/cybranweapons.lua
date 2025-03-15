@@ -29,10 +29,6 @@ CDFProtonCannonWeapon = Class(DefaultProjectileWeapon) {
                      '/effects/emitters/proton_cannon_muzzle_02_emit.bp',},
 }
 
-CDFOverchargeWeapon = Class(DefaultProjectileWeapon) {
-    FxMuzzleFlash = EffectTemplate.CMolecularRipperOverChargeFlash01,
-}
-
 # COMMANDER ENHANCEMENT WEAPON!
 CDFHeavyMicrowaveLaserGeneratorCom = Class(DefaultBeamWeapon) {
     BeamType = CollisionBeamFile.MicrowaveLaserCollisionBeam02,

@@ -11,7 +11,7 @@
 TableCat = import('utilities.lua').TableCat
 EmtBpPath = '/effects/emitters/'
 EmitterTempEmtBpPath = '/effects/emitters/temp/'
-ModPath = '/mods/4th_Dimension_212/hook/effects/Emitters/'
+ModPath = '/mods/4th_Dimension_302/hook/effects/Emitters/'
 
 #---------------------------------------------------------------
 # ### EXPLOSIONS ###

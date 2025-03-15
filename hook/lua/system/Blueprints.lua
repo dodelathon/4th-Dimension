@@ -59,19 +59,19 @@ function ModBlueprints(all_bps)
 	                		end 
 	                	if v == 'CYBRAN' and civilian == 0 then
  	               			if bp.Display.Tarmacs[1].Albedo == 'Tarmacs/Tar12x_cybran_01_albedo'
-                				then bp.Display.Tarmacs[1].Albedo = '/mods/4th_Dimension_212/hook/env/Common/decals/Tarmacs/Tar12x_01_albedo_cybran.dds'
+                				then bp.Display.Tarmacs[1].Albedo = '/mods/4th_Dimension_302/hook/env/Common/decals/Tarmacs/Tar12x_01_albedo_cybran.dds'
                 					bp.Display.Tarmacs[1].Normal = 'Tarmacs/Tar12x_01_normals'
                 				end
                 			if bp.Display.Tarmacs[1].Albedo == 'Tarmacs/Tar6x_cybran_01_albedo'
-                				then bp.Display.Tarmacs[1].Albedo = '/mods/4th_Dimension_212/hook/env/Common/decals/Tarmacs/Tar6x_01_albedo_cybran.dds'
+                				then bp.Display.Tarmacs[1].Albedo = '/mods/4th_Dimension_302/hook/env/Common/decals/Tarmacs/Tar6x_01_albedo_cybran.dds'
                 					bp.Display.Tarmacs[1].Normal = 'Tarmacs/Tar6x_01_normals'
                 			end
                 			if bp.Display.Tarmacs[1].Albedo == 'Tarmacs/Tar8x_cybran_01_albedo'
-                				then bp.Display.Tarmacs[1].Albedo = '/mods/4th_Dimension_212/hook/env/Common/decals/Tarmacs/Tar8x_01_albedo_cybran.dds'
+                				then bp.Display.Tarmacs[1].Albedo = '/mods/4th_Dimension_302/hook/env/Common/decals/Tarmacs/Tar8x_01_albedo_cybran.dds'
                 					bp.Display.Tarmacs[1].Normal = 'Tarmacs/Tar8x_01_normals'
                 			end
                 			if bp.Display.Tarmacs[1].Albedo == 'Tarmacs/Tar10x_cybran_01_albedo'
-                				then bp.Display.Tarmacs[1].Albedo = '/mods/4th_Dimension_212/hook/env/Common/decals/Tarmacs/Tar10x_01_albedo_cybran.dds'
+                				then bp.Display.Tarmacs[1].Albedo = '/mods/4th_Dimension_302/hook/env/Common/decals/Tarmacs/Tar10x_01_albedo_cybran.dds'
                 					bp.Display.Tarmacs[1].Normal = 'Tarmacs/Tar10x_01_normals'
                 			end
                     		bp.Display.Tarmacs[1].Length = bp.Display.Tarmacs[1].Length * 2.0
@@ -79,22 +79,6 @@ function ModBlueprints(all_bps)
                     		bp.Display.Tarmacs[1].FadeOut = 900    
                 		end
                 		if v == 'AEON' and civilian == 0 then
-                			if bp.Display.Tarmacs[1].Albedo == 'Tarmacs/Tar12x_aeon_01_albedo'
-                				then bp.Display.Tarmacs[1].Albedo = '/mods/4th_Dimension_212/hook/env/Common/decals/Tarmacs/Tar12x_01_albedo_aeon.dds'
-                					bp.Display.Tarmacs[1].Normal = ''
-                			end
-                			if bp.Display.Tarmacs[1].Albedo == 'Tarmacs/Tar6x_aeon_01_albedo'
-                				then bp.Display.Tarmacs[1].Albedo = '/mods/4th_Dimension_212/hook/env/Common/decals/Tarmacs/Tar6x_01_albedo_aeon.dds'
-                					bp.Display.Tarmacs[1].Normal = ''
-                			end
-                			if bp.Display.Tarmacs[1].Albedo == 'Tarmacs/Tar8x_aeon_01_albedo'
-                				then bp.Display.Tarmacs[1].Albedo = '/mods/4th_Dimension_212/hook/env/Common/decals/Tarmacs/Tar8x_01_albedo_aeon.dds'
-                					bp.Display.Tarmacs[1].Normal = ''
-                			end
-                			if bp.Display.Tarmacs[1].Albedo == 'Tarmacs/Tar10x_aeon_01_albedo'
-                				then bp.Display.Tarmacs[1].Albedo = '/mods/4th_Dimension_212/hook/env/Common/decals/Tarmacs/Tar10x_01_albedo_aeon.dds'
-                					bp.Display.Tarmacs[1].Normal = ''
-                			end
                     		bp.Display.Tarmacs[1].Length = bp.Display.Tarmacs[1].Length * 1.6
                     		bp.Display.Tarmacs[1].Width = bp.Display.Tarmacs[1].Width * 1.6
                     		bp.Display.Tarmacs[1].FadeOut = 900    

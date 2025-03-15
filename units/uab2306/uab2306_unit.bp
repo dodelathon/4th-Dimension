@@ -60,7 +60,7 @@ UnitBlueprint {
         SubThreatLevel = 0,
         SurfaceThreatLevel = 50,
     },
-    Description = 'Heavy Disruptor Turret A',
+    Description = 'Heavy Disruptor Turret',
 
     Display = {   
         Mesh = {
@@ -220,8 +220,8 @@ UnitBlueprint {
             DamageRadius = 1.25,
             DamageType = 'Normal',
             DisplayName = 'Annihilator BFG',
-            EnergyDrainPerSecond = 2000,
-            EnergyRequired = 3000,
+            EnergyDrainPerSecond = 500,
+            EnergyRequired = 1000,
             FireTargetLayerCapsTable = {
                 Land = 'Land|Water',
             },
@@ -235,7 +235,7 @@ UnitBlueprint {
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 25, 
-            ProjectileId = '/mods/4th_Dimension_212/hook/projectiles/BFGShell/BFGShell_proj.bp',
+            ProjectileId = '/mods/4th_Dimension_302/hook/projectiles/BFGShell/BFGShell_proj.bp',
             ProjectileLifetime = 4,
             ProjectilesPerOnFire = 1,
             RackBones = {

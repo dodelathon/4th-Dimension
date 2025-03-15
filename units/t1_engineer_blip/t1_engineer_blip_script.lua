@@ -8,7 +8,7 @@
 #*************************************************************************
 
 local TConstructionUnit = import('/lua/terranunits.lua').TConstructionUnit
-TConstructionUnit = import('/mods/4th_Dimension_212/hook/lua/AdvancedJamming.lua').AdvancedJammerHologram( TConstructionUnit )
+TConstructionUnit = import('/mods/4th_Dimension_302/hook/lua/AdvancedJamming.lua').AdvancedJammerHologram( TConstructionUnit )
 
 t1_engineer_blip = Class(TConstructionUnit) {}
 

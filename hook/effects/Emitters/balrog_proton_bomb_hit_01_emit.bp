@@ -21,7 +21,7 @@ EmitterBlueprint {
 	SortOrder = -1.00,
 	Texture = [[/textures/particles/ring_05.dds]],
 	-- RampTexture = [[/textures/particles/ramp_red_06.dds]], # original
-	RampTexture = [[/mods/4th_Dimension_212/textures/particles/ramp_magma_orange_02.dds]],
+	RampTexture = [[/mods/4th_Dimension_302/textures/particles/ramp_magma_orange_02.dds]],
 	XDirectionCurve = {
 		XRange = 16.00,
 		Keys = {

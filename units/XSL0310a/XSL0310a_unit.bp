@@ -67,19 +67,19 @@ UnitBlueprint {
         },     
 		AnimationDeath = {
             {
-                Animation = '/mods/4th_Dimension_212/units/xsl0310a/xsl0310a_Death01.sca',
+                Animation = '/mods/4th_Dimension_302/units/xsl0310a/xsl0310a_Death01.sca',
                 AnimationRateMax = 1.75,
                 AnimationRateMin = 1.15,
                 Weight = 50,
             },
 			{
-                Animation = '/mods/4th_Dimension_212/units/xsl0310a/XSL0310a_death02.sca',
+                Animation = '/mods/4th_Dimension_302/units/xsl0310a/XSL0310a_death02.sca',
                 AnimationRateMax = 1.75,
                 AnimationRateMin = 1.15,
                 Weight = 33,
             },
         },    
-        AnimationWalk = '/mods/4th_Dimension_212/units/xsl0310a/XSL0310a_Awalk.sca',
+        AnimationWalk = '/mods/4th_Dimension_302/units/xsl0310a/XSL0310a_Awalk.sca',
 		AnimationWalkRate = 0.644, #0.92
 		Mesh = {
             IconFadeInZoom = 130,
@@ -299,7 +299,7 @@ UnitBlueprint {
             Turreted = true,
             WeaponCategory = 'Direct Fire',
 			WeaponRepackTimeout = 2, 
-            WeaponUnpackAnimation = '/mods/4th_Dimension_212/units/XSL0310a/XSL0310a_LeftGunUnpack.sca', 
+            WeaponUnpackAnimation = '/mods/4th_Dimension_302/units/XSL0310a/XSL0310a_LeftGunUnpack.sca', 
             WeaponUnpackAnimationRate = 0.5, 
             WeaponUnpacks = true,
         },    
@@ -410,7 +410,7 @@ UnitBlueprint {
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 10,
             NotExclusive = true,                              
-            ProjectileId = '/mods/4th_Dimension_212/hook/projectiles/SIFLaanseTacticalMissile05/SIFLaanseTacticalMissile05_proj.bp',
+            ProjectileId = '/mods/4th_Dimension_302/hook/projectiles/SIFLaanseTacticalMissile05/SIFLaanseTacticalMissile05_proj.bp',
             ProjectileLifetime = 25,
             ProjectilesPerOnFire = 1,
             RackBones = {

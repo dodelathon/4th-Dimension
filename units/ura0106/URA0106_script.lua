@@ -14,6 +14,8 @@
 local CAirUnit = import('/lua/cybranunits.lua').CAirUnit
 local EffectUtil = import('/lua/EffectUtilities.lua')
 local util = import('/lua/utilities.lua')
+local Buff = import('/lua/sim/buff.lua')
+local baseUnit = import('/lua/sim/unit.lua').Unit
 
 #### Weapon local files ####
 local CAAAutocannon = import('/lua/cybranweapons.lua').CAAAutocannon
@@ -25,20 +27,6 @@ URA0106 = Class(CAirUnit) {
                 if not self.unit:IsDead() and self.unit:GetWeaponByLabel('MainGun'):GetCurrentTarget() then
                     local myWeapon = self.unit:GetWeaponByLabel('MainGun')
                     local myTarget = myWeapon:GetCurrentTarget()
-                    ### Checks current target for its unit category and sets the weapons stats accordingly
-                    if table.find(myTarget:GetBlueprint().Categories,'AIR') then 								# and not table.find(myTarget:GetBlueprint().Categories,'EXPERIMENTAL')    
-                        ### Prevents the Activation of the DMG modification if it is already on
-                        if self.unit.DmgMod == false then
-                            myWeapon:SetFiringRandomness(myWeapon:GetBlueprint().FiringRandomness) 
-                            myWeapon:AddDamageMod(-12)
-                            self.unit.DmgMod = true
-                        end
-                    elseif self.unit.DmgMod == true then
-                        ### Prevents the De-activation of the DMG modification if it is already off          
-                        myWeapon:SetFiringRandomness(myWeapon:GetBlueprint().FiringRandomness * 2)
-                        myWeapon:AddDamageMod(12)
-                        self.unit.DmgMod = false
-                    end
                 end
                 local proj = CAAAutocannon.CreateProjectileAtMuzzle(self, muzzle)
             end,
@@ -64,10 +52,8 @@ URA0106 = Class(CAirUnit) {
 ########################################################################## 
 
     OnCreate = function(self, builder, layer)
-    CAirUnit. OnCreate(self,builder,layer)    
+		CAirUnit.OnCreate(self,builder,layer) 
         if not self:IsDead() then 
-            ### Disables weapons
-            self:SetWeaponEnabledByLabel('MainGun', false)
             self:SetScriptBit('RULEUCC_RetaliateToggle', false) 
                
             ### Global Varibles 
@@ -79,7 +65,7 @@ URA0106 = Class(CAirUnit) {
             self.MoveToParent = false
             self.DmgMod = false
             self.Launch = true    
-                    
+       
             ### Global varibles            
             self.Duration = 1
             self.MyWeapon = self:GetWeaponByLabel('MainGun')
@@ -95,11 +81,7 @@ URA0106 = Class(CAirUnit) {
         ### Are we dead?
         if not self:IsDead() and not self.Parent:IsDead() then
         
-            ### Updates the drone veterancy to match that of the carrier upon launch
-            local carrierKills = self.Parent:GetStat('KILLS', 0).Value
-            self.AddKills(self, carrierKills)            
-               
-            ### Set flag to true 
+			### Set flag to true 
             self.BurnerActive = true
              
             ### Issues the move command to simulate a launch
@@ -150,7 +132,7 @@ URA0106 = Class(CAirUnit) {
                 self.MoveToParent = true
                 
                 ### Disables weapons and attempts to move drone back to parent
-                self:SetWeaponEnabledByLabel('MainGun', false)           
+                           
                 self:SetScriptBit('RULEUCC_RetaliateToggle', false)
                 IssueClearCommands({self})
                 IssueMove({self}, parentPos) 
@@ -159,8 +141,6 @@ URA0106 = Class(CAirUnit) {
                 ### Set flag to false
                 self.MoveToParent = false
                 
-                ### Enables weapons
-                self:SetWeaponEnabledByLabel('MainGun', true)
                 self:SetScriptBit('RULEUCC_RetaliateToggle', true)                   
                 if self.MyWeapon:GetCurrentTarget() then
                     local myTarget = self.MyWeapon:GetCurrentTarget()
@@ -196,29 +176,20 @@ URA0106 = Class(CAirUnit) {
                 end
             end         
             ### Delay between checks
-            WaitSeconds(0.25)
+            WaitSeconds(1)
         end
     end,
     
-    OnKilledUnit = function(self, unitKilled)
-        CAirUnit.OnKilledUnit(self, unitKilled)     
-        if not self:IsDead() and not self.Parent:IsDead() then
-            self:ForkThread(self.UpdateCarrierKills) 
+	OnKilledUnit = function(self, unitKilled, massKilled)
+		CAirUnit.OnKilledUnit(self, unitKilled, massKilled)
+		if not self:IsDead() and not self.Parent:IsDead() then
+            self:ForkThread(self.UpdateCarrierKills(self, unitKilled, massKilled)) 
         end
-    end, 
+	end,    
     
-    ReceiveKills = function(self, unitKills)
-        self.AddKills(self, unitKills)   
-    end,       
-    
-    UpdateCarrierKills = function(self)
+    UpdateCarrierKills = function(self, unitKilled, massKilled)
         ### Updates the carrier veterancy to match that of the drone
-        local carrierKills = self.Parent:GetStat('KILLS', 0).Value          
-        local droneKills = self:GetStat('KILLS', 0).Value
-        if droneKills > carrierKills then
-            local unitKills = droneKills - carrierKills
-            self.Parent.ReceiveKills(self.Parent, unitKills)
-        end    
+        self.Parent.ReceiveKills(self.Parent, unitKilled, massKilled/8)  
     end,
               
     OnMotionHorzEventChange = function(self, new, old) 
@@ -344,6 +315,13 @@ URA0106 = Class(CAirUnit) {
         
         ### Final command to finish off the fighters death event 
         CAirUnit.OnKilled(self, instigator, type, overkillRatio) 
-    end,   
+    end, 
+
+	AddKills = function(self, numKills)
+        #Add the kills, then check veterancy junk.
+        local unitKills = self:GetStat('KILLS', 0).Value + numKills
+        self:SetStat('KILLS', unitKills)
+    end,
+
 } 
 TypeClass = URA0106 

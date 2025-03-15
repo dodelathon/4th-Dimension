@@ -16,16 +16,6 @@ UAL0201 = Class(AHoverLandUnit) {
         MainGun = Class(ADFDisruptorCannonWeapon) {}
     },
     
-   OnLayerChange = function(self, new, old)
-        AHoverLandUnit.OnLayerChange(self, new, old)
-        if( old != 'None' ) then
-            if( new == 'Land' ) then
-           	self:SetSpeedMult(1)
-            elseif( new == 'Water' ) then
-                self:SetSpeedMult(.7)
-            end
-     	end
-    end,
 }
 TypeClass = UAL0201
 

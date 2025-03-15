@@ -1,9 +1,9 @@
 #****************************************************************************
 #**
-#**  File     :  /units/URL0204/URL0204_script.*
+#**  File     :  /units/URL0305/URL0305_script.*
 #**  Author(s):  Optimus Prime
 #**
-#**  Summary  :  
+#**  Summary  :  Hellhound Script
 #**
 #****************************************************************************
 
@@ -16,6 +16,11 @@ URL0305 = Class(CWalkingLandUnit) {
     Weapons = {
         MainGun = Class(CDFLaserDisintegratorWeapon) {},
     },
+	
+	OnStopBeingBuilt = function(self, builder, layer)
+		CWalkingLandUnit.OnStopBeingBuilt(self, builder, layer)
+		self:AddCommandCap('RULEUCC_Teleport')
+	end,
 }
 
 TypeClass = URL0305

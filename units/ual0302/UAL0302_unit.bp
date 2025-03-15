@@ -330,7 +330,7 @@ UnitBlueprint {
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 4,
-            ProjectileId = '/mods/4th_Dimension_212/hook/projectiles/AIFMissileSerpentine03/AIFMissileSerpentine03_proj.bp',
+            ProjectileId = '/mods/4th_Dimension_302/hook/projectiles/AIFMissileSerpentine03/AIFMissileSerpentine03_proj.bp',
             ProjectileLifetime = 25,
             RackBones = {
                 {
@@ -399,7 +399,7 @@ UnitBlueprint {
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 4,
-            ProjectileId = '/mods/4th_Dimension_212/hook/projectiles/AIFMissileSerpentine03/AIFMissileSerpentine03_proj.bp',
+            ProjectileId = '/mods/4th_Dimension_302/hook/projectiles/AIFMissileSerpentine03/AIFMissileSerpentine03_proj.bp',
             ProjectileLifetime = 25,
             RackBones = {
                 {
@@ -466,7 +466,7 @@ UnitBlueprint {
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 4,
-            ProjectileId = '/mods/4th_Dimension_212/hook/projectiles/AIFMissileSerpentine03/AIFMissileSerpentine03_proj.bp',
+            ProjectileId = '/mods/4th_Dimension_302/hook/projectiles/AIFMissileSerpentine03/AIFMissileSerpentine03_proj.bp',
             ProjectileLifetime = 25,
             RackBones = {
                 {
@@ -533,7 +533,7 @@ UnitBlueprint {
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 4,
-            ProjectileId = '/mods/4th_Dimension_212/hook/projectiles/AIFMissileSerpentine03/AIFMissileSerpentine03_proj.bp',
+            ProjectileId = '/mods/4th_Dimension_302/hook/projectiles/AIFMissileSerpentine03/AIFMissileSerpentine03_proj.bp',
             ProjectileLifetime = 25,
             RackBones = {
                 {
@@ -600,7 +600,7 @@ UnitBlueprint {
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 4,
-            ProjectileId = '/mods/4th_Dimension_212/hook/projectiles/AIFMissileSerpentine03/AIFMissileSerpentine03_proj.bp',
+            ProjectileId = '/mods/4th_Dimension_302/hook/projectiles/AIFMissileSerpentine03/AIFMissileSerpentine03_proj.bp',
             ProjectileLifetime = 25,
             RackBones = {
                 {
@@ -667,7 +667,7 @@ UnitBlueprint {
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 4,
-            ProjectileId = '/mods/4th_Dimension_212/hook/projectiles/AIFMissileSerpentine03/AIFMissileSerpentine03_proj.bp',
+            ProjectileId = '/mods/4th_Dimension_302/hook/projectiles/AIFMissileSerpentine03/AIFMissileSerpentine03_proj.bp',
             ProjectileLifetime = 25,
             RackBones = {
                 {

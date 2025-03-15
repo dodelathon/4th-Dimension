@@ -4,7 +4,7 @@ ProjectileBlueprint {
             Type = 'Small01',
             Scale = 2.0,
         },
-        MeshBlueprint = '/mods/4th_Dimension_212/hook/meshes/projectiles/debris_misc_08_mesh.bp',
+        MeshBlueprint = '/mods/4th_Dimension_302/hook/meshes/projectiles/debris_misc_08_mesh.bp',
         UniformScale = 0.6,
     },
     Physics = {

@@ -51,11 +51,6 @@ ADFReactonCannon = Class(DefaultProjectileWeapon) {
                            '/effects/emitters/reacton_cannon_muzzle_flash_01_emit.bp',},
 }
 
-ADFOverchargeWeapon = Class(DefaultProjectileWeapon) {
-    FxMuzzleFlash = EffectTemplate.ACommanderOverchargeFlash01,
-}
-
-
 ADFTractorClaw = Class(DefaultBeamWeapon) {
     BeamType = TractorClawCollisionBeam,
     FxMuzzleFlash = {},

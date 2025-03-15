@@ -1,6 +1,6 @@
 #**************************************************************************** 
 #** 
-#**  File     :  mods/4th_Dimension_212/units/UEL0403/UEL0403_script.lua 
+#**  File     :  mods/4th_Dimension_302/units/UEL0403/UEL0403_script.lua 
 #**    
 #**  Summary  :  EbolaSoup's Experimental Quadruped Bot for UEF 
 #** 
@@ -14,7 +14,7 @@ local WeaponFile = import('/lua/terranweapons.lua')
 local TSAMLauncher = WeaponFile.TSAMLauncher 
 local TDFIonizedPlasmaCannon = TerranWeaponFile.TDFIonizedPlasmaCannon 
 local TIFCommanderDeathWeapon = TerranWeaponFile.TIFCommanderDeathWeapon 
-local BalrogMagmaCannonWeapon = import('/mods/4th_Dimension_212/hook/lua/Balrogweapons.lua').BalrogMagmaCannonWeapon 
+local BalrogMagmaCannonWeapon = import('/mods/4th_Dimension_302/hook/lua/Balrogweapons.lua').BalrogMagmaCannonWeapon 
 local TIFCruiseMissileLauncher = WeaponFile.TIFCruiseMissileLauncher 
 local TDFHeavyPlasmaCannonWeapon = import('/lua/terranweapons.lua').TDFHeavyPlasmaGatlingCannonWeapon 
 

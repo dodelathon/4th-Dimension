@@ -10,7 +10,7 @@
 
 ### Misc files
 local AWalkingLandUnit = import('/lua/aeonunits.lua').AWalkingLandUnit 
-local CustomAeonWeapons = import('/mods/4th_Dimension_212/hook/lua/aeonweapons.lua')
+local CustomAeonWeapons = import('/mods/4th_Dimension_302/hook/lua/aeonweapons.lua')
 local EffectUtils = import('/lua/EffectUtilities.lua')
 local Effects = import('/lua/effecttemplates.lua')
 local AAAZealotMissileWeapon = import('/lua/aeonweapons.lua').AAAZealotMissileWeapon

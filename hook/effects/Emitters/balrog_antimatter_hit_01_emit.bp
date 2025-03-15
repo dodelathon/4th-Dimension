@@ -24,7 +24,7 @@ EmitterBlueprint {
 	MedFidelity = true,
 	HighFidelity = true,
 	Texture = [[/textures/particles/glow_02.dds]],
-	RampTexture = [[/mods/4th_Dimension_212/textures/particles/ramp_magma_orange_02.dds]],
+	RampTexture = [[/mods/4th_Dimension_302/textures/particles/ramp_magma_orange_02.dds]],
 	-- RampTexture = [[/textures/particles/ramp_fire_04.dds]],
 	-- RampTexture = [[/textures/particles/ramp_fire_03.dds]],
 	XDirectionCurve = {

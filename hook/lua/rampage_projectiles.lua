@@ -23,7 +23,7 @@ local EffectTemplate = import('/lua/EffectTemplates.lua')
 local DepthCharge = import('/lua/defaultantiprojectile.lua').DepthCharge
 local util = import('/lua/utilities.lua')
 EmtBpPath = '/effects/emitters/'
-MOD_BpPath = '/mods/4th_Dimension_212/hook/effects/emitters/'
+MOD_BpPath = '/mods/4th_Dimension_302/hook/effects/emitters/'
 
 #------------------------------------------------------------------------
 #  Rampage Naplam Missile

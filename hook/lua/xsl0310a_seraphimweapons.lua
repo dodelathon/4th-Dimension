@@ -18,7 +18,7 @@ local Explosion = import('/lua/defaultexplosions.lua')
 local KamikazeWeapon = WeaponFile.KamikazeWeapon
 
 ### Custom weapon info ###
-local xsl0310a_CollisionBeamFile = import('/mods/4th_Dimension_212/hook/lua/xsl0310a_defaultcollisionbeams.lua')
+local xsl0310a_CollisionBeamFile = import('/mods/4th_Dimension_302/hook/lua/xsl0310a_defaultcollisionbeams.lua')
 
 ### Local effect templates ###
 local EffectTemplate = import('/lua/EffectTemplates.lua')

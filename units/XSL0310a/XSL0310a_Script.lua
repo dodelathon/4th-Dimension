@@ -12,7 +12,7 @@ local SWalkingLandUnit = import('/lua/seraphimunits.lua').SWalkingLandUnit
 
 #### Weapon local files ####
 local WeaponsFile = import('/lua/seraphimweapons.lua')
-local xsl0310a_LightningWeapon = import('/mods/4th_Dimension_212/hook/lua/xsl0310a_seraphimweapons.lua').xsl0310a_LightningWeapon
+local xsl0310a_LightningWeapon = import('/mods/4th_Dimension_302/hook/lua/xsl0310a_seraphimweapons.lua').xsl0310a_LightningWeapon
 local SDFThauCannon = WeaponsFile.SDFThauCannon
 local SIFThunthoCannonWeapon = import('/lua/seraphimweapons.lua').SIFThunthoCannonWeapon
 local SLaanseMissileWeapon = WeaponsFile.SLaanseMissileWeapon

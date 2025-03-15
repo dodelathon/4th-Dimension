@@ -73,13 +73,13 @@ UnitBlueprint {
     Display = {
         AnimationDeath = {
             {
-                Animation = '/mods/4th_Dimension_212/units/UEL0302/uel0302_death.sca',
+                Animation = '/mods/4th_Dimension_302/units/UEL0302/uel0302_death.sca',
                 AnimationRateMax = 1.75,
                 AnimationRateMin = 1,
                 Weight = 100,
             },
             {
-                Animation = '/mods/4th_Dimension_212/units/UEL0302/uel0302_death2.sca',
+                Animation = '/mods/4th_Dimension_302/units/UEL0302/uel0302_death2.sca',
                 AnimationRateMax = 1.25,
                 AnimationRateMin = 0.75,
                 Weight = 100,
@@ -115,7 +115,7 @@ UnitBlueprint {
                 },
             },
         },
-        AnimationWalk = '/mods/4th_Dimension_212/units/uel0302/uel0302_awalk.sca',
+        AnimationWalk = '/mods/4th_Dimension_302/units/uel0302/uel0302_awalk.sca',
         AnimationWalkRate = 3.9, 
         PlaceholderMeshName = 'UXL0001',
         SpawnRandomRotation = true,

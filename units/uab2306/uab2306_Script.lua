@@ -9,7 +9,7 @@
 #****************************************************************************
 
 local AStructureUnit = import('/lua/aeonunits.lua').AStructureUnit
-local BFGShellWeapon = import('/mods/4th_Dimension_212/hook/lua/aeonweapons.lua').BFGShellWeapon
+local BFGShellWeapon = import('/mods/4th_Dimension_302/hook/lua/aeonweapons.lua').BFGShellWeapon
 local utilities = import('/lua/utilities.lua')
 
 UAB2306_A = Class(AStructureUnit) {

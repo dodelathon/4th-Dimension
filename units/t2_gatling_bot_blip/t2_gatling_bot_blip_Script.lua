@@ -8,7 +8,7 @@
 #*************************************************************************
 
 local TWalkingLandUnit = import('/lua/terranunits.lua').TWalkingLandUnit
-TWalkingLandUnit = import('/mods/4th_Dimension_212/hook/lua/AdvancedJamming.lua').AdvancedJammerHologram( TWalkingLandUnit )
+TWalkingLandUnit = import('/mods/4th_Dimension_302/hook/lua/AdvancedJamming.lua').AdvancedJammerHologram( TWalkingLandUnit )
 
 t2_gatling_bot_blip = Class(TWalkingLandUnit) {}
 

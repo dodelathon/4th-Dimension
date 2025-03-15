@@ -8,7 +8,7 @@
 #*************************************************************************
 
 local TSubUnit = import('/lua/terranunits.lua').TSubUnit
-TSubUnit = import('/mods/4th_Dimension_212/hook/lua/AdvancedJamming.lua').AdvancedJammerHologram( TSubUnit )
+TSubUnit = import('/mods/4th_Dimension_302/hook/lua/AdvancedJamming.lua').AdvancedJammerHologram( TSubUnit )
 
 t1_sub_blip = Class(TSubUnit) {}
 

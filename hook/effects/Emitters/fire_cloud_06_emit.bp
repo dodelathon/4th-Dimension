@@ -19,8 +19,8 @@ EmitterBlueprint {
 	InterpolateEmission = true,
 	TextureStripcount = 1.00,
 	SortOrder = 0.00,
-	Texture = [[/mods/4th_Dimension_212/textures/particles/fire_cloud_premod_04.dds]],
-	RampTexture = [[/mods/4th_Dimension_212/textures/particles/ramp_red_02.dds]],
+	Texture = [[/mods/4th_Dimension_302/textures/particles/fire_cloud_premod_04.dds]],
+	RampTexture = [[/mods/4th_Dimension_302/textures/particles/ramp_red_02.dds]],
 	XDirectionCurve = {
 		XRange = 4.00,
 		Keys = {

@@ -146,7 +146,7 @@ URL0403 = Class(CLandUnit) {
     },
 
     OnStopBeingBuilt = function(self,builder,layer)
-        CLandUnit.OnStopBeingBuilt(self)
+        CLandUnit.OnStopBeingBuilt(self, builder, layer)
         ### Global variable setup
         self.MyWeapon = self:GetWeaponByLabel('QuadCannon')
         self.CurrentAccuracy = nil

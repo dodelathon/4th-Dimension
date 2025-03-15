@@ -319,7 +319,7 @@ UnitBlueprint {
             MuzzleVelocity = 16,
             MuzzleVelocityRandomness = 2.0,
             MuzzleVelocityReduceDistance = 1, 
-            ProjectileId = '/mods/4th_Dimension_212/hook/projectiles/TDFFragmentationGrenade02/TDFFragmentationGrenade02_proj.bp',
+            ProjectileId = '/mods/4th_Dimension_302/hook/projectiles/TDFFragmentationGrenade02/TDFFragmentationGrenade02_proj.bp',
             ProjectileLifetimeUsesMultiplier = 1.3,
             ProjectilesPerOnFire = 3,
             RackBones = {

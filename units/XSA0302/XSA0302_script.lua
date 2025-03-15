@@ -9,7 +9,7 @@
 #****************************************************************************
 
 local SAirUnit = import('/lua/seraphimunits.lua').SAirUnit
-SAirUnit = import('/mods/4th_Dimension_212/hook/lua/UnitPhasing.lua').UnitPhasing( SAirUnit )
+SAirUnit = import('/mods/4th_Dimension_302/hook/lua/UnitPhasing.lua').UnitPhasing( SAirUnit )
 
 XSA0302 = Class(SAirUnit) {}
 TypeClass = XSA0302

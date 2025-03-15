@@ -14,6 +14,11 @@ XAL0305 = Class(AWalkingLandUnit) {
     Weapons = {
         MainGun = Class(ADFHeavyDisruptorCannonWeapon) {}
     },
+	
+	OnStopBeingBuilt = function(self, builder, layer)
+		AWalkingLandUnit.OnStopBeingBuilt(self, builder, layer)
+		self:AddCommandCap('RULEUCC_Teleport')
+	end,
 }
 
 TypeClass = XAL0305

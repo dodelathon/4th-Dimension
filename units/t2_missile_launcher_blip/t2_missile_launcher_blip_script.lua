@@ -8,7 +8,7 @@
 #*************************************************************************
 
 local TLandUnit = import('/lua/terranunits.lua').TLandUnit
-TLandUnit = import('/mods/4th_Dimension_212/hook/lua/AdvancedJamming.lua').AdvancedJammerHologram( TLandUnit )
+TLandUnit = import('/mods/4th_Dimension_302/hook/lua/AdvancedJamming.lua').AdvancedJammerHologram( TLandUnit )
 
 t2_missile_launcher_blip = Class(TLandUnit) {}
 

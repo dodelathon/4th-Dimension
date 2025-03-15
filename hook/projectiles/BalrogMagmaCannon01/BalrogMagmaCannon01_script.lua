@@ -7,7 +7,7 @@
 #**
 #**  Copyright © 2007 Gas Powered Games, Inc.  All rights reserved.
 #****************************************************************************
-TDBalrogMagmaCannon01 = Class(import('/mods/4th_Dimension_212/hook/lua/Balrogprojectiles.lua').TBalrogMagmaCannon) {
+TDBalrogMagmaCannon01 = Class(import('/mods/4th_Dimension_302/hook/lua/Balrogprojectiles.lua').TBalrogMagmaCannon) {
 }
 --TypeClass = TDFIonizedPlasmaGatlingCannon01
 TypeClass = TDBalrogMagmaCannon01

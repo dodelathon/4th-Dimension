@@ -94,7 +94,7 @@ UAL0302 = Class(ALandUnit) {
             velocity.y = velocity.y + utilities.GetRandomFloat( -1.15, 1.15)
             proj = self:CreateProjectile('/effects/entities/DestructionFirePlume01/DestructionFirePlume01_proj.bp', offset.x, offset.y + yBoneOffset, offset.z, velocity.x, velocity.y, velocity.z)
             proj:SetBallisticAcceleration(utilities.GetRandomFloat(-1, 1)):SetVelocity(utilities.GetRandomFloat(1, 2)):SetCollision(false)           
-            local emitter = CreateEmitterOnEntity(proj, Army, '/mods/4th_Dimension_212/hook/effects/emitters/destruction_explosion_fire_plume_03_emit.bp')
+            local emitter = CreateEmitterOnEntity(proj, Army, '/mods/4th_Dimension_302/hook/effects/emitters/destruction_explosion_fire_plume_03_emit.bp')
             local lifetime = utilities.GetRandomFloat( 5, 25 )
         end
     end,

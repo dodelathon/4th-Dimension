@@ -13,10 +13,10 @@ do
       'uel0402',
       'url0403',  
       'url0305',
-      'ura0305',
+      'ura0405',
       'ura0106',
       'url0102',  
-      'ura0305',   
+      'ura0405',   
       'ueb2201', 
       'ueb2201_a',
       'ueb2201_b',
@@ -37,7 +37,7 @@ do
 	  'xsl0310b',		    
    }
    --unit icon must be in /icons/units/. Put the full path to the /icons/ folder in here - note no / on the end!
-   local MyIconPath ="/mods/4th_Dimension_212" 
+   local MyIconPath ="/mods/4th_Dimension_302" 
    
    local function IsMyUnit(bpid)
       for i, v in MyUnitIdTable do

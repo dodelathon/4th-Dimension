@@ -24,11 +24,6 @@ TDFHeavyPlasmaCannonWeapon = Class(DefaultProjectileWeapon) {
     FxMuzzleFlash = EffectTemplate.TPlasmaCannonHeavyMuzzleFlash,
 }
 
-
-TDFOverchargeWeapon = Class(DefaultProjectileWeapon) {
-    FxMuzzleFlash = EffectTemplate.TCommanderOverchargeFlash01,
-}
-
 TDFMachineGunWeapon = Class(DefaultProjectileWeapon) {
     FxMuzzleFlash = {
         '/effects/emitters/machinegun_muzzle_fire_02_emit.bp',},

@@ -19,7 +19,7 @@ drone_launcher01 = Class(CElectronBolterProjectile) {
             local drone = CreateUnit('ura0106', launcher:GetArmy(), projLoc[1], projLoc[2], projLoc[3], projOri[1], projOri[2], projOri[3], projOri[4], 'Air')                         
                                            
             ### Sets the Carrier unit as the drones parent 
-            drone:SetParent(launcher, 'ura0305') 
+            drone:SetParent(launcher, 'ura0405') 
             drone:SetCreator(launcher)
             
             ### Adds the new drone to the parents table 

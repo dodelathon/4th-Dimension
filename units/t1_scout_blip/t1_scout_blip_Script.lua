@@ -7,7 +7,7 @@
 #**  Copyright © 2009
 #*************************************************************************
 local TLandUnit = import('/lua/terranunits.lua').TLandUnit
-TLandUnit = import('/mods/4th_Dimension_212/hook/lua/AdvancedJamming.lua').AdvancedJammerHologram( TLandUnit )
+TLandUnit = import('/mods/4th_Dimension_302/hook/lua/AdvancedJamming.lua').AdvancedJammerHologram( TLandUnit )
 
 t1_scout_blip = Class(TLandUnit) {}
 

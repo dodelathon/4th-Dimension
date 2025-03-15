@@ -15,10 +15,10 @@ local DefaultProjectileWeapon = WeaponFile.DefaultProjectileWeapon
 local DefaultBeamWeapon = WeaponFile.DefaultBeamWeapon
 local GinsuCollisionBeam = CollisionBeams.GinsuCollisionBeam
 local OrbitalDeathLaserCollisionBeam = CollisionBeams.OrbitalDeathLaserCollisionBeam
-local BalrogEffectTemplate = import('/mods/4th_Dimension_212/hook/lua/BalrogEffectTemplates.lua')
+local BalrogEffectTemplate = import('/mods/4th_Dimension_302/hook/lua/BalrogEffectTemplates.lua')
 local EffectTemplate = import('/lua/EffectTemplates.lua')
--- local EbolaCollisionBeamFile = import ('/mods/4th_Dimension_212/lua/Eboladefaultcollisionbeams.lua')
-local BalrogProjectileFile = import ('/mods/4th_Dimension_212/hook/lua/Balrogprojectiles.lua')
+-- local EbolaCollisionBeamFile = import ('/mods/4th_Dimension_302/lua/Eboladefaultcollisionbeams.lua')
+local BalrogProjectileFile = import ('/mods/4th_Dimension_302/hook/lua/Balrogprojectiles.lua')
 
 
 -- EbolaDeathLaserBeamWeapon = Class(DefaultBeamWeapon) {

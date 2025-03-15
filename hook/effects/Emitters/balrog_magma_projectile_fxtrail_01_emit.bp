@@ -23,9 +23,9 @@ EmitterBlueprint {
 	LowFidelity = true,
 	MedFidelity = true,
 	HighFidelity = true,
-	Texture = [[/mods/4th_Dimension_212/textures/particles/fire_cloud_add_02.dds]], # glow_03.dds worked okay with Add mode;  fire_cloud_alpha_02 good with Add, too dark with Normal; 
+	Texture = [[/mods/4th_Dimension_302/textures/particles/fire_cloud_add_02.dds]], # glow_03.dds worked okay with Add mode;  fire_cloud_alpha_02 good with Add, too dark with Normal; 
 	--Texture = [[/textures/particles/glow_03.dds]], #Original
-	RampTexture = [[/mods/4th_Dimension_212/textures/particles/ramp_fire_09.dds]],
+	RampTexture = [[/mods/4th_Dimension_302/textures/particles/ramp_fire_09.dds]],
 		--RampTexture = [[/textures/particles/ramp_blue_16.dds]], # Original
 	XDirectionCurve = {
 		XRange = 5.00,

@@ -25,7 +25,7 @@ EmitterBlueprint {
 	MedFidelity = true,
 	HighFidelity = true,
 	Texture = [[/textures/particles/fire_flame_add_03.dds]],
-	-- Texture = [[/mods/4th_Dimension_212/textures/particles/fire_flame_add_03.dds]],
+	-- Texture = [[/mods/4th_Dimension_302/textures/particles/fire_flame_add_03.dds]],
 	-- Texture = [[/textures/particles/miasma_alpha_01.dds]], # original
 	RampTexture = [[/textures/particles/ramp_blue_14.dds]],
 	XDirectionCurve = {

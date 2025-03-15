@@ -10,7 +10,7 @@
 
 UnitList = {
 T4AirExperimental1 = {
-Cybran = {'URA0305', 20}, # Retribution, T3 Airborne Drone Carrier
+Cybran = {'URA0405', 20}, # Retribution, T4 Airborne Drone Carrier
 },
 
 T1LandDFTank = {
@@ -32,7 +32,7 @@ Aeon = {'UAL0204', 35}, # Predator, T2 Sniper Bot
 },
 
 T2FighterBomber= {
-Aeon = {'UAA0206', 50}, # Abolisher, multi-role fighter
+Aeon = {'UAA0206', 50}, # Abolisher, Laser Beam Gunship
 UEF = {'UEA0206', 60}, # Thrasher, multi-role fighter
 Cybran = {'URA0206', 60} # Vampire, stealthed-cloaked hunter
 },

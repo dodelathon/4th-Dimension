@@ -87,10 +87,10 @@ UnitBlueprint {
             IconFadeInZoom = 130,
             LODs = {
                 {
-		    MeshName = '/mods/4th_Dimension_212/units/ueb2201_a/ueb2201_a_lod0.scm',
-	            AlbedoName = '/mods/4th_Dimension_212/units/ueb2201_a/ueb2201_a_Albedo.dds',
-	            NormalsName = '/mods/4th_Dimension_212/units/ueb2201_a/ueb2201_a_normalsTS.dds',
-	            SpecularName = '/mods/4th_Dimension_212/units/ueb2201_a/ueb2201_a_SpecTeam.dds',
+		    MeshName = '/mods/4th_Dimension_302/units/ueb2201_a/ueb2201_a_lod0.scm',
+	            AlbedoName = '/mods/4th_Dimension_302/units/ueb2201_a/ueb2201_a_Albedo.dds',
+	            NormalsName = '/mods/4th_Dimension_302/units/ueb2201_a/ueb2201_a_normalsTS.dds',
+	            SpecularName = '/mods/4th_Dimension_302/units/ueb2201_a/ueb2201_a_SpecTeam.dds',
 	            LODCutoff = 130,
 	            ShaderName = 'Unit',
                 },
