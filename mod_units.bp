@@ -1,0 +1,8299 @@
+#================================================= land units =================================================#
+
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="xsl0001",
+
+ 	Enhancements = {	
+	    RegenAura = {
+            BuildCostEnergy = 5500,
+            BuildCostMass = 800,
+            BuildTime = 800,
+            Icon = 'nrf',
+            Name = '<LOC enhancements_0125>Restoration Field',
+            Radius = 12,
+            RegenCeiling = 25,
+            RegenFloor = 0,
+            RegenPerSecond = 0.0055555555,
+            ShowBones = {
+                'Right_Upgrade',
+            },
+            Slot = 'RCH',
+            UpgradeEffectBones = {
+                'Right_Upgrade',
+                'Right_Turret_Muzzle',
+            },
+            UpgradeUnitAmbientBones = {
+                'Body',
+            },
+        },   
+    },         	 
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="xsl0101",
+
+	Display = {    		
+    	AnimationWalkRate = 0.9,
+    	UniformScale = 0.084,
+    },	
+    Defense = {
+        ArmorType = 'Normal',
+        Health = 140,
+        MaxHealth = 140,
+    },
+	Economy = {
+        BuildCostEnergy = 220,
+        BuildCostMass = 30,
+        BuildTime = 150,
+    },       	
+	Physics = {
+        RotateOnSpot = false,
+        MaxAcceleration = 1.8,
+		MaxSpeedReverse = 1.0, 
+		MaxBrake = 2.1,
+        MaxSpeed = 3.9,   	
+    },     
+    Weapon = {
+        {
+    	Damage = 7,  
+        MuzzleVelocity = 45,    
+        FiringRandomness = 0.2,
+        MaxRadius = 11,
+        },
+    },                         	 
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="xsl0201",
+
+    Defense = {
+        ArmorType = 'Normal',
+        Health = 440,
+        MaxHealth = 440,
+    },
+	Economy = {
+        BuildCostEnergy = 300,
+        BuildCostMass = 70,
+        BuildTime = 340,
+    },       	
+	Physics = {
+        RotateOnSpot = false,
+        MaxAcceleration = 1.5,
+		MaxSpeedReverse = 1.0, 
+		MaxBrake = 2.1,
+        MaxSpeed = 2.9,   	
+    },     
+    Weapon = {
+        {
+    	Damage = 55,
+        RateOfFire = 0.5,  
+        MuzzleVelocity = 40,    
+        FiringRandomness = 0.2,
+        MaxRadius = 20,
+        },
+    },                         	 
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="xsl0103",
+
+    Display = {	
+        UniformScale = 0.085,
+    },	
+    Defense = {
+        ArmorType = 'Normal',
+        Health = 350,
+        MaxHealth = 350,
+    },    
+	Economy = {
+        BuildCostEnergy = 320,
+        BuildCostMass = 64,
+        BuildTime = 300,
+    }, 	
+	Physics = {
+        RotateOnSpot = false,
+        MaxAcceleration = 1.5,
+		MaxSpeedReverse = 1.0, 
+		MaxBrake = 2.1,
+        MaxSpeed = 2.5,   	
+    },  
+    Weapon = {
+        {
+        DamageRadius = 1.2,
+    	Damage = 85,
+        RateOfFire = 0.15,      
+        FiringRandomness = 1.0,
+        },
+    },                           	 
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="xsl0202",
+
+	Physics = {
+        RotateOnSpot = false,
+        MaxAcceleration = 1.5,
+		MaxSpeedReverse = 1.0, 
+		MaxBrake = 2.1,
+        MaxSpeed = 2.9,   	
+    },     
+    Weapon = {
+        {
+        Damage = 25,
+        },
+    },                         	 
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="xsl0203",
+
+	Physics = {
+        RotateOnSpot = false,
+        MaxAcceleration = 1.0,
+		MaxSpeedReverse = 1.0, 
+		MaxBrake = 2.1,
+        MaxSpeed = 2.7,   	
+    },  
+    Weapon = {
+        {
+        MaxRadius = 20,
+        Damage = 235,
+        },
+    },                               	 
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="xsl0111",
+
+	Physics = {
+        RotateOnSpot = false,
+        MaxAcceleration = 1.0,
+		MaxSpeedReverse = 1.0, 
+		MaxBrake = 2.1,
+        MaxSpeed = 2.4,   	
+    },                             	 
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="xsl0303",
+
+    Defense = {
+
+        Health = 7000,
+        MaxHealth = 7000,
+
+    },	
+	Economy = {
+        BuildCostEnergy = 6320,
+    }, 		
+	Physics = {
+        RotateOnSpot = false,
+        MaxAcceleration = 1.0,
+		MaxSpeedReverse = 1.0, 
+		MaxBrake = 2.1,
+        MaxSpeed = 2.1,
+		StandUpright = false,   	
+    },     
+    Weapon = {
+        {
+        Damage = 350,
+        DamageRadius = 0.5,
+        FiringRandomness = 0.2, 
+        MaxRadius = 30, 
+        MuzzleVelocity = 38,
+        },
+        { 
+        },
+        {
+        FiringRandomness = 0.15, 
+        Damage = 10,
+        MuzzleVelocity = 40,
+        ProjectileId = '/projectiles/SDFOhCannon03/SDFOhCannon03_proj.bp',
+        RateOfFire = 3.0, 
+        },
+        {
+        FiringRandomness = 0.15, 
+        Damage = 10,
+        MuzzleVelocity = 40,
+        ProjectileId = '/projectiles/SDFOhCannon03/SDFOhCannon03_proj.bp',
+        RateOfFire = 3, 
+        },
+    },                         	 
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="xsl0305",
+
+    Defense = {
+        Health = 800,
+        MaxHealth = 800,
+    },	
+	Physics = {
+        RotateOnSpot = false,
+        MaxAcceleration = 1.0,
+		MaxSpeedReverse = 1.0, 
+		MaxBrake = 2.1,
+        MaxSpeed = 2.4,   	
+    },     
+    Weapon = {
+        { 
+        MaxRadius = 48,
+        },
+        {
+        MaxRadius = 65,
+        },
+    },
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="xsl0307",
+
+	Physics = {
+        RotateOnSpot = false,
+        MaxAcceleration = 1.0,
+		MaxSpeedReverse = 1.0, 
+		MaxBrake = 2.1,
+        MaxSpeed = 3.0,   	
+    },          	 
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="xsl0304",
+
+   	Display = {
+        AnimationWalkRate = 2.0,
+    }, 
+    Defense = {
+        Health = 1650,
+        MaxHealth = 1650,
+    },   	
+	Physics = {
+        RotateOnSpot = false,
+        MaxAcceleration = 1.0,
+		MaxSpeedReverse = 1.0, 
+		MaxBrake = 1.6,
+        MaxSpeed = 2.2,   	
+    },     
+    Weapon = {
+        { 
+        BallisticArc = 'RULEUBA_LowArc',
+        DamageRadius = 5,
+        MuzzleVelocity = 33,
+        },
+    },                         	 
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="xsl0105",
+
+	Physics = {
+        RotateOnSpot = false,
+        MaxAcceleration = 1.0,
+		MaxSpeedReverse = 1.3,    	
+    },            	 
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="xsl0208",
+
+	Physics = {
+        RotateOnSpot = false,
+        MaxAcceleration = 1.0,
+		MaxSpeedReverse = 1.3,    	
+    },            	 
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="xsl0309",
+
+	Physics = {
+        RotateOnSpot = false,
+        MaxAcceleration = 1.0,
+		MaxSpeedReverse = 1.3,    	
+    },            	 
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="xsl0105",
+
+	Physics = {
+		MaxSpeed = 1.5,
+		MaxAcceleration = 1.0,
+        TurnRate = 90,
+        RotateOnSpot = false,
+		MaxSpeedReverse = 1.3,    	
+    },            	 
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="xsl0104",
+
+   Display = {
+        UniformScale = 0.04,
+    }, 	
+    Economy = {
+        BuildCostEnergy = 150,
+        BuildCostMass = 35,
+        BuildTime = 160,
+   	},
+	Physics = {
+		MaxAcceleration = 1.0,
+        MaxBrake = 1.5,
+        MaxSpeed = 3.0,
+        MaxSpeedReverse = 1.0,
+        TurnRate = 40,
+        RotateOnSpot = false,
+		MaxSpeedReverse = 3.0,          
+    },  
+    Weapon = {
+    {  
+    	Damage = 3,
+        RateOfFire = 1.0,  
+        MuzzleVelocity = 60,    
+        FiringRandomness = 2.2,       
+   	},	
+    },            	 
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="xsl0205",
+
+	Physics = {
+		MaxSpeed = 3.3,
+		MaxAcceleration = 1.0,
+        TurnRate = 160,
+        RotateOnSpot = false,
+		MaxSpeedReverse = 3.3,  
+    },  
+    Weapon = {
+    {  
+    	Damage = 12,  
+		LeadTarget = true, 
+        MuzzleVelocity = 60,    
+        FiringRandomness = 2.2,       
+   	},	
+    },            	 
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="xsl0401",
+
+	Display = {    		
+    	AnimationWalkRate = 0.9,
+    	UniformScale = 0.036,
+    },	
+    Defense = {
+
+        Health = 77000,
+        MaxHealth = 77000,
+    },
+    Economy = {
+        BuildCostEnergy = 350000,
+        BuildCostMass = 34000,
+        BuildTime = 16000,
+    },      	
+	Physics = {
+        RotateOnSpot = false,
+        MaxAcceleration = 1.5,
+        MaxBrake = 1.5,
+        MaxSpeed = 2.0,   	
+    },     
+    Weapon = {
+        {
+    	Damage = 7,  
+        MuzzleVelocity = 45,    
+        FiringRandomness = 0.2,
+        MaxRadius = 11,
+        },
+    },                         	 
+}
+
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="xal0305",
+
+   Display = {
+        AnimationWalkRate = 3.7,
+        UniformScale = 0.12,
+    },           
+          	 
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="xal0305",
+
+   Display = {
+        AnimationWalkRate = 3.7,
+        UniformScale = 0.12,
+    },           
+          	 
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="xal0203",
+
+    Physics = {
+    	MaxAcceleration = 1.0,
+    	MaxSpeed = 3.0,
+    	WobbleFactor = 0.25,
+        WobbleSpeed = 0.02,
+        TurnRate = 40,     
+        RotateOnSpot = false,
+		MaxSpeedReverse = 3.0,             
+    },	
+    Weapon = {
+        {
+        	MuzzleVelocity = 45,
+        	Damage = 20,
+            TurretBoneYaw = 'Gun_Turret',        	
+            SlavedToBody = false,
+            TurretYawRange = 180,
+			TurretPitchSpeed = 75,
+        },
+    },            	 
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="xrl0302",
+
+    Defense = {
+        Health = 1400,
+        MaxHealth = 1400,
+    },		
+    Display = {
+           	AnimationWalkRate = 5.5,     
+    },		
+    Physics = {
+    	MaxAcceleration = 1.65,
+    	MaxSpeed = 3.6,
+        TurnRate = 50,        
+    },	
+    Weapon = {
+        {
+        	Damage = 2000,
+        },
+    },            	 
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="xrl0305",
+
+    Defense = {
+        Health = 9000,
+        MaxHealth = 9000,
+    },		
+    Display = {
+    		AnimationWalk = '/mods/4th_Dimension_212/units/xrl0305/xrl0305_awalk.sca',
+    		
+           	AnimationWalkRate = 0.9, 
+           	Mesh = {
+           	 	LODs = {
+               			{
+						MeshName = '/mods/4th_Dimension_212/units/xrl0305/XRL0305_lod0.scm',
+               			},
+               		},
+           	},    
+    },		
+    Physics = {
+    	MaxAcceleration = 1.45,
+    	MaxSpeed = 1.4,
+        TurnRate = 40,        
+    },	
+    Weapon = {
+        {
+        	Damage = 1120,
+			DamageRadius = 1,
+        	RateOfFire = 0.21,
+        },
+        {
+        },        
+        {
+        },
+    	{
+    	Damage = 1200,
+    	DamageFriendly = true,
+    	DamageRadius = 4,
+    	DamageType = 'Normal',
+    	DummyWeapon = true,
+    	Label = 'DeathWeapon',
+    	},                    
+    },            	 
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="xel0305",
+
+    Economy = {
+        BuildCostEnergy = 11500,
+        BuildCostMass = 1180,
+        BuildTime = 4200,
+    },		
+    Defense = {
+        Health = 7200,
+        MaxHealth = 7200,
+    },		
+    Display = {
+           	AnimationWalkRate = 1.5,     
+    },		
+    Physics = {
+    	MaxAcceleration = 1.45,
+    	MaxSpeed = 1.6,
+        TurnRate = 40,        
+    },	
+    Weapon = {
+        {
+        	Damage = 1200,
+        	RateOfFire = 0.2,
+        },
+    	{
+    	Damage = 1000,
+    	DamageFriendly = true,
+    	DamageRadius = 4,
+    	DamageType = 'Normal',
+    	DummyWeapon = true,
+    	Label = 'DeathWeapon',
+    	},                    
+    },            	 
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="xel0306",
+
+    Economy = {
+        BuildCostEnergy = 6000,
+        BuildCostMass = 700,
+        BuildTime = 3000,
+    },			
+    Physics = {
+    	MaxAcceleration = 1.0,
+    	MaxSpeed = 1.9,
+        TurnRate = 40,     
+        RotateOnSpot = false,
+		MaxSpeedReverse = 1.0,             
+    },	
+    Weapon = {
+        {
+        	ProjectileId = '/mods/4th_Dimension_212/hook/projectiles/TIFMissileCruise05/TIFMissileCruise05_proj.bp',
+        	MaxRadius = 70,
+        	Damage = 750,
+        	DamageRadius = 1.8,
+        	RateOfFire = 0.07,
+        	FiringRandomness = 0.5,
+        },
+    	{    	
+    	Damage = 800,
+    	DamageFriendly = true,
+    	DamageRadius = 3,
+    	DamageType = 'Normal',
+    	DummyWeapon = true,
+    	Label = 'DeathWeapon',
+    	},                    
+    },            	 
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="xrl0403",
+
+	CollisionOffsetY = 1.0,
+    Defense = {
+        Health = 140000,
+        MaxHealth = 140000,
+        RegenRate = 10,
+    },		
+    Economy = {
+        BuildCostEnergy = 560500,
+        BuildCostMass = 52700,
+        BuildTime = 18000,
+    },	
+    Display = {
+           	AnimationWalkRate = 3.0, 
+           	UniformScale = 0.046,    
+    },	
+    SelectionSizeX = 4.5,
+    SelectionSizeZ = 4.5,  
+    SizeX = 4.6,
+    SizeY = 3.5,
+    SizeZ = 7.0,    	    		
+    Physics = {
+    	MaxAcceleration = 0.95,
+    	MaxSpeed = 1.5,
+        TurnRate = 30,        
+    },	
+    Weapon = {
+        {
+        	Damage = 1650,
+        	DamageRadius = 1.3,
+        	RateOfFire = 0.35,
+        	FiringRandomness = 0.4,   
+        	HeadingArcCenter = -45, 
+        	HeadingArcRange = 125,  
+        	TurretYaw = -45,  
+        	TurretYawRange = 125,	
+        	ProjectileLifetime = 1,
+        },
+        {
+        	Damage = 1650,
+        	DamageRadius = 1.3,
+        	RateOfFire = 0.35,
+        	FiringRandomness = 0.4, 
+        	HeadingArcCenter = 45, 
+        	HeadingArcRange = 125, 
+        	TurretYaw = 45,
+        	TurretYawRange = 125,     
+        	ProjectileLifetime = 1,      
+        },        
+        {
+        },  
+        {
+        },        
+        {
+        	DamageRadius = 0.5,
+			MuzzleVelocity = 50,        
+        },         
+        {
+        },          
+        {
+        	Damage = 10000,
+        	DamageRadius = 7.0,
+        },            
+    },            	 
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="dal0310",
+
+    Description = 'Fast Firing Plasma Tank',    	
+	Display = {	
+		UniformScale = 0.07,
+	},  
+	SizeX = 1.0,
+    SizeY = 0.4,
+    SizeZ = 1.3,  
+    Physics = {
+    	MaxAcceleration = 1.0,
+    	MaxSpeedReverse = 2.7,  
+    	MaxSpeed = 2.7,
+    	WobbleFactor = 0.25,
+        WobbleSpeed = 0.02,
+        TurnRate = 40,     
+        RotateOnSpot = false,           
+    },
+    Interface = {
+        HelpText = 'Hovers',
+    },
+    Defense = {
+        Health = 2600,
+        MaxHealth = 2600,
+    },	
+    Weapon = {
+        {
+            Audio = {
+                Fire = Sound {
+                    Bank = 'UALWeapon',
+                    Cue = 'UAL0103_Mortar_Concussion',
+                    LodCutoff = 'Weapon_LodCutoff',
+                },
+            },        
+            ProjectileId = '/projectiles/AIFMortar01/AIFMortar01_proj.bp',
+        	Damage = 65,
+        	FiringRandomness = 0.3,
+            MaxRadius = 34,
+            MuzzleChargeDelay = 0.0,
+            MuzzleSalvoDelay = 0.2,
+            MuzzleSalvoSize = 5,
+            MuzzleVelocity = 30,
+            RateOfFire = 0.33,        
+            SlavedToBody = false,
+            TurretYawRange = 180,
+            TurretYawSpeed = 80,
+        },
+    },            	 
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="del0204",
+
+   Buffs = {
+       Regen = {
+           Level1 = 1,
+           Level2 = 2,
+           Level3 = 3,
+           Level4 = 4,
+           Level5 = 5,
+       },
+   },	
+    Defense = {
+        Health = 1000,
+        MaxHealth = 1000,
+    },	
+    Display = {
+           	AnimationWalkRate = 3.0,
+        	Abilities = {
+            '<LOC ability_jammer>Jammer: Creates False Radar Signals',
+        	},        
+    },	    
+    Physics = {
+    	MaxAcceleration = 1.0,
+    	MaxSpeed = 2.7,
+        TurnRate = 40,
+    },	
+    Economy = {
+        BuildCostEnergy = 1228,
+        BuildCostMass = 194,
+        BuildTime = 820,
+    },	
+    Intel = {
+        JamRadius = {
+            Max = 60,
+            Min = 60,
+        },
+        JammerBlips = 5,
+    },    		
+    Weapon = {
+        {	
+        	Damage = 33,
+            MaxRadius = 18,
+            MuzzleSalvoSize = 8,
+            MuzzleVelocity = 50,
+            RateOfFire = 1.5,
+            RackSalvoChargeTime = 1,
+            TurretYawSpeed = 40,
+        },
+        {
+        	FiringRandomness = 1.2,
+        	MuzzleVelocity = 30,
+        	TurretYawSpeed = 40,
+        },
+    },  
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="drl0204",
+
+    Economy = {
+        BuildCostEnergy = 864,
+        BuildCostMass = 162,
+        BuildTime = 720,
+    },		
+    Intel = {
+    	VisionRadius = 15,
+    },		 
+	Display = {	
+		AnimationWalkRate = 2.6,
+		UniformScale = 0.07,
+	},
+    Physics = {
+        MaxAcceleration = 1.0,
+        MaxSpeed = 2.4,
+        TurnRate = 40,        
+    },	
+	SizeX = 0.6,
+	SizeY = 0.8,
+    SizeZ = 1.0,
+    Weapon = {
+        {
+        BallisticArc = 'RULEUBA_None',    
+        TargetRestrictDisallow = 'UNTARGETABLE',
+    	TargetRestrictOnlyAllow = 'EXPERIMENTAL, LAND, NAVAL, STRUCTURE',    
+        Damage = 80,
+        DamageRadius = 1.3,
+        MuzzleVelocity = 18,
+        FiringRandomness = 0.8,
+        WeaponCategory = 'Missile',
+        },
+    },        	
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="ual0105",
+
+   Display = {
+        RotateOnSpot = false,
+        MaxSpeedReverse = 1.5,
+    },                   	 
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="uel0105",
+
+   Display = {
+        RotateOnSpot = false,
+        MaxSpeedReverse = 1.5,
+    },                   	 
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="url0105",
+
+   Display = {
+        RotateOnSpot = false,
+        MaxSpeedReverse = 1.5,
+    },                   	 
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="ual0208",
+
+   Display = {
+        RotateOnSpot = false,
+        MaxSpeedReverse = 1.5,
+    },                   	 
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="uel0208",
+
+   Display = {
+        RotateOnSpot = false,
+        MaxSpeedReverse = 1.5,
+    },                   	 
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="url0208",
+
+   Display = {
+        RotateOnSpot = false,
+        MaxSpeedReverse = 1.5,
+    },                   	 
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="ual0309",
+
+   Display = {
+        RotateOnSpot = false,
+        MaxSpeedReverse = 1.5,
+    },                   	 
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="uel0309",
+
+   Display = {
+        RotateOnSpot = false,
+        MaxSpeedReverse = 1.5,
+    },                   	 
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="url0309",
+
+   Display = {
+        RotateOnSpot = false,
+        MaxSpeedReverse = 1.5,
+    },                   	 
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="ual0307",
+
+    Physics = {
+    	MaxSpeed = 3,
+    	MaxAcceleration = 1.0,
+        TurnRate = 40,
+        RotateOnSpot = false,
+		MaxSpeedReverse = 3.0,          
+    },	
+    Defense = {
+        Shield = {
+
+            ShieldSize = 18,
+        },
+    },   
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="uel0307",
+
+    Physics = {
+    	MaxSpeed = 3,
+        MaxAcceleration = 1.2,
+        TurnRate = 35,
+        RotateOnSpot = false,
+		MaxSpeedReverse = 3,          
+    },		
+    Defense = {
+        Shield = {
+            ShieldSize = 20,
+        },
+    },   
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="ual0001",
+
+ 	Display = {	
+ 	    AnimationWalkRate = 2.0,
+ 	},
+	Weapon = {
+    	{  
+        MuzzleVelocity = 40,
+   	    },	
+   	    {
+        MaxRadius = 22,     	    
+        MuzzleVelocity = 40,   	    
+   	    },
+   	    {
+        MuzzleVelocity = 40,    	    
+   	    },
+   	    {
+   	    },  	       	       	    
+    },
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="uel0001",
+	
+	Weapon = {
+    	{  
+        MuzzleVelocity = 38,
+   	    },	
+   	    {
+        MaxRadius = 22,     	    
+        MuzzleVelocity = 38,   	    
+   	    },
+   	    {
+   	    },
+   	    {
+   	    },
+   	    {
+   	    },   	       	       	    
+    },     
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="url0001",
+
+	Weapon = {
+    	{  
+        MuzzleVelocity = 44,
+   	    },	
+   	    {
+        MaxRadius = 22,     	    
+        MuzzleVelocity = 44,   	    
+   	    },
+   	    {
+   	    },
+   	    {
+   	    },
+   	    {
+   	    },   	       	       	    
+    },     
+}
+
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="ual0103",
+   	
+	Display = {
+	        UniformScale = 0.11,
+    },	
+    SelectionSizeX = 0.4,
+    SelectionSizeZ = 0.55,    
+    SizeX = 0.65,
+    SizeY = 0.3,
+    SizeZ = 0.75,
+	Physics = {
+		MaxAcceleration = 1.0,	
+        MaxBrake = 2.0,
+        MaxSpeed = 2.5,
+        MaxSpeedReverse = 1.0,
+        TurnRate = 40,
+        RotateOnSpot = false,
+		MaxSpeedReverse = 2.5,          
+    },        
+    Defense = {
+        ArmorType = 'Normal',
+        Health = 300,
+        MaxHealth = 300,
+        RegenRate = 0,
+    },    
+	Economy = {
+        BuildCostEnergy = 360,
+        BuildCostMass = 72,
+        BuildTime = 360,
+    },  
+	Weapon = {
+    {  
+            MuzzleSalvoDelay = 0.4,
+            MuzzleSalvoSize = 4,  
+            Damage = 100,    
+            RateOfFire = 0.21,   
+   	},	
+    },  
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="url0103",
+
+	Defense = {
+        ArmorType = 'Normal',
+        Health = 330,
+        MaxHealth = 330,
+        RegenRate = 0,
+    }, 
+	Display = {
+	        UniformScale = 0.14,
+    },	
+    SizeX = 0.75,
+    SizeY = 0.375,
+    SizeZ = 0.75,
+	Physics = {
+		MaxAcceleration = 1.0,	
+        MaxBrake = 2.0,
+        MaxSpeed = 2.5,
+        TurnRate = 40,
+        RotateOnSpot = false,
+		MaxSpeedReverse = 2.5,          
+    },            
+	Economy = {
+        BuildCostEnergy = 360,
+        BuildCostMass = 72,
+        BuildTime = 360,
+    },   		
+	Weapon = {
+    {  
+		Damage = 210,           
+   	},	
+    },  
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="uel0103",
+   	
+	Display = {
+	        UniformScale = 0.095,
+    },	
+    SizeX = 0.525,
+    SizeY = 0.45,
+    SizeZ = 0.975,
+	Physics = {
+		MaxAcceleration = 1.0,	
+        MaxBrake = 2.0,
+        MaxSpeed = 2.4,
+        MaxSpeedReverse = 1.0,
+        TurnRate = 40,
+        RotateOnSpot = false,
+		MaxSpeedReverse = 2.4,          
+    },    
+    Defense = {
+        ArmorType = 'Normal',
+        Health = 375,
+        MaxHealth = 375,
+        RegenRate = 0,
+    },    
+	Economy = {
+        BuildCostEnergy = 300,
+        BuildCostMass = 62,
+        BuildTime = 280,
+    },  
+       
+	Weapon = {
+    {  
+		CameraVisionRadius = 12,
+   	},	
+    },  
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="ual0104",
+
+	Display = {
+        UniformScale = 0.1,
+    }, 	
+    Economy = {
+        BuildCostEnergy = 150,
+        BuildCostMass = 35,
+        BuildTime = 160,
+   	},
+	Physics = {
+		MaxAcceleration = 1.0,
+        MaxBrake = 1.5,
+        MaxSpeed = 3.0,
+        MaxSpeedReverse = 1.0,
+        TurnRate = 40,
+        RotateOnSpot = false,
+		MaxSpeedReverse = 3.0,          
+    },    	
+	Weapon = {
+    {  
+    	Damage = 3,
+    	MuzzleSalvoDelay = 0.1,
+    	MuzzleSalvoSize = 1,
+        RateOfFire = 1.2,  
+        MuzzleVelocity = 60,    
+        FiringRandomness = 2.0,       
+   	},	
+    },   
+}
+
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="uel0104",
+
+	Display = {
+        UniformScale = 0.078,
+    },
+    Economy = {
+        BuildCostEnergy = 150,
+        BuildCostMass = 35,
+        BuildTime = 160,
+   	},
+	Physics = {
+		MaxAcceleration = 1.0,	
+        MaxBrake = 2.0,
+        MaxSpeed = 2.9,
+        MaxSpeedReverse = 1.0,
+        TurnRate = 40,
+        RotateOnSpot = false,         
+    },       		
+	Weapon = {
+    {  
+    	Damage = 2,
+        ProjectilesPerOnFire = 2,
+        MuzzleVelocity = 60, 
+        FiringRandomness = 2.0,  
+   	},	
+    },  
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="url0104",
+
+	Display = {
+        UniformScale = 0.15,
+    },	
+    Economy = {
+        BuildCostEnergy = 200,
+        BuildCostMass = 55,
+        BuildTime = 190,
+   	},
+    Defense = {
+        Health = 180,
+        MaxHealth = 180,
+    },
+   	Physics = {
+		MaxAcceleration = 1.0,
+        MaxBrake = 2.0,
+        MaxSpeed = 2.8,
+        MaxSpeedReverse = 1.0,
+        TurnRate = 40,
+        RotateOnSpot = false,
+		MaxSpeedReverse = 2.8,          
+    },       		
+	Weapon = {
+    {
+    	Damage = 2,  
+        MuzzleVelocity = 30,           
+   	},	
+   	{
+   		Damage = 10,
+   		MuzzleVelocity = 30,
+   	},
+    },  
+}
+
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="ual0106",
+
+    Physics = {
+        MaxAcceleration = 1.5,
+        MaxBrake = 3,
+        MaxSpeed = 3.8,
+        MaxSpeedReverse = 0,
+        TurnRate = 40,
+    },	    
+    Defense = {
+        ArmorType = 'Normal',
+        Health = 200,
+        MaxHealth = 200,
+        RegenRate = 0,
+    },
+	Display = {    		
+    AnimationWalkRate = 1.65,
+    UniformScale = 0.12,	
+    },
+    Economy = {
+        BuildCostEnergy = 240,
+        BuildCostMass = 42,
+        BuildTime = 240,
+   	},
+    SizeX = 0.4,
+    SizeY = 0.6,
+    SizeZ = 0.50,
+               	
+	Weapon = {
+   	{  
+            RackBones = {
+                {
+                    MuzzleBones = {
+                        'Turret_Muzzel_01',
+                    },
+                    RackBone = 'Turret',
+                },
+                {
+                    MuzzleBones = {
+                        'Turret_Muzzel_02',
+                    },
+                    RackBone = 'Turret',                
+            	},
+            	},            
+   	        Audio = {
+                Fire = Sound {
+                    Bank = 'UELWeapon',
+                    Cue = 'UEL0106_MachineGun',
+                    LodCutoff = 'Weapon_LodCutoff',
+                },
+            },
+            SlavedToBody = true,            
+            ProjectileId = '/projectiles/TDFMachineGun01/TDFMachineGun01_proj.bp',            
+            Damage = 4.5,        
+            FiringRandomness = 0.3,    
+            RateOfFire = 4.5,
+            MaxRadius = 13,  
+   	    },	
+    },     
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="url0106",
+	
+   Buffs = {
+       Regen = {
+           Level1 = 1,
+           Level2 = 2,
+           Level3 = 3,
+           Level4 = 4,
+           Level5 = 5,
+       },
+   },
+    Defense = {
+        ArmorType = 'Normal',
+        Health = 190,
+        MaxHealth = 190,
+    },
+    Physics = {
+        MaxAcceleration = 1.5,
+        MaxBrake = 3,
+        MaxSpeed = 4.1,
+        MaxSpeedReverse = 0,
+        TurnRate = 40,
+    },	
+    Display = {    		
+    	AnimationWalkRate = 6.5,
+    	UniformScale = 0.0225,	
+    },
+    Economy = {
+        BuildCostEnergy = 220,
+        BuildCostMass = 42,
+        BuildTime = 240,
+  	},
+   
+    SizeX = 0.4,
+    SizeY = 0.6,
+    SizeZ = 0.45,
+               	
+	Weapon = {
+    { 
+	        MuzzleVelocity = 36,  
+  	    	SlavedToBody = true,   
+            Damage = 9.5,    
+            FiringRandomness = 0.5, 
+            RateOfFire = 1.5,
+            MaxRadius = 14,              
+    },	
+    },     
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="uel0106",
+
+    Defense = {
+        ArmorType = 'Normal',
+        Health = 210,
+        MaxHealth = 210,
+    },
+	Display = {    		
+    AnimationWalkRate = 4.6,
+    UniformScale = 0.09375,	
+    },
+    Physics = {
+        MaxAcceleration = 1.5,
+        MaxBrake = 3,
+        MaxSpeed = 4.0,
+        MaxSpeedReverse = 0,
+        TurnRate = 40,
+    },	    
+    Economy = {
+        BuildCostEnergy = 240,
+        BuildCostMass = 42,
+        BuildTime = 240,
+   	},
+    SizeX = 0.45,
+    SizeY = 0.6,
+    SizeZ = 0.3,
+               	
+	Weapon = {
+    {
+  	    	SlavedToBody = true,   
+            MuzzleSalvoDelay = 0.1,
+            MuzzleSalvoSize = 3,    
+            FiringRandomness = 0.5,   
+            ProjectilesPerOnFire = 3, 
+            Damage = 6,      
+            RateOfFire = 6,
+            MaxRadius = 13,            
+    },	
+    },     
+}
+
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="ual0111",
+
+   Buffs = {
+       Regen = {
+           Level1 = 1,
+           Level2 = 2,
+           Level3 = 3,
+           Level4 = 4,
+           Level5 = 5,
+       },
+   },
+    Physics = {
+        MaxAcceleration = 1.0,
+        MaxBrake = 2,
+        MaxSpeed = 2.7,
+        TurnRate = 40,
+        RotateOnSpot = false,
+		MaxSpeedReverse = 2.7,          
+    },	     
+    Defense = {
+        ArmorType = 'Normal',
+        Health = 555,
+        MaxHealth = 555,
+        RegenRate = 0,
+    },
+    Economy = {
+        BuildCostEnergy = 2400,
+        BuildCostMass = 360,
+        BuildTime = 2400,
+   },
+
+               	
+	Weapon = {
+    {
+            RateOfFire = 0.14, 
+            Damage = 495,
+            DamageRadius = 1.6,   
+            MuzzleVelocity = 6,   
+    },	
+    },     
+}
+
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="uel0111",
+
+   Buffs = {
+       Regen = {
+           Level1 = 1,
+           Level2 = 2,
+           Level3 = 3,
+           Level4 = 4,
+           Level5 = 5,
+       },
+   },
+    Physics = {
+        MaxAcceleration = 1.0,
+        MaxBrake = 2,
+        MaxSpeed = 2.8,
+        TurnRate = 40,
+        RotateOnSpot = false,
+		MaxSpeedReverse = 1.4,          
+        RotateOnSpot = false,
+		MaxSpeedReverse = 1.4,  		
+    },	    
+    Defense = {
+        ArmorType = 'Normal',
+        Health = 396,
+        MaxHealth = 396,
+        RegenRate = 0,
+    },
+    Economy = {
+        BuildCostEnergy = 2400,
+        BuildCostMass = 360,
+        BuildTime = 2400,
+   },
+
+               	
+	Weapon = {
+    {
+            RateOfFire = 0.1, 
+            Damage = 705,
+            DamageRadius = 1.8,   
+            MuzzleVelocity = 6,
+            ProjectileId = '/mods/4th_Dimension_212/hook/projectiles/TIFMissileCruise03/TIFMissileCruise03_proj.bp',
+    },	
+    },     
+}
+
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="url0111",
+
+   Buffs = {
+       Regen = {
+           Level1 = 1,
+           Level2 = 2,
+           Level3 = 3,
+           Level4 = 4,
+           Level5 = 5,
+       },
+   },
+    Physics = {
+        MaxAcceleration = 1.0,
+        MaxBrake = 2,
+        MaxSpeed = 2.9,
+        TurnRate = 40,
+        RotateOnSpot = false,
+		MaxSpeedReverse = 2.9,          
+    },	    
+    Defense = {
+        ArmorType = 'Normal',
+        Health = 690,
+        MaxHealth = 690,
+        RegenRate = 0,
+    },
+    Economy = {
+        BuildCostEnergy = 2400,
+        BuildCostMass = 360,
+        BuildTime = 2400,
+   },
+              	
+	Weapon = {
+    {
+            Damage = 470,
+            DamageRadius = 2,  
+            RateOfFire = 0.15, 
+            MuzzleVelocity = 6,
+    },	
+    },     
+}
+
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="ual0301",
+
+ 	Display = {	
+ 	    AnimationWalkRate = 2.0,
+        UniformScale = 0.16,
+ 	},	
+ 	Physics = {
+        TurnRate = 66,
+	},
+    Economy = {    
+        StorageEnergy = 50,	
+        BuildTime = 60000,
+        },  
+ 	Enhancements = {   
+        ResourceAllocation = {
+            BuildCostEnergy = 300000,
+            BuildCostMass = 6000,
+            BuildTime = 9000,
+            ProductionPerSecondEnergy = 2400,
+            ProductionPerSecondMass = 8,
+        }, 	
+ 	},     
+    SizeX = 0.9,
+    SizeY = 2.0,
+    SizeZ = 0.65,
+	Weapon = {
+    {
+     Audio = {
+                Fire = Sound {
+                    Bank = 'UALWeapon',
+                    Cue = 'UAL0001_Quantum_Beam',
+                    LodCutoff = 'Weapon_LodCutoff',
+                },
+            },
+    ProjectileId = '/projectiles/ADFQuantumDisruptor01/ADFQuantumDisruptor01_proj.bp',        
+    HeadingArcRange = 105,    
+    MuzzleVelocity = 34,            
+    },	
+    {
+    },
+    },               
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="uel0301",
+
+ 	Display = {	
+        UniformScale = 0.2,
+ 	},		
+    Economy = {
+        StorageEnergy = 50,	
+        BuildTime = 60000,        
+        },
+    Physics = {
+        TurnRate = 66,
+	},    
+ 	Enhancements = {   
+        ResourceAllocation = {
+            ProductionPerSecondEnergy = 2400,
+            ProductionPerSecondMass = 8,
+        }, 	
+        HighExplosiveOrdnance = {
+            BuildCostEnergy = 80000,
+            BuildCostMass = 3400,
+            BuildTime = 6000,
+            Icon = 'heo',
+            Name = '<LOC enhancements_0063>High Explosive Ordnance',
+            NewDamageRadius = 3,
+            ShowBones = {
+                'SAM',
+            },
+            Slot = 'RCH',
+            UpgradeEffectBones = {
+                'SAM',
+                'Cannon_Muzzle',
+            },
+            UpgradeUnitAmbientBones = {
+                'UEL0301',
+            },
+        },
+        HighExplosiveOrdnanceRemove = {
+            BuildCostEnergy = 1,
+            BuildCostMass = 1,
+            BuildTime = 0.1,
+            HideBones = {
+                'SAM',
+            },
+            Icon = 'heo',
+            Name = '<LOC enhancements_0064>Remove High Explosive Ordnance',
+            NewDamageRadius = -3,
+            Prerequisite = 'HighExplosiveOrdnance',
+            RemoveEnhancements = {
+                'HighExplosiveOrdnance',
+                'HighExplosiveOrdnanceRemove',
+            },
+            Slot = 'RCH',
+        },
+ 	},      
+    SizeX = 0.85,
+    SizeY = 1.9,
+    SizeZ = 0.6, 	     
+  	Weapon = {
+    {
+  	    	HeadingArcRange = 105,    
+            MuzzleVelocity = 38,            
+    },	
+    {
+    },
+    },            
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="url0301",
+
+ 	Display = {	
+        UniformScale = 0.15,
+ 	},		
+    Economy = {
+        StorageEnergy = 50,	
+        BuildTime = 60000,        
+        },
+    Physics = {
+        TurnRate = 66,
+	},      
+ 	Enhancements = {   
+        ResourceAllocation = {
+            ProductionPerSecondEnergy = 2400,
+            ProductionPerSecondMass = 8,
+        }, 	
+        SelfRepairSystem = {
+            NewRegenRate = 250,
+        },
+ 	},      
+    SizeX = 0.85,
+    SizeY = 1.9,
+    SizeZ = 0.6, 	      
+    Weapon = {
+        {
+  	    	HeadingArcRange = 105,        
+            MuzzleVelocity = 36,
+        },
+        {
+	        Damage = 24,
+        },
+        {
+        },
+    },
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="url0401",
+	
+   Buffs = {
+       Regen = {
+           Level1 = 1,
+           Level2 = 2,
+           Level3 = 3,
+           Level4 = 4,
+           Level5 = 5,
+       },
+   },
+    Economy = {
+        BuildCostEnergy = 1890000,
+        BuildCostMass = 162000,
+        BuildTime = 108000,
+    },
+	Defense = {
+        Health = 24000,
+        MaxHealth = 24000,	
+    },    	
+    Weapon = {
+    {  
+    		Damage = 2000,
+            MaxRadius = 450,
+            EnergyDrainPerSecond = 10000,
+            EnergyRequired = 10000,
+            MuzzleVelocity = 55,
+    },	
+    },    
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="url0306",
+	Economy = {
+        BuildCostEnergy = 2000,
+        BuildCostMass = 200,
+        BuildTime = 2000,
+    },		
+    Physics = {
+    	MaxSpeed = 3,
+        MaxAcceleration = 1.2,
+        TurnRate = 35,
+        RotateOnSpot = false,
+		MaxSpeedReverse = 3.0,
+    },		
+    Intel = {
+        RadarStealthFieldRadius = 18,
+    },
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="ual0101",
+
+    Physics = {
+        MaxAcceleration = 1.5,
+        MaxBrake = 3,
+        MaxSpeed = 4,
+        MaxSpeedReverse = 3,
+        TurnRate = 40,
+    },			
+	Economy = {
+        BuildCostEnergy = 120,
+        BuildCostMass = 12,
+        BuildTime = 120,
+    },		
+    Intel = {
+    VisionRadius = 30,
+    },		
+    Weapon = {
+    {
+    FiringRandomness = 0.4,
+    },
+    },
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="uel0101",
+
+	Economy = {
+        BuildCostEnergy = 120,
+        BuildCostMass = 12,
+        BuildTime = 120,
+    },
+    Physics = {
+        MaxAcceleration = 1.5,
+        MaxBrake = 3,
+        MaxSpeed = 3.6,
+        MaxSpeedReverse = 3,
+        TurnRate = 40,
+    },	
+    Intel = {
+    VisionRadius = 30,
+    },	
+    Weapon = {
+    {  
+    RateOfFire = 2,
+    FiringRandomness = 0.4,
+    },	
+    },    
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="url0101",
+
+	Economy = {
+        BuildCostEnergy = 120,
+        BuildCostMass = 12,
+        BuildTime = 120,
+    },
+    Physics = {
+        MaxAcceleration = 1.5,
+        MaxBrake = 3,
+        MaxSpeed = 3.84,
+        MaxSpeedReverse = 3,
+        TurnRate = 40,
+    },			
+    Intel = {
+    VisionRadius = 35,
+    },	   
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="ual0201",
+
+   Buffs = {
+       Regen = {
+           Level1 = 1,
+           Level2 = 2,
+           Level3 = 3,
+           Level4 = 4,
+           Level5 = 5,
+       },
+   },	
+	Defense = {
+        Health = 240,
+        MaxHealth = 240,
+    },
+	Physics = {
+		MaxAcceleration = 1.0,
+        BackUpDistance = 4,	
+        MaxBrake = 3.0,
+        MaxSpeed = 3.0,
+        MaxSpeedReverse = 1.0,
+        TurnRate = 40,
+        WobbleFactor = 0.25,
+        WobbleSpeed = 0.01,
+        RotateOnSpot = false,
+		MaxSpeedReverse = 3.0,  
+    },		
+    Weapon = {
+    {
+             Audio = {
+                Fire = Sound {
+                    Bank = 'UELWeapon',
+                    Cue = 'UEL0301_BG_Gun',
+                    LodCutoff = 'Weapon_LodCutoff',
+                },
+            },
+    ProjectileId = '/projectiles/TDFPlasmaHeavy03/TDFPlasmaHeavy03_proj.bp',    
+    MaxRadius = 20,
+    FiringRandomness = 0.3,
+    MuzzleVelocity = 34,
+    },
+    },
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="uel0201",
+
+	Defense = {
+        Health = 310,
+        MaxHealth = 310,
+    },	
+	Physics = {
+		MaxAcceleration = 1.0,
+        MaxBrake = 2.0,
+        MaxSpeed = 3.0,
+        MaxSpeedReverse = 2.0,
+        TurnRate = 40,
+        RotateOnSpot = false,
+		MaxSpeedReverse = 3.0,          
+    },	
+    Description = 'Light Tank',
+    Interface = {
+        HelpText = '<LOC uel0201_help>Light Tank',
+    },	
+    Weapon = {
+    {
+    DamageRadius = 1,            
+    Damage = 48,    
+    MuzzleVelocity = 42,    
+    FiringRandomness = 0.3,
+    RateOfFire = 0.6,    
+    },	
+    },    
+}
+
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="url0107",
+   Buffs = {
+       Regen = {
+           Level1 = 1,
+           Level2 = 2,
+           Level3 = 3,
+           Level4 = 4,
+           Level5 = 5,
+       },
+   },
+    Display = {
+    	AnimationWalkRate = 4,  
+    },  
+	Defense = {
+        Health = 280,
+        MaxHealth = 280,
+    },	
+	Physics = {
+        MaxBrake = 3.0,
+        MaxSpeed = 3.0,
+    },	
+    Weapon = {
+    {
+    Damage = 10,    	
+    MuzzleVelocity = 44,      
+    FiringRandomness = 0.3,
+    },
+    },    
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="ual0202",
+	
+	Economy = {
+        BuildCostEnergy = 1080,
+        BuildCostMass = 230,
+        BuildTime = 1060,
+        MaintenanceConsumptionPerSecondEnergy = 5,
+    },	
+   Buffs = {
+       Regen = {
+           Level1 = 1,
+           Level2 = 2,
+           Level3 = 3,
+           Level4 = 4,
+           Level5 = 5,
+       },
+   },
+    Defense = {
+        Shield = {
+            ShieldRegenRate = 8,
+            ShieldRegenStartTime = 0,
+        },
+    },	    
+	Defense = {
+        Health = 800,
+        MaxHealth = 800,
+		Shield = {
+            ShieldMaxHealth = 900,
+            ShieldRechargeTime = 60,
+        },        	
+    },    	
+	Display = {
+        UniformScale = 0.11,
+	},	
+  	Physics = {
+  		MaxAcceleration = 1.0,
+        MaxBrake = 1.8,
+        MaxSpeed = 2.78,
+        TurnRate = 40,
+        RotateOnSpot = false,
+		MaxSpeedReverse = 2.48,           
+	},
+    Weapon = {
+    {
+    MaxRadius = 22,        
+    Damage = 307,
+    RateOfFire = 0.21,        
+    MuzzleVelocity = 38,
+    FiringRandomness = 0.3,    
+    },
+    },	
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="uel0202",
+
+	Economy = {
+        BuildCostEnergy = 1440,
+        BuildCostMass = 250,
+        BuildTime = 1100,
+    },	
+   Buffs = {
+       Regen = {
+           Level1 = 1,
+           Level2 = 2,
+           Level3 = 3,
+           Level4 = 4,
+           Level5 = 5,
+       },
+   },  	
+	Defense = {
+        Health = 2000,
+        MaxHealth = 2000,	
+    },    	
+	Display = {
+        UniformScale = 0.105,
+	},
+  	Physics = {
+  		MaxAcceleration = 1.0,
+        MaxBrake = 1.8,
+        MaxSpeed = 2.66,
+        TurnRate = 40,
+        RotateOnSpot = false,
+		MaxSpeedReverse = 2.56,              
+	},
+    Weapon = {
+    {
+	MaxRadius = 23,             
+    Damage = 84,
+    RateOfFire = 0.37,        
+    MuzzleVelocity = 46,
+    FiringRandomness = 0.25,    
+    },
+    },		
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="url0202",
+
+	Economy = {
+        BuildCostEnergy = 1150,
+        BuildCostMass = 210,
+        BuildTime = 1000,
+    },	
+   Buffs = {
+       Regen = {
+           Level1 = 1,
+           Level2 = 2,
+           Level3 = 3,
+           Level4 = 4,
+           Level5 = 5,
+       },
+   },   	
+	Defense = {
+        Health = 1550,
+        MaxHealth = 1550,	
+    },      	
+	Display = {
+        UniformScale = 0.1485,
+	},
+    SizeX = 0.65,
+    SizeY = 0.4,
+    SizeZ = 0.8,	   
+  	Physics = {
+  		MaxAcceleration = 1.0,
+        MaxBrake = 1.8,
+        MaxSpeed = 2.74,
+        TurnRate = 40,
+        RotateOnSpot = false,
+		MaxSpeedReverse = 2.64,          
+	},
+    Weapon = {
+    {  
+    MaxRadius = 23,        
+    Damage = 90,
+    RateOfFire = 0.35,        
+    FiringRandomness = 0.3,    
+    },
+    },	
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="uel0203",
+
+	Defense = {
+        Health = 900,
+        MaxHealth = 900,
+    }, 	
+    Economy = {
+        BuildCostEnergy = 1250,
+        BuildCostMass = 190,
+        BuildTime = 1000,
+    },	
+	Physics = {
+		MaxSpeed = 3.0,
+		MaxAcceleration = 1.0,
+        TurnRate = 36,
+        Elevation = 0.25,
+        WobbleFactor = 0.25,
+        WobbleSpeed = 0.01,
+        RotateOnSpot = false,
+		MaxSpeedReverse = 2.2,          
+    },	
+    Weapon = {
+    {
+    Audio = {
+                Fire = Sound {
+                    Bank = 'UELWeapon',
+                    Cue = 'UEL0106_MachineGun',
+                    LodCutoff = 'Weapon_LodCutoff',
+                },
+    },	
+    ProjectileId = '/projectiles/TDFMachineGun01/TDFMachineGun01_proj.bp',
+    Damage = 4,
+    RateOfFire = 7,
+    SlavedToBody = false,
+    MuzzleVelocity = 40, 
+    FiringRandomness = 0.6, 
+    TurretYawRange = 180,
+    TurretYawSpeed = 120,      
+    },	
+    },    
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="url0203",
+
+	Defense = {
+        Health = 1250,
+        MaxHealth = 1250,
+    },  
+    Display = {
+    	UniformScale = 0.145,
+    },
+    Economy = {
+        BuildCostEnergy = 1400,
+        BuildCostMass = 220,
+        BuildTime = 1100,
+    },	    
+	Physics = {
+		MaxSpeed = 2.8,
+		MaxAcceleration = 1.0,
+        TurnRate = 30,
+        RotateOnSpot = false,
+		MaxSpeedReverse = 2.8,          
+    },	    	
+    Weapon = {
+    {
+    Damage = 66,
+    MuzzleVelocity = 18,    
+    },	
+    {
+    Damage = 38,    
+    MuzzleVelocity = 33,    
+    },
+    {
+    Damage = 33,    
+    },        
+    },    
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="ual0205",
+
+	Economy = {
+        BuildCostEnergy = 1000,
+        BuildCostMass = 150,
+        BuildTime = 960,
+    },
+	Physics = {
+		MaxSpeed = 3.3,
+		MaxAcceleration = 1.0,
+        TurnRate = 160,
+        RotateOnSpot = false,
+		MaxSpeedReverse = 3.3,  
+    },    		
+	Weapon = {
+    {
+    		Damage = 12,
+    	    LeadTarget = true, 
+            MuzzleVelocity = 60,
+    		DamageRadius = 1.1,          
+   	},	
+    },     
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="uel0205",
+
+	Economy = {
+        BuildCostEnergy = 1000,
+        BuildCostMass = 150,
+        BuildTime = 960,
+    },	
+	Physics = {
+		MaxSpeed = 3.0,
+		MaxAcceleration = 1.0,
+        TurnRate = 30,
+        RotateOnSpot = false,
+		MaxSpeedReverse = 1.5,          
+    },      	
+	Weapon = {
+    	{  
+    		#ProjectileId = '/projectiles/TAARailgun01/TAARailgun02_proj.bp',
+    		Damage = 5,    
+			LeadTarget = true, 
+            MuzzleVelocity = 60,
+    		DamageRadius = 1.0,  		
+   	    },	
+    },     
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="url0205",
+
+	SizeX = 0.5,
+    SizeY = 0.6,
+    SizeZ = 0.85,
+
+	Physics = {
+		MaxSpeed = 3.1,
+		MaxAcceleration = 1.0,
+        TurnRate = 30,
+        RotateOnSpot = false,
+		MaxSpeedReverse = 3.1,          
+    },     
+    Economy = {
+        BuildCostEnergy = 1000,
+        BuildCostMass = 150,
+        BuildTime = 960,
+    },		
+	Weapon = {
+    {  
+    		ProjectileId = '/projectiles/TAARailgun01/TAARailgun01_proj.bp',
+			Damage = 11,    
+			LeadTarget = true, 
+            MuzzleVelocity = 60,
+    		DamageRadius = 1.0,          
+   	    },	
+    },     
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="ual0303",
+
+	Economy = {
+        BuildCostEnergy = 3720,
+        BuildCostMass = 568,
+        BuildTime = 3300,
+         MaintenanceConsumptionPerSecondEnergy = 20,
+    },	
+    Defense = {
+        Health = 2100,
+        MaxHealth = 2100,
+        RegenRate = 1,
+        Shield = {
+        	ShieldMaxHealth = 2500,
+        	ShieldSize = 2.2,
+        },	
+    },    			
+	Display = {
+	    AnimationWalkRate = 5.2,
+        UniformScale = 0.75,
+	},
+  	Physics = {
+  		MaxAcceleration = 1.5,
+        MaxBrake = 1.8,
+        MaxSpeed = 2.0,
+        TurnRate = 76,
+	},
+	SizeX = 0.7,
+	SizeY = 1.3,
+	SizeZ = 0.7,
+    Weapon = {
+    {
+            Audio = {
+                BarrelLoop = Sound {
+                    Bank = 'UAS',
+                    Cue = 'UAS_Turret_Sml_Loop',
+                    LodCutoff = 'Weapon_LodCutoff',
+                },
+                BarrelStart = Sound {
+                    Bank = 'UAS',
+                    Cue = 'UAS_Turret_Sml_Start',
+                    LodCutoff = 'Weapon_LodCutoff',
+                },
+                MuzzleChargeStart = Sound {
+                    Bank = 'UASWeapon',
+                    Cue = 'UAS0202_Cannon_Quantum',
+                    LodCutoff = 'Weapon_LodCutoff',
+                },
+            }, 
+    ProjectileId = '/projectiles/ADFQuantumCannon01/ADFQuantumCannon01_proj.bp',    
+    HeadingArcRange = 140,
+    MaxRadius = 30,      
+    Damage = 118,
+   	DamageRadius = 0.3,    
+    RateOfFire = 0.75,
+    FiringRandomness = 0.5, 
+    MuzzleVelocity = 40,       
+    },
+    {
+    Damage = 250,
+    DamageFriendly = true,
+    DamageRadius = 2,
+    DamageType = 'Normal',
+    DummyWeapon = true,
+    Label = 'DeathWeapon',
+    },
+    },		
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="url0303",
+
+	Display = {
+	    AnimationWalkRate = 3.0,
+        UniformScale = 0.165,
+	},
+	Economy = {
+        BuildCostEnergy = 3520,
+        BuildCostMass = 535,	
+        BuildTime = 3100,
+    },	
+	Defense = {
+		Health = 4200,
+        MaxHealth = 4200,
+        RegenRate = 2,
+    },  	
+  	Physics = {
+  		MaxAcceleration = 1.5,
+        MaxBrake = 2.0,
+        MaxSpeed = 2.1,
+        TurnRate = 76,
+	},
+	SizeX = 0.7,
+	SizeZ = 0.7,	
+    Weapon = {
+    {
+    Damage = 70,
+   	DamageRadius = 0.2,    
+    MaxRadius = 30,    
+    HeadingArcRange = 120,    
+    MuzzleVelocity = 44,       
+    FiringRandomness = 0.5,    
+    },
+    {
+    FiringRandomness = 0.2,     
+    MaxRadius = 30,      
+    HeadingArcRange = 130,     
+    MuzzleVelocity = 63,       
+    Damage = 13,
+    },
+    {
+    },
+    {
+    Damage = 250,
+    DamageFriendly = true,
+    DamageRadius = 1.6,
+    DamageType = 'Normal',
+    DummyWeapon = true,
+    Label = 'DeathWeapon',
+    },
+    },		
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="uel0303",
+
+    Defense = {
+		Health = 2200,
+        MaxHealth = 2200,    
+        Shield = {
+            ShieldMaxHealth = 2500,
+            ShieldRechargeTime = 60,
+            ShieldRegenRate = 2,
+            ShieldRegenStartTime = 0,
+        },
+    },	
+	Economy = {
+        BuildCostEnergy = 3960,
+        BuildCostMass = 594,
+        BuildTime = 3300,
+        MaintenanceConsumptionPerSecondEnergy = 20,
+    },
+	Display = {
+	    AnimationWalkRate = 4.5,
+        UniformScale = 0.77,
+	},
+  	Physics = {
+  		MaxAcceleration = 1.5,
+        MaxBrake = 1.8,
+        MaxSpeed = 1.9,
+        TurnRate = 76,
+	},
+	SizeX = 0.7,	
+	SizeZ = 0.7,	
+    Weapon = {
+    {
+    RateOfFire = 1.8,
+    Damage = 57,
+    MaxRadius = 30,      
+    HeadingArcRange = 120,    
+    MuzzleVelocity = 45,       
+    FiringRandomness = 0.5,  
+   	DamageRadius = 0.2,      
+    },
+    {
+    Damage = 250,
+    DamageFriendly = true,
+    DamageRadius = 2,
+    DamageType = 'Normal',
+    DummyWeapon = true,
+    Label = 'DeathWeapon',
+    },
+    },		
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="uel0304",
+
+  	Physics = {
+  		MaxAcceleration = 1.2,
+        MaxBrake = 1.7,
+        MaxSpeed = 2.6,
+        TurnRate = 36,
+        RotateOnSpot = false,
+		MaxSpeedReverse = 2.6,          
+	},
+    Weapon = {
+    {
+	ProjectileId = '/mods/4th_Dimension_212/hook/projectiles/TIFAntiMatterShells02/TIFAntiMatterShells02_proj.bp',      
+    BallisticArc = 'RULEUBA_LowArc',    
+    Damage = 1300,
+    RateOfFire = 0.065, 
+    MuzzleVelocity = 30,
+    MaxRadius = 85,        
+    },
+    {
+    Damage = 350,
+    DamageFriendly = true,
+    DamageRadius = 2.5,
+    DamageType = 'Normal',
+    DummyWeapon = true,
+    Label = 'DeathWeapon',
+    },
+    },		
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="url0304",
+
+  	Physics = {
+  		MaxAcceleration = 1.2,
+        MaxBrake = 1.7,
+        MaxSpeed = 2.7,
+        TurnRate = 36,
+	},
+    Weapon = {
+    {
+    BallisticArc = 'RULEUBA_LowArc',
+    ProjectileId = '/mods/4th_Dimension_212/hook/projectiles/CIFArtilleryProton01/CIFArtilleryProton01_proj.bp',    
+    Damage = 900,
+    RateOfFire = 0.05, 
+    MuzzleVelocity = 30,
+    DamageRadius = 5,
+    MaxRadius = 90,        
+    },
+    {
+    Damage = 350,
+    DamageFriendly = true,
+    DamageRadius = 2.5,
+    DamageType = 'Normal',
+    DummyWeapon = true,
+    Label = 'DeathWeapon',
+    },
+    },		
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="ual0304",
+
+  	Physics = {
+  		MaxAcceleration = 1.2,
+        MaxBrake = 1.7,
+        MaxSpeed = 2.5,
+        TurnRate = 36,
+	},
+    Weapon = {
+    {
+	ProjectileId = '/mods/4th_Dimension_212/hook/projectiles/AIFSonanceShell01/AIFSonanceShell01_proj.bp',    
+    BallisticArc = 'RULEUBA_LowArc',    
+    MaxRadius = 80,      
+    MuzzleVelocity = 30,
+    },
+    {
+    Damage = 350,
+    DamageFriendly = true,
+    DamageRadius = 2.5,
+    DamageType = 'Normal',
+    DummyWeapon = true,
+    Label = 'DeathWeapon',
+    },
+    },		
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="uel0401",
+
+	Economy = {
+        BuildCostEnergy = 664800,
+        BuildCostMass = 61400,
+        BuildTime = 19500,
+    },	
+  	Physics = {
+  		MaxAcceleration = 0.5,
+        MaxBrake = 1.0,
+        MaxSpeed = 1.0,
+        TurnRate = 14,
+        RotateOnSpot = false,
+		MaxSpeedReverse = 1.0,
+	},
+	Defense = {
+        Health = 50000,
+        MaxHealth = 50000,	
+        Shield = {
+        		ShieldMaxHealth = 25000,
+        		},
+    },   
+    Display = {
+        Abilities = {
+            '<LOC ability_crushes>Massive: Crushes Enemy Units',
+        },
+    },
+    General = {
+        ToggleCaps = {
+            RULEUTC_ProductionToggle = true, 
+        },
+    },    
+   Buffs = {
+       Regen = {
+           Level1 = 1,
+           Level2 = 2,
+           Level3 = 3,
+           Level4 = 4,
+           Level5 = 5,
+       },
+   },	
+    Veteran = {
+        Level1 = 150,
+        Level2 = 300,
+        Level3 = 750,
+        Level4 = 1500,
+        Level5 = 3000,
+    },    	
+    Weapon = {
+    {
+    MuzzleVelocity = 60,   
+    FiringRandomness = 0.5,
+    Damage = 800,
+    RateOfFire = 0.4,  
+    DamageRadius = 1,
+    },    
+    {
+    MuzzleVelocity = 60,   
+    FiringRandomness = 0.5,
+    Damage = 800,
+    RateOfFire = 0.4, 
+    DamageRadius = 1,
+    },
+    {
+    MuzzleVelocity = 60,    
+    FiringRandomness = 0.5,
+    Damage = 800,
+    RateOfFire = 0.4, 
+    DamageRadius = 1,
+    },
+    {
+    MuzzleVelocity = 60,
+    FiringRandomness = 0.5,
+    Damage = 800,
+    RateOfFire = 0.4, 
+    DamageRadius = 1,
+    },
+    {
+    ProjectileId = '/projectiles/TDPhalanx01/TDPhalanx01_proj.bp',
+    Damage = 75,
+    MuzzleVelocity = 65,    
+    FiringRandomness = 0.7,
+    },
+    {
+    ProjectileId = '/projectiles/TDPhalanx01/TDPhalanx01_proj.bp',
+    Damage = 75,
+    MuzzleVelocity = 65,    
+    FiringRandomness = 0.7,
+    },
+    {
+    Damage = 6,
+    },
+    {
+    Damage = 6,
+    },
+    {
+    },    
+    {
+    Damage = 5500,
+    DamageFriendly = true,
+    DamageRadius = 7,
+    DamageType = 'Normal',
+    DummyWeapon = true,
+    Label = 'DeathWeapon',
+    },    
+	}
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="url0402",
+
+	Display = {	
+		AnimationWalkRate = 2.5,
+	},		
+	Defense = {
+        Health = 65000,
+        MaxHealth = 65000,	
+    },   
+	Economy = {
+        BuildCostEnergy = 315000,
+        BuildCostMass = 31500,
+        BuildTime = 13500,
+    },  	
+	Physics = {
+		MaxAcceleration = 1.0,
+        MaxBrake = 1.5,
+        MaxSpeed = 1.8,
+        TurnRate = 20,
+        SkirtOffsetX = -1.5,
+        SkirtOffsetZ = -1.5,
+        SkirtSizeX = 6,
+        SkirtSizeZ = 6,
+    },
+    SizeX = 2,
+    SizeY = 4,
+    SizeZ = 3,
+    Weapon = {
+    {
+    MaxRadius = 20,
+    HeadingArcRange = 125, 
+    RackReloadTimeout = 10,
+    TurretYawSpeed = 22,
+    DamageRadius = 0.6,
+    Damage = 1450,
+    },    
+    {
+    Damage = 300,
+    MuzzleVelocity = 70,    
+    },
+    {
+    Damage = 300,
+    MuzzleVelocity = 70,    
+    },
+    {
+    Damage = 10,
+    },
+    {
+    Damage = 10,
+    },
+    {
+    Damage = 150,
+    },
+    {
+    Damage = 8500,
+    DamageFriendly = true,
+    DamageRadius = 6,
+    DamageType = 'Normal',
+    DummyWeapon = true,
+    Label = 'DeathWeapon',
+    },    
+	}
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="ual0401",
+
+	Display = {	
+		AnimationWalkRate = 0.9,
+		MovementEffects = {
+			Land = {
+				Footfall = {
+					Damage = {
+						Amount = 25000,
+	                },
+                },
+            },
+        },				
+	},	
+	Defense = {
+        Health = 240000,
+        MaxHealth = 240000,	
+    },   
+	Economy = {
+        BuildCostEnergy = 810000,
+        BuildCostMass = 63600,
+        BuildTime = 20000,
+    },  
+  	Physics = {
+  		MaxAcceleration = 1.0,
+        MaxBrake = 1.5,
+        MaxSpeed = 1.2,
+        TurnRate = 35,
+	},      	
+	Veteran = {
+        Level1 = 200,
+        Level2 = 400,
+        Level3 = 1000,
+        Level4 = 2000,
+        Level5 = 4000,
+    },	
+    Weapon = {
+    {
+    MaxRadius = 20,
+    Damage = 1650,
+    },
+    {
+    TargetRestrictDisallow = 'UNTARGETABLE, HEAVY, HOLOGRAM',
+    },
+    {
+    TargetRestrictDisallow = 'UNTARGETABLE, HEAVY, HOLOGRAM',
+    },
+    {
+    Damage = 10000,
+    DamageRadius = 7,
+    },
+  	}
+}
+
+
+
+#================================================= water units / ships =================================================#
+
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="xas0204",
+
+    Defense = {
+        Health = 2500,
+        MaxHealth = 2500,
+    },	    
+  	Physics = {
+        MaxAcceleration = 0.3,
+        MaxBrake = 0.4,
+        MaxSpeed = 5.0,
+        TurnRadius = 20,
+        TurnRate = 20,        
+	},
+	Weapon = {
+    {          
+    },
+    {   
+    MuzzleVelocity = 50,     
+    },    
+    },		
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="xrs0204",
+
+    Defense = {
+        Health = 2330,
+        MaxHealth = 2330,
+    },	    
+  	Physics = {
+        MaxAcceleration = 0.3,
+        MaxBrake = 0.3,
+        MaxSpeed = 5.0,
+        TurnRadius = 20,
+        TurnRate = 20,        
+	},
+	Weapon = {
+    {  
+    RateOfFire = 0.2,        
+    },
+    {   
+    RateOfFire = 0.08,    
+    },    
+    },		
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="xrs0205",
+
+  	Physics = {
+        MaxAcceleration = 0.3,
+        MaxBrake = 0.3,
+        MaxSpeed = 5.0,
+        TurnRadius = 20,
+        TurnRate = 20,        
+	},		
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="xes0205",
+
+  	Physics = {
+        MaxAcceleration = 0.3,
+        MaxBrake = 0.3,
+        MaxSpeed = 5.0,
+        TurnRadius = 20,
+        TurnRate = 20,        
+	},		
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="xes0102",
+
+  	Physics = {
+        MaxAcceleration = 0.3,
+        MaxBrake = 0.3,
+        MaxSpeed = 4.6,
+        TurnRadius = 20,
+        TurnRate = 20,        
+	},	
+	Weapon = {
+    {          
+    },
+    {   
+    RateOfFire = 0.1,    
+    },    
+    },
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="xes0307",
+
+  	Physics = {
+        MaxAcceleration = 0.3,
+        MaxBrake = 0.3,
+        MaxSpeed = 3.85,
+        TurnRadius = 20,
+        TurnRate = 20,        
+	},	
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="uas0305",
+
+  	Physics = {
+        MaxAcceleration = 0.2,
+        MaxBrake = 0.3,
+        MaxSpeed = 3.0,
+        TurnRadius = 20,
+        TurnRate = 20,        
+	},	
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="ues0305",
+
+  	Physics = {
+        MaxAcceleration = 0.2,
+        MaxBrake = 0.3,
+        MaxSpeed = 3.0,
+        TurnRadius = 20,
+        TurnRate = 20,        
+	},	
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="urs0305",
+
+  	Physics = {
+        MaxAcceleration = 0.2,
+        MaxBrake = 0.3,
+        MaxSpeed = 3.0,
+        TurnRadius = 20,
+        TurnRate = 20,        
+	},	
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="uas0102",
+
+    Economy = {
+        BuildCostEnergy = 2400,
+        BuildCostMass = 240,
+        BuildTime = 1000,
+    }, 		
+  	Physics = {
+        MaxAcceleration = 0.34,
+        MaxBrake = 0.34,
+        MaxSpeed = 4.3,
+        TurnRate = 25,        
+	},
+	Weapon = {
+    {
+    Damage = 2,
+    },
+    }		
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="uas0103",
+
+    Economy = {
+        BuildCostEnergy = 4200,
+        BuildCostMass = 420,
+        BuildTime = 1800,
+    }, 			
+    Defense = {
+        ArmorType = 'Normal',
+        Health = 1500,
+        MaxHealth = 1500,
+        RegenRate = 0,
+    },		
+  	Physics = {
+        MaxAcceleration = 0.2,
+        MaxBrake = 0.2,
+        MaxSpeed = 4.2,
+        TurnRadius = 40,        
+        TurnRate = 15,        
+	},
+	Weapon = {
+    {
+    RateOfFire = 0.4,
+    MuzzleVelocity = 34,    
+    FiringRandomness = 0.5,
+    },
+    {
+    RateOfFire = 0.4,
+    MuzzleVelocity = 34,    
+    FiringRandomness = 0.5,    
+    },
+    {
+    },
+    }	
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="urs0103",
+
+    Economy = {
+        BuildCostEnergy = 4800,
+        BuildCostMass = 480,
+        BuildTime = 1900,
+    }, 	
+  	Physics = {
+        MaxAcceleration = 0.2,
+        MaxBrake = 0.2,
+        MaxSpeed = 4.2,
+        TurnRadius = 40,
+        TurnRate = 15,        
+       	},
+	Weapon = {
+    {
+    RateOfFire = 2.75,
+    MuzzleVelocity = 36,    
+    FiringRandomness = 0.5,
+    },
+    {
+    FiringRandomness = 0.4,
+    Damage = 4,
+    },    
+    }      	
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="ues0103",
+
+    Economy = {
+        BuildCostEnergy = 5000,
+        BuildCostMass = 500,
+        BuildTime = 1900,
+    }, 	
+ 
+  	Physics = {
+        MaxAcceleration = 0.2,
+        MaxBrake = 0.2,
+        MaxSpeed = 4.2,
+        TurnRadius = 40,
+        TurnRate = 15,        
+	},
+	Weapon = {
+    {
+    RateOfFire = 0.7,
+    MuzzleVelocity = 36,    
+    FiringRandomness = 0.7,
+    },
+    {
+    FiringRandomness = 0.4,
+    RateOfFire = 2,     
+    Damage = 3,    
+    },
+    }	
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="xss0103",
+
+    Economy = {
+        BuildCostEnergy = 4600,
+        BuildCostMass = 460,
+        BuildTime = 1850,
+    }, 	
+ 
+  	Physics = {
+        MaxAcceleration = 0.2,
+        MaxBrake = 0.2,
+        MaxSpeed = 4.2,
+        TurnRadius = 40,
+        TurnRate = 15,        
+	},
+	Weapon = {
+    {
+    MuzzleSalvoSize = 2,
+    RateOfFire = 0.5,
+    MuzzleVelocity = 36,    
+    FiringRandomness = 0.4,
+    Damage = 100, 
+    },
+    {
+    RateOfFire = 2,     
+    Damage = 3,  
+    FiringRandomness = 0.4,  
+    },
+    }	
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="xss0203",
+
+    Economy = {
+        BuildCostEnergy = 3000,
+        BuildCostMass = 652,
+        BuildTime = 2000,
+    },
+    Defense = {
+        Health = 1050,
+        MaxHealth = 1050,
+    },	    
+  	Physics = {
+        MaxAcceleration = 0.2,
+        MaxBrake = 0.2,
+        MaxSpeed = 4.2,
+        TurnRadius = 20,
+        TurnRate = 20,        
+	},
+	Weapon = {
+    {
+    		MuzzleVelocity = 4.5,
+            Damage = 460,
+            RateOfFire = 0.13,            
+    },
+    {
+    },
+    {
+    },
+    },		
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="xss0304",
+	    
+    Defense = {
+        Health = 5550,
+        MaxHealth = 5550,
+    },	 	
+  	Physics = {
+        MaxAcceleration = 0.25,
+        MaxBrake = 0.25,
+        MaxSpeed = 4.4,
+        TurnRadius = 20,
+        TurnRate = 20,        
+	},
+	Weapon = {
+    {     
+    MaxRadius = 45,       
+    },
+    {
+    MuzzleVelocity = 20,
+    },
+    {
+    MuzzleVelocity = 20,
+    },
+    {
+    Damage = 10,
+    RateOfFire = 1.0,
+    FiringRandomness = 0.7, 
+    },
+    },		
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="uas0203",
+
+    Economy = {
+        BuildCostEnergy = 3000,
+        BuildCostMass = 672,
+        BuildTime = 2000,
+    },
+    Defense = {
+        Health = 1000,
+        MaxHealth = 1000,
+    },	    
+  	Physics = {
+        MaxAcceleration = 0.2,
+        MaxBrake = 0.2,
+        MaxSpeed = 4.2,
+        TurnRadius = 20,
+        TurnRate = 20,        
+	},
+	Weapon = {
+    {
+    		MuzzleVelocity = 4.5,
+            Damage = 490,
+            RateOfFire = 0.13,            
+    },
+    },		
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="ues0203",
+
+    Economy = {
+        BuildCostEnergy = 3000,
+        BuildCostMass = 672,
+        BuildTime = 2000,
+    },	
+    Defense = {
+        Health = 1250,
+        MaxHealth = 1250,
+    },    
+  	Physics = {
+        MaxAcceleration = 0.2,
+        MaxBrake = 0.2,
+        MaxSpeed = 4.2,
+        TurnRadius = 20,
+        TurnRate = 20,        
+	},
+	Weapon = {
+    {
+    		MuzzleVelocity = 4.5,
+            Damage = 400,
+            RateOfFire = 0.125,            
+    },
+    {
+    },
+    },		
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="urs0203",
+
+    Economy = {
+        BuildCostEnergy = 3000,
+        BuildCostMass = 672,
+        BuildTime = 2000,
+    },	
+    Defense = {
+        Health = 1125,
+        MaxHealth = 1125,
+    },    
+  	Physics = {
+        MaxAcceleration = 0.2,
+        MaxBrake = 0.2,
+        MaxSpeed = 4.2,
+        TurnRadius = 20,
+        TurnRate = 20,        
+	},
+	Weapon = {
+    {
+    		MuzzleVelocity = 4.5,
+            Damage = 60,
+            RateOfFire = 0.1665,            
+    },
+    {
+    },
+    },	
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="uas0202",
+    Display = {
+        UniformScale = 0.10,
+    },	
+  	Physics = {
+        MaxAcceleration = 0.17,
+        MaxBrake = 0.17,
+        MaxSpeed = 3.4,
+        TurnRadius = 70,
+        TurnRate = 10,     
+	},		
+    Defense = {
+        ArmorType = 'Normal',
+        Health = 7200,
+        MaxHealth = 7200,
+        RegenRate = 0,
+    },
+    Economy = {
+        BuildCostEnergy = 28000,
+        BuildCostMass = 2800,
+        BuildTime = 10800,
+    },    	
+	SelectionSizeX = 1.1,
+    SelectionSizeZ = 4.75,
+    SizeX = 1.6,
+    SizeY = 1.5,
+    SizeZ = 6.8,
+	Weapon = {
+    {
+    MuzzleVelocity = 36,    
+    FiringRandomness = 0.5,
+    TurretYawSpeed = 50,
+    },
+    {
+    RateOfFire = 0.25,
+    Damage = 100,
+    DamageRadius = 0,    
+    MuzzleVelocity = 32,     
+    },
+    {
+    RateOfFire = 0.25,
+    Damage = 100,
+    DamageRadius = 0,    
+    MuzzleVelocity = 32,      
+    },
+    {
+    },
+    }
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="ues0202",
+    Display = {
+        UniformScale = 0.11,
+    },	
+  	Physics = {
+        MaxAcceleration = 0.17,
+        MaxBrake = 0.17,
+        MaxSpeed = 3.4,
+        TurnRadius = 70,
+        TurnRate = 10,        
+	},		
+    Defense = {
+        ArmorType = 'Normal',
+        Health = 7000,
+        MaxHealth = 7000,
+        RegenRate = 0,
+    },
+    Economy = {
+        BuildCostEnergy = 30000,
+        BuildCostMass = 3000,
+        BuildTime = 11200,
+    },	
+    SelectionSizeX = 0.9,
+    SelectionSizeZ = 6.15,
+    SizeX = 1.7,
+    SizeY = 1.6,
+    SizeZ = 8.0,
+	Weapon = {
+    {
+    MuzzleSalvoSize = 2,
+    Damage = 600,
+    MuzzleVelocity = 38,    
+    },
+    {    
+    TurretYawSpeed = 50,   
+    },
+    {
+    Damage = 38,
+    DamageRadius = 0,
+    MuzzleVelocity = 34,    
+    ProjectileLifetime = 4,
+    RateOfFire = 0.3,     
+    },
+    {
+    },
+    }		
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="urs0202",
+    Display = {
+        UniformScale = 0.1,
+    },	
+  	Physics = {
+        MaxAcceleration = 0.17,
+        MaxBrake = 0.17,
+        MaxSpeed = 3.4,
+        TurnRadius = 70,
+        TurnRate = 10,        
+	},		
+    Defense = {
+        ArmorType = 'Normal',
+        Health = 6600,
+        MaxHealth = 6600,
+        RegenRate = 0,
+    },
+    Economy = {
+        BuildCostEnergy = 28000,
+        BuildCostMass = 2800,
+        BuildTime = 11200,
+    },	
+    SelectionSizeX = 1.1,
+    SelectionSizeZ = 4.75,
+    SizeX = 1.6,
+    SizeY = 1.5,
+    SizeZ = 6.8,	
+	Weapon = {
+    {
+    Damage = 40,
+    MuzzleVelocity = 42,    
+    FiringRandomness = 0.7,
+    TurretYawSpeed = 50,
+    },
+    {
+    Damage = 30,
+    DamageRadius = 0,    
+    MuzzleVelocity = 33, 
+    RateOfFire = 0.2,   
+    },
+    {
+    },
+    {
+    RateOfFire = 0.25, 
+    },
+    }	
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="xss0202",
+    Display = {	
+        UniformScale = 0.075,
+    },
+  	Physics = {
+        MaxAcceleration = 0.17,
+        MaxBrake = 0.17,
+        MaxSpeed = 3.4,
+        TurnRadius = 70,
+        TurnRate = 10,        
+	},	
+    Defense = {
+        ArmorType = 'Normal',
+        Health = 6800,
+        MaxHealth = 6800,
+        RegenRate = 0,
+    },
+    Economy = {
+        BuildCostEnergy = 28000,
+        BuildCostMass = 2800,
+        BuildTime = 11200,
+    },	
+    SelectionSizeX = 1.2,
+    SelectionSizeZ = 5.2,
+    SizeX = 1.8,
+    SizeY = 1.7,
+    SizeZ = 7.0,	
+	Weapon = {
+    {
+    Damage = 2500,
+    RateOfFire = 0.1,
+    },
+    {
+    Damage = 50,
+    DamageRadius = 0,    
+    MuzzleVelocity = 33, 
+    RateOfFire = 0.2,   
+    FiringRandomness = 0.1,
+    },
+    {
+    Damage = 6,
+    FiringRandomness = 0.5,
+    },
+    {
+    RateOfFire = 0.25, 
+    },
+    }	
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="uas0201",
+    Display = {
+        UniformScale = 0.135,
+    },	
+  	Physics = {
+        MaxAcceleration = 0.2,
+        MaxBrake = 0.2,
+        MaxSpeed = 4.0,
+        TurnRadius = 60,
+        TurnRate = 12.5,     
+	},
+   Buffs = {
+       Regen = {
+           Level1 = 1,
+           Level2 = 2,
+           Level3 = 3,
+           Level4 = 4,
+           Level5 = 5,
+       },
+   },
+    Defense = {
+        ArmorType = 'Normal',
+        Health = 10000,
+        MaxHealth = 10000,
+        RegenRate = 0,
+    },
+    Economy = {
+        BuildCostEnergy = 20250,
+        BuildCostMass = 3375,
+        BuildTime = 13500,
+    },	
+	SelectionSizeX = 0.9,
+    SelectionSizeZ = 4.4,
+	SizeX = 1.7,
+    SizeY = 1.4,
+    SizeZ = 6.4,
+	Weapon = {
+    {
+    ProjectileId = '/projectiles/ADFOblivionCannon01/ADFOblivionCannon01_proj.bp',
+    MuzzleVelocity = 37,    
+    FiringRandomness = 0.8,
+    FiringRandomnessWhileMoving = 1.6,
+    TurretYawSpeed = 40,
+    },
+    {
+    Damage = 300,
+    },
+    {
+    Damage = 150,
+    },
+    {
+    },
+    } 	
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="ues0201",
+    Display = {
+        UniformScale = 0.135,
+    },	
+  	Physics = {
+        MaxAcceleration = 0.2,
+        MaxBrake = 0.2,
+        MaxSpeed = 4.0,
+        TurnRadius = 60,
+        TurnRate = 12.5,        
+	},
+	Buffs = {
+       Regen = {
+           Level1 = 1,
+           Level2 = 2,
+           Level3 = 3,
+           Level4 = 4,
+           Level5 = 5,
+       },
+   },	
+    Defense = {
+        ArmorType = 'Normal',
+        Health = 10400,
+        MaxHealth = 10400,
+        RegenRate = 0,
+    },
+    Economy = {
+        BuildCostEnergy = 22500,
+        BuildCostMass = 3750,
+        BuildTime = 15000,
+    },	
+	SelectionSizeX = 0.9,
+    SelectionSizeZ = 4.4,
+	SizeX = 1.7,
+    SizeY = 1.4,
+    SizeZ = 6.4,
+	Weapon = {
+    {
+    MuzzleVelocity = 39,    
+    FiringRandomness = 0.8,
+    FiringRandomnessWhileMoving = 1.6,
+    TurretYawSpeed = 40,
+    },
+    {
+    MuzzleVelocity = 39,    
+    FiringRandomness = 0.8,    
+    FiringRandomnessWhileMoving = 1.6,
+    TurretYawSpeed = 40,
+    },
+    {
+    Damage = 8,
+    },
+    {
+    RateOfFire = 0.15,
+    Damage = 350,
+    },
+    {
+    MuzzleVelocity = 7,
+    MinRadius = 1,
+    RateOfFire = 0.12,
+    },
+    }    	
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="urs0201",
+
+	Display = {
+	AnimationWalkRate = 1.6,
+	UniformScale = 0.682,
+	},
+	SelectionSizeX = 0.9,
+    SelectionSizeZ = 3.3,
+    SizeX = 1.44,
+    SizeY = 1.44,
+    SizeZ = 5.64,
+  	Physics = {
+        MaxAcceleration = 0.2,
+        MaxBrake = 0.2,
+        MaxSpeed = 4.0,
+        TurnRadius = 60,
+        TurnRate = 12.5,         
+	},
+	Buffs = {
+       Regen = {
+           Level1 = 1,
+           Level2 = 2,
+           Level3 = 3,
+           Level4 = 4,
+           Level5 = 5,
+       },
+   },
+    Defense = {
+        ArmorType = 'Normal',
+        Health = 10100,
+        MaxHealth = 10100,
+        RegenRate = 0,
+    },
+    Economy = {
+        BuildCostEnergy = 19800,
+        BuildCostMass = 3300,
+        BuildTime = 14000,
+    },	
+	SelectionSizeX = 0.9,
+    SelectionSizeZ = 4.4,
+	SizeX = 1.7,
+    SizeY = 1.4,
+    SizeZ = 6.4,
+	Weapon = {
+    {
+    Damage = 115,
+    MuzzleVelocity = 42,    
+    FiringRandomness = 0.8,
+    FiringRandomnessWhileMoving = 1.6,
+    TurretYawSpeed = 40,
+    },
+    {
+    },
+    {
+    },
+    {
+    },
+    }   	
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="xss0201",
+	Display = {
+        UniformScale = 0.06,
+    },
+  	Physics = {
+        MaxAcceleration = 0.2,
+        MaxBrake = 0.2,
+        MaxSpeed = 4.0,
+        TurnRadius = 60,
+        TurnRate = 12.5,         
+	},
+    Defense = {
+        ArmorType = 'Normal',
+        Health = 9200,
+        MaxHealth = 9200,
+        RegenRate = 0,
+    },
+    Economy = {
+        BuildCostEnergy = 18000,
+        BuildCostMass = 3200,
+        BuildTime = 13500,
+    },	
+    SelectionSizeX = 1,
+    SelectionSizeZ = 3.8,
+    SelectionThickness = 0.18,
+    SizeX = 1.5,
+    SizeY = 1.4,
+    SizeZ = 5.3,	
+	Weapon = {
+    {
+    Damage = 65,
+    TurretYawSpeed = 40,
+    },
+    {
+    Damage = 65,
+    TurretYawSpeed = 40,
+    },
+    {
+    Damage = 300,
+    MuzzleSalvoSize = 2,
+    RateOfFire = 0.25,
+    },
+    {
+    },
+    }   	
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="uas0302",
+
+    Defense = {
+        Health = 55000,
+        MaxHealth = 55000,
+    },
+    Economy = {
+        BuildCostEnergy = 152000,
+        BuildCostMass = 19000,
+        BuildTime = 45600,
+    },		
+  	Physics = {
+        MaxAcceleration = 0.17,
+        MaxBrake = 0.17,
+        MaxSpeed = 3.74,
+        TurnRadius = 90,
+        TurnRate = 7.5,      
+	},
+	Weapon = {
+    {
+    RateOfFire = 0.07,
+    MuzzleVelocity = 47,    
+    FiringRandomness = 1,
+    DamageRadius = 2,
+    },
+    {
+    RateOfFire = 0.07,
+    MuzzleVelocity = 47,    
+    FiringRandomness = 1,
+    DamageRadius = 2,    
+    },
+    {
+    RateOfFire = 0.07,
+    MuzzleVelocity = 47,    
+    FiringRandomness = 1,
+    DamageRadius = 2,    
+    },
+    {
+    },
+    } 	
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="ues0302",
+
+    Defense = {
+        Health = 60000,
+        MaxHealth = 60000,
+    },
+    Economy = {
+        BuildCostEnergy = 160000,
+        BuildCostMass = 20000,
+        BuildTime = 48000,
+    },		
+  	Physics = {
+        MaxAcceleration = 0.17,
+        MaxBrake = 0.17,
+        MaxSpeed = 3.74,
+        TurnRadius = 90,
+        TurnRate = 7.5,        
+	},
+	Weapon = {
+    {
+    MuzzleVelocity = 49,    
+    FiringRandomness = 1,
+    },
+    {
+    MuzzleVelocity = 49,    
+    FiringRandomness = 1,    
+    },
+    { 
+    MuzzleVelocity = 49,    
+    FiringRandomness = 1,   
+    },
+    {
+    Damage = 7,
+    },
+    {
+    Damage = 7,
+    },
+    {
+    Damage = 7,
+    },
+    {
+    Damage = 7,
+    },
+    {
+    },  
+    {
+    },           
+    } 	
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="urs0302",
+
+    Defense = {
+        Health = 50000,
+        MaxHealth = 50000,
+    },
+    Economy = {
+        BuildCostEnergy = 158000,
+        BuildCostMass = 19000,
+        BuildTime = 44000,
+    },		
+  	Physics = {
+        MaxAcceleration = 0.17,
+        MaxBrake = 0.17,
+        MaxSpeed = 3.74,
+        TurnRadius = 90,
+        TurnRate = 7.5,            
+	},
+	Weapon = {
+    {
+    MuzzleVelocity = 55,    
+    FiringRandomness = 1,
+    },
+    {
+    MuzzleVelocity = 55,    
+    FiringRandomness = 1,    
+    },
+    {
+    Damage = 2,
+    },
+    {
+    Damage = 2,    
+    },
+    {
+    },
+    {
+    },
+    {
+    },           
+    } 	
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="xss0302",
+
+    Economy = {
+        BuildCostEnergy = 152000,
+        BuildCostMass = 18500,
+        BuildTime = 44000,
+    },		
+  	Physics = {
+        MaxAcceleration = 0.17,
+        MaxBrake = 0.17,
+        MaxSpeed = 3.74,
+        TurnRadius = 90,
+        TurnRate = 7.5,            
+	},
+	Weapon = {
+    {
+    MuzzleVelocity = 45,    
+    FiringRandomness = 0.8,
+    },
+    {
+    MuzzleVelocity = 45,    
+    FiringRandomness = 0.8,  
+    },
+    {
+    MuzzleVelocity = 45,    
+    FiringRandomness = 0.8,  
+    },    
+    {
+    },
+    {  
+    },
+    {
+    },
+    {
+    },
+    {
+    },           
+    } 	
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="uas0303",
+
+	AI = {
+        RefuelingMultiplier = 90,
+    },		
+    Defense = {
+        Health = 36000,
+        MaxHealth = 36000,
+    },
+  	Physics = {
+        MaxAcceleration = 0.17,
+        MaxBrake = 0.17,
+        MaxSpeed = 2.72,
+        TurnRadius = 200,
+        TurnRate = 5,      
+	},
+	Economy = {
+	    	BuildCostEnergy = 60000,
+            BuildCostMass = 6000,
+            BuildTime = 24000,
+        },
+    General = {
+        ToggleCaps = {
+            RULEUTC_ProductionToggle = true, 
+        },
+    },
+	Weapon = {
+    {
+    Damage = 16,
+    },
+    {
+    Damage = 16,    
+    },
+    }     
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="urs0303",
+
+	AI = {
+        RefuelingMultiplier = 80,
+    },	
+    Defense = {
+        Health = 32000,
+        MaxHealth = 32000,
+    },
+  	Physics = {
+        MaxAcceleration = 0.17,
+        MaxBrake = 0.17,
+        MaxSpeed = 2.72,
+        TurnRadius = 200,
+        TurnRate = 5,              
+	},
+    Economy = {
+		BuildCostEnergy = 55000,
+        BuildCostMass = 5500,
+        BuildTime = 41000,
+    },
+    General = {
+        ToggleCaps = {
+            RULEUTC_ProductionToggle = true, 
+        },
+    },
+	Weapon = {
+    {
+    Damage = 2, 
+    RateOfFire = 1.5,
+    },
+    {
+    Damage = 2, 
+    RateOfFire = 1.5,  
+    },
+    {
+    Damage = 2,  
+    RateOfFire = 1.5, 
+    },
+    {
+    Damage = 2, 
+    RateOfFire = 1.5,    
+    },
+    {
+    },
+    }     
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="xss0303",
+
+	AI = {
+        RefuelingMultiplier = 80,
+    },	
+    Defense = {
+        Health = 33000,
+        MaxHealth = 33000,
+    },
+  	Physics = {
+        MaxAcceleration = 0.17,
+        MaxBrake = 0.17,
+        MaxSpeed = 2.72,
+        TurnRadius = 200,
+        TurnRate = 5,              
+	},
+    Economy = {
+		BuildCostEnergy = 55000,
+        BuildCostMass = 5500,
+        BuildTime = 41000,
+    },
+	Weapon = {
+    {
+    Damage = 2500, 
+    RateOfFire = 0.1,
+    },
+    {
+    Damage = 11, 
+    FiringRandomness = 0.5, 
+    },
+    {
+    Damage = 11,   
+    FiringRandomness = 0.5,
+    },    
+    }     
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="ues0401",
+    Audio = {
+        AmbientMove = Sound {
+            Bank = 'UES',
+            Cue = 'UES0401_Move_Loop',
+            LodCutoff = 'UnitMove_LodCutoff',
+        },
+        Killed = Sound {
+            Bank = 'UESDestroy',
+            Cue = 'UES0302_Destroy',
+            LodCutoff = 'UnitMove_LodCutoff',
+        },
+        StartMove = Sound {
+            Bank = 'UES',
+            Cue = 'UES0401_Move_Start',
+            LodCutoff = 'UnitMove_LodCutoff',
+        },
+        StopMove = Sound {
+            Bank = 'UES',
+            Cue = 'UES0401_Move_Stop',
+            LodCutoff = 'UnitMove_LodCutoff',
+        },
+        SubmergeStart = Sound {
+            Bank = 'UES',
+            Cue = 'UES_Sub_Submerge',
+            LodCutoff = 'UnitMove_LodCutoff',
+        },
+        SurfaceStart = Sound {
+            Bank = 'UES',
+            Cue = 'UES_Sub_Surface',
+            LodCutoff = 'UnitMove_LodCutoff',
+        },
+        UISelection = Sound {
+            Bank = 'Interface',
+            Cue = 'UEF_Select_Naval',
+            LodCutoff = 'UnitMove_LodCutoff',
+        },
+    },
+        General = {
+            ToggleCaps = {
+                RULEUTC_ProductionToggle = true, 
+            },
+        },
+    Economy = {
+		BuildCostEnergy = 155000,
+        BuildCostMass = 15000,
+        BuildTime = 41000,
+    },        
+  	Physics = {
+        MaxAcceleration = 0.17,
+        MaxBrake = 0.17,
+        MaxSpeed = 2.38,
+        TurnRadius = 170,
+        TurnRate = 3,        
+	},
+	Weapon = {
+    {
+    },
+    {
+    Damage = 24,    
+    },
+    {
+    Damage = 24,    
+    },
+    {
+    Damage = 24,     
+    },
+    {
+    Damage = 24,    
+    },
+    } 
+}
+
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="uas0304",
+
+    Economy = {
+        BuildTime = 30000,
+    },   	
+  	Physics = {
+        MaxAcceleration = 0.17,
+        MaxBrake = 0.17,
+        MaxSpeed = 2.04,
+        TurnRadius = 60,
+        TurnRate = 12.5,      
+	},
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="ues0304",
+
+    Economy = {
+        BuildTime = 16000,
+    },   	
+  	Physics = {
+        MaxAcceleration = 0.17,
+        MaxBrake = 0.17,
+        MaxSpeed = 2.04,
+        TurnRadius = 60,
+        TurnRate = 12.5,        
+	},
+}
+
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="urs0304",
+
+    Economy = {
+        BuildTime = 33000,
+    },   	
+  	Physics = {
+        MaxAcceleration = 0.17,
+        MaxBrake = 0.17,
+        MaxSpeed = 2.04,
+        TurnRadius = 60,
+        TurnRate = 12.5,                
+	},
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="uas0401",
+
+    Economy = {
+		BuildCostEnergy = 200000,
+        BuildCostMass = 30000,
+        BuildTime = 42000,
+    },	
+    Defense = {
+        Health = 65000,
+        MaxHealth = 65000,
+    },    
+  	Physics = {
+        MaxAcceleration = 0.2,
+        MaxBrake = 0.27,
+        MaxSpeed = 2.44,
+        TurnRadius = 170,
+        TurnRate = 4.5, 
+        RotateOnSpot = false,               
+	},	 
+	Weapon = {
+    {
+           Audio = {
+                BarrelLoop = Sound {
+                    Bank = 'UAB',
+                    Cue = 'UAB2302_Turret_Loop',
+                    LodCutoff = 'WeaponBig_LodCutoff',
+                },
+                BarrelStart = Sound {
+                    Bank = 'UAB',
+                    Cue = 'UAB2302_Turret_Start',
+                    LodCutoff = 'WeaponBig_LodCutoff',
+                },
+                Fire = Sound {
+                    Bank = 'UALWeapon',
+                    Cue = 'UAB2302_Artillery_Sonance',
+                    LodCutoff = 'Weapon_LodCutoff',
+                },
+                MuzzleChargeStart = Sound {
+                    Bank = 'UALWeapon',
+                    Cue = 'UAB2302_Artillery_Son_Charge',
+                    LodCutoff = 'Weapon_LodCutoff',
+                },
+            },    
+    ProjectileId = '/projectiles/AIFSonanceShell02/AIFSonanceShell02_proj.bp',        
+    MuzzleVelocity = 47, 
+    Damage = 7500,
+    DamageRadius = 4,   
+	TurretPitch = 20,
+    },
+ 	{
+    },
+    {
+    },
+ 	},
+}
+
+
+#================================================= air units =================================================#
+
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="xsa0101",
+ 	Economy = {
+	    BuildCostEnergy = 960,
+        BuildCostMass = 24,
+        BuildTime = 400,
+    },
+	Intel = {
+        VisionRadius = 55,
+    },  
+	Defense = {
+        Health = 10,
+        MaxHealth = 10,
+    },
+	SizeSphere = 0.6,
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="xsa0103",
+ 
+	Defense = {
+        Health = 75,
+        MaxHealth = 75,
+    },
+	SizeSphere = 1.0,
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="xsa0102",
+ 
+	Defense = {
+        Health = 29,
+        MaxHealth = 29,
+    },
+	SizeSphere = 0.8,
+    Weapon = {
+    {    
+    	Damage = 4,   
+    },
+    {     
+    	DamageRadius = 2,
+    },    
+ 	},       
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="xsa0107",
+
+	Air = {	
+		MaxAirspeed = 14,
+    },		 
+	Defense = {
+        Health = 100,
+        MaxHealth = 100,
+    },
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="xsa0104",
+
+	Economy = {
+    	BuildCostEnergy = 13000,
+    	BuildCostMass = 430,
+    	BuildTime = 3250,
+    },				 
+	Defense = {
+        Health = 360,
+        MaxHealth = 360,
+    },
+	Weapon = {
+	{
+		Damage = 1,
+	},
+	{
+		Damage = 1,
+	},	
+	{
+	},
+	{
+		DamageRadius = 2,
+	},	
+    },    
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="xsa0202",
+				 
+	Defense = {
+        Health = 120,
+        MaxHealth = 120,
+    },
+	SizeSphere = 1.1,
+	Weapon = {
+	{
+		Damage = 5,
+	},
+	{
+		Damage = 5,
+	},	
+	{
+	},
+	{
+		DamageRadius = 2,
+	},	
+    },    
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="xsa0203",
+				 
+	Defense = {
+        Health = 210,
+        MaxHealth = 210,
+    },
+	Economy = {
+	    BuildCostEnergy = 7200,
+        BuildCostMass = 360,
+        BuildTime = 2400,
+    },	
+	SizeSphere = 1.0,
+	Weapon = {
+	{
+	},
+	{
+	},	
+	{
+		DamageRadius = 2,
+	},	
+    },    
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="xsa0204",
+				 
+	Defense = {
+        Health = 170,
+        MaxHealth = 170,
+    },   
+	SizeSphere = 1.0,
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="xsa0303",
+				 
+	Defense = {
+        Health = 280,
+        MaxHealth = 280,
+    },  
+	SizeSphere = 1.0,
+    Weapon = {
+    {
+    Damage = 38, 
+    },
+    {
+    DamageRadius = 2,
+    },
+ 	},     
+}
+
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="xsa0304",
+						 
+	Defense = {
+        Health = 470,
+        MaxHealth = 470,
+    },      
+	SizeSphere = 1.3,
+    Weapon = {
+    {
+    	MaxRadius = 62,
+    	FiringTolerance = 3,
+    	Damage = 5500,
+    	DamageRadius = 5.5,
+    },
+    {
+    	DamageRadius = 2,
+    },
+    },    
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="xsa0402",
+
+	Display = {							 
+		UniformScale = 0.035,
+	},
+    Footprint = {
+        MaxSlope = 0.5,
+        SizeX = 9,
+        SizeZ = 9,
+    },	
+    Economy = {
+        BuildCostEnergy = 720000,
+        BuildCostMass = 40000,
+        BuildTime = 36000,
+    },
+    LifeBarHeight = 0.065,
+    LifeBarOffset = 7.0,
+    LifeBarSize = 10,  
+	Physics = {
+	    SkirtSizeX = 12,
+        SkirtSizeZ = 12,
+	},    
+    SelectionSizeX = 7.6,
+    SelectionSizeZ = 6.9,
+    SizeX = 10,
+    SizeY = 3.5,
+    SizeZ = 10,	  
+	Defense = {
+        Health = 9500,
+        MaxHealth = 9500,
+    },      
+    Weapon = {
+    {
+    	DamageRadius = 14,
+    },
+    {
+    	Damage = 35,
+    },
+    {
+    	Damage = 35,
+    },
+    {
+    	Damage = 35,
+    },
+    {
+    	Damage = 35,
+    },
+    {
+    },            
+    },    
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="xaa0202",
+	
+	Air = {
+		MinAirspeed = 10,
+	},
+	Economy = {
+	    BuildCostEnergy = 5000,
+        BuildCostMass = 160,
+        BuildTime = 1400,
+    },		 
+	Defense = {
+        Health = 100,
+        MaxHealth = 100,
+    },    
+	SizeSphere = 1.1,
+   	Weapon = {
+    {    
+    		Damage = 7, 
+    		MuzzleVelocity = 120,
+           	TurretPitchRange = 25,
+            TurretYawRange = 25,    
+    },
+    {     
+    DamageRadius = 2,
+    },    
+ 	},       
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="xra0105",
+
+	Economy = {
+	    BuildCostEnergy = 3000,
+        BuildCostMass = 180,
+        BuildTime = 800,
+    },	 
+	Defense = {
+        Health = 65,
+        MaxHealth = 65,
+    },    
+	SizeSphere = 1.0,
+   	Weapon = {
+    {    
+    FireTargetLayerCapsTable = {
+                Air = 'Land|Water|Seabed',
+                Land = 'Land|Water|Seabed',
+    },
+   	Damage = 12,   
+    },
+    {     
+    DamageRadius = 2,    
+    },    
+ 	},       
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="xaa0305",
+
+	Defense = {
+		Health = 650,
+        MaxHealth = 650,
+    },    
+	SizeSphere = 1.2,
+   	Weapon = {
+    {	
+    FireTargetLayerCapsTable = {
+                Air = 'Land|Water|Seabed',
+                Land = 'Land|Water|Seabed',
+    },	 
+    },
+    {     
+    RateOfFire = 0.333,
+    Damage = 38,  
+    },    
+    {     
+    RateOfFire = 0.333,
+    Damage = 38,  
+    },  
+    {	
+    DamageRadius = 2,    	 
+    },        
+ 	},       
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="xaa0306",
+
+	Defense = {
+		Health = 540,
+        MaxHealth = 540,
+    },           
+	SizeSphere = 1.3,
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="xra0305",
+
+	Defense = {
+        Health = 675,
+        MaxHealth = 675,
+    },    
+	SizeSphere = 1.2,
+   	Weapon = {
+    {	
+    FireTargetLayerCapsTable = {
+                Air = 'Land|Water|Seabed',
+                Land = 'Land|Water|Seabed',
+    },
+    Damage = 100,	 
+    },
+    {     
+    RateOfFire = 0.5,
+    Damage = 12,  
+    },  
+    {	
+    DamageRadius = 2,    	 
+    },        
+ 	},       
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="xea0306",
+
+	Defense = {
+        Health = 1200,
+        MaxHealth = 1200,
+        Shield = {
+            ShieldMaxHealth = 2000,
+        },
+    },    
+   	Weapon = {
+    {		 
+    },
+    {		 
+    },    
+    {     
+    RateOfFire = 0.3,  
+    },      
+    {     
+    RateOfFire = 0.3,  
+    },  
+    {     
+    RateOfFire = 0.3,  
+    },  
+    {     
+    RateOfFire = 0.3,  
+    },  
+    {	
+    DamageRadius = 2,    	 
+    },        
+ 	},       
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="uaa0101",
+
+	Air = {	
+		MaxAirspeed = 17,
+    },	
+	Economy = {
+	    BuildCostEnergy = 960,
+        BuildCostMass = 24,
+        BuildTime = 400,
+    },
+    Intel = {
+        VisionRadius = 55,
+    },    
+	Defense = {
+        Health = 9,
+        MaxHealth = 9,
+    },    
+	SizeSphere = 0.6,
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="uea0101",
+
+	Air = {	
+		MaxAirspeed = 17,
+    },	
+	Economy = {
+	    BuildCostEnergy = 960,
+        BuildCostMass = 24,
+        BuildTime = 400,
+    },
+    Intel = {
+        VisionRadius = 55,
+    },    
+	Defense = {
+        Health = 10,
+        MaxHealth = 10,
+    },    
+	SizeSphere = 0.6,
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="ura0101",
+
+	Air = {	
+		MaxAirspeed = 17,
+    },	
+	Economy = {
+	    BuildCostEnergy = 900,
+        BuildCostMass = 22,
+        BuildTime = 280,
+    },
+    Intel = {
+        VisionRadius = 55,
+    },    
+	Defense = {
+        Health = 7,
+        MaxHealth = 7,
+    },    
+	SizeSphere = 0.6,
+}
+
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="dea0202",
+
+    Air = {
+        MaxAirspeed = 12,
+        MinAirspeed = 8,
+    },	
+   Buffs = {
+       Regen = {
+           Level1 = 1,
+           Level2 = 2,
+           Level3 = 3,
+           Level4 = 4,
+           Level5 = 5,
+       },
+   },		
+	Defense = {
+        Health = 130,
+        MaxHealth = 130,
+    },
+	SizeSphere = 1.1,
+    Weapon = {
+    {   
+    Damage = 6,
+    TurretPitchRange = 25,
+    TurretYawRange = 25,    
+    },
+    {
+    Damage = 6,    
+    TurretPitchRange = 25,
+    TurretYawRange = 25,  
+    }, 
+    {   
+    DamageRadius = 2,      
+    },    
+ 	},   
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="dra0202",
+
+    Air = {
+        MaxAirspeed = 16,
+        MinAirspeed = 10,
+    },
+   	Buffs = {
+       Regen = {
+           Level1 = 1,
+           Level2 = 2,
+           Level3 = 3,
+           Level4 = 4,
+           Level5 = 5,
+       },
+   	},
+	Defense = {
+        Health = 110,
+        MaxHealth = 110,
+    },
+	SizeSphere = 1.1,
+    Weapon = {
+    { 
+	Damage = 5,
+    },
+    {   
+    FireTargetLayerCapsTable = {
+                Air = 'Air|Land|Water',
+                Land = 'Air|Land|Water',
+                Water = 'Air|Land|Water',
+            },    
+    TargetRestrictDisallow = 'HIGHALTAIR, UNTARGETABLE',
+    Damage = 200, 
+    MuzzleVelocity = 43,      
+    }, 
+    {
+	DamageRadius = 2,    
+    },   
+ 	},   
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="daa0206",
+
+    Air = {
+        MaxAirspeed = 12,
+        MinAirspeed = 10,
+        TurnSpeed = 1.0,
+    },	
+    Defense = {
+        Health = 20,
+        MaxHealth = 20,
+    },	
+    Physics = {
+        FuelUseTime = 180,
+    },		
+	SizeSphere = 0.9,
+    Weapon = {
+    {
+    TargetRestrictDisallow = 'UNTARGETABLE',
+    TargetRestrictOnlyAllow = 'EXPERIMENTAL, LAND, NAVAL, STRUCTURE',
+    Damage = 2400,
+    DamageRadius = 2.0,
+    },
+    {
+    DamageRadius = 2,
+    },
+ 	},
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="uaa0204",
+
+	Economy = {
+	    BuildCostEnergy = 4000,
+        BuildCostMass = 400,
+        BuildTime = 1800,
+    },		
+	Defense = {
+        Health = 170,
+        MaxHealth = 170,
+    },		
+	SizeSphere = 1.0,
+    Weapon = {
+    {
+             ProjectileId = '/projectiles/CANTorpedoNanite02/CANTorpedoNanite02_proj.bp',
+            CollideFriendly = false,
+            Damage = 780,
+    },
+    {
+    DamageRadius = 2,
+    },
+ 	},
+}
+
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="uea0204",
+
+	Economy = {
+	    BuildCostEnergy = 4400,
+        BuildCostMass = 440,
+        BuildTime = 1900,
+    },		
+	Defense = {
+        Health = 170,
+        MaxHealth = 170,
+    },			
+	SizeSphere = 1.0,
+    Weapon = {
+    {
+             ProjectileId = '/projectiles/CANTorpedoNanite02/CANTorpedoNanite02_proj.bp',
+            CollideFriendly = false,
+            Damage = 780,             
+    },
+    {
+    DamageRadius = 2,
+    },
+ 	},
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="ura0204",
+
+	Economy = {
+	    BuildCostEnergy = 4000,
+        BuildCostMass = 400,
+        BuildTime = 1800,
+    },		
+	Defense = {
+        Health = 155,
+        MaxHealth = 155,
+    },		
+	SizeSphere = 1.0,
+    Weapon = {
+    {
+             ProjectileId = '/projectiles/CANTorpedoNanite02/CANTorpedoNanite02_proj.bp',
+            CollideFriendly = false,
+            Damage = 78,             
+    },
+    {
+    DamageRadius = 2,
+    },
+ 	},
+}
+
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="uaa0102",
+
+	Air = {	
+		MaxAirspeed = 19,
+    },
+    Defense = {
+        Health = 28,
+        MaxHealth = 28,
+    },    
+	Economy = {
+	    BuildCostEnergy = 2280,
+        BuildCostMass = 38,
+        BuildTime = 760,
+    },    		
+	SizeSphere = 0.8,
+    Weapon = {
+    {
+    Damage = 4,
+    MuzzleVelocity = 45,    
+    TurretPitchRange = 25,
+    TurretYawRange = 25,    
+    },
+    {
+    Damage = 4,
+    MuzzleVelocity = 45,   
+    TurretPitchRange = 25,
+    TurretYawRange = 25,         
+    },    
+    {
+    },
+ 	},
+}
+
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="uea0102",
+
+	Air = {	
+		MaxAirspeed = 19,
+    },
+    Defense = {
+        Health = 30,
+        MaxHealth = 30,
+    },     		
+	Economy = {
+	    BuildCostEnergy = 2280,
+        BuildCostMass = 38,
+        BuildTime = 760,
+    },    
+	SizeSphere = 0.8,
+    Weapon = {
+    {
+            Audio = {
+                Fire = Sound {
+                    Bank = 'UELWeapon',
+                    Cue = 'UEL0106_MachineGun',
+                    LodCutoff = 'Weapon_LodCutoff',
+                },
+            },              
+	ProjectileId = '/projectiles/TDFMachineGun01/TDFMachineGun01_proj.bp',    
+    Damage = 4,   
+    MuzzleVelocity = 45,      
+    MuzzleSalvoDelay = 0.15,
+    MuzzleSalvoSize = 5,  
+    TurretPitchRange = 25,
+    TurretYawRange = 25,      
+    },
+    {
+    },
+ 	},
+}
+
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="ura0102",
+
+	Air = {	
+		MaxAirspeed = 19,
+    },	
+    Defense = {
+        Health = 26,
+        MaxHealth = 26,
+    },     
+	Economy = {
+	    BuildCostEnergy = 2000,
+        BuildCostMass = 32,
+        BuildTime = 640,
+    },			
+	SizeSphere = 0.8,
+    Weapon = {
+    {
+    Damage = 4,
+    MuzzleVelocity = 45,   
+    TurretPitchRange = 25,
+    TurretYawRange = 25,         
+    },
+    {
+    Damage = 4,
+    MuzzleVelocity = 45,      
+    TurretPitchRange = 25,
+    TurretYawRange = 25,      
+    },    
+    {
+    },
+ 	},
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="uaa0103",
+
+	Air = {	
+		MaxAirspeed = 12,
+    },	
+	Economy = {
+	    BuildCostEnergy = 2880,
+        BuildCostMass = 144,
+        BuildTime = 960,
+    },		
+	Defense = {
+        Health = 72,
+        MaxHealth = 72,
+    },
+	SizeSphere = 1.0,
+    Weapon = {
+    {
+	Damage = 250,      
+    },
+    {     
+    DamageRadius = 2,
+    },    
+ 	},
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="uea0103",
+
+	Air = {	
+		MaxAirspeed = 12,
+    },	
+	Economy = {
+	    BuildCostEnergy = 2880,
+        BuildCostMass = 144,
+        BuildTime = 960,
+    },			
+	Defense = {
+        Health = 80,
+        MaxHealth = 80,
+    },
+	SizeSphere = 1.0,
+    Weapon = {
+    {
+	Damage = 5.6,      
+    },
+    {     
+    DamageRadius = 2,
+    },    
+ 	},   
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="ura0103",
+
+	Air = {	
+		MaxAirspeed = 12,
+    },	
+	Economy = {
+	    BuildCostEnergy = 2880,
+        BuildCostMass = 144,
+        BuildTime = 960,
+    },		
+	Defense = {
+        Health = 76,
+        MaxHealth = 76,
+    },
+	SizeSphere = 1.0,
+    Weapon = {
+    {
+	Damage = 70,      
+    },
+    {    
+    DamageRadius = 2, 
+    },    
+ 	},    
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="uaa0107",
+
+	Air = {	
+		MaxAirspeed = 14,
+    },	
+	Economy = {
+	    BuildCostEnergy = 4800,
+        BuildCostMass = 120,
+        BuildTime = 1200,
+    },		
+	Defense = {
+        Health = 90,
+        MaxHealth = 90,
+    },
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="uea0107",
+
+	Air = {	
+		MaxAirspeed = 14,
+    },	
+	Economy = {
+	    BuildCostEnergy = 4800,
+        BuildCostMass = 120,
+        BuildTime = 1200,
+    },		
+	Defense = {
+        Health = 90,
+        MaxHealth = 90,
+    },
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="ura0107",
+
+	Air = {	
+		MaxAirspeed = 14,
+    },	
+	Economy = {
+	    BuildCostEnergy = 4800,
+        BuildCostMass = 120,
+        BuildTime = 1200,
+    },		
+	Defense = {
+        Health = 90,
+        MaxHealth = 90,
+    },
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="uaa0203",
+
+	Economy = {
+	    BuildCostEnergy = 7800,
+        BuildCostMass = 390,
+        BuildTime = 2600,
+    },		
+	Defense = {
+        Health = 200,
+        MaxHealth = 200,
+    },		
+	SizeSphere = 1.0,
+    Weapon = {
+    {
+    Damage = 16,
+    MuzzleVelocity = 38,    
+    FiringRandomness = 1,
+    FireTargetLayerCapsTable = {
+                Air = 'Land|Water|Seabed',
+                Land = 'Land|Water|Seabed',
+    },
+    },
+    {
+    DamageRadius = 2,
+    },
+ 	},
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="uea0203",
+
+	Economy = {
+	    BuildCostEnergy = 7800,
+        BuildCostMass = 390,
+        BuildTime = 2600,
+    },		
+	Defense = {
+        Health = 190,
+        MaxHealth = 190,
+    },			
+	SizeSphere = 1.0,
+    Weapon = {
+    {
+    FireTargetLayerCapsTable = {
+                Air = 'Land|Water|Seabed',
+                Land = 'Land|Water|Seabed',
+    },
+    MuzzleVelocity = 36,    
+    FiringRandomness = 1,
+    },
+    {
+    },    
+ 	},
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="ura0203",
+
+	Economy = {
+	    BuildCostEnergy = 8600,
+        BuildCostMass = 430,
+        BuildTime = 2800,
+    },		
+	Defense = {
+        Health = 170,
+        MaxHealth = 170,
+    },			
+	SizeSphere = 1.0,
+    Weapon = {
+    {
+    FireTargetLayerCapsTable = {
+                Air = 'Land|Water|Seabed',
+                Land = 'Land|Water|Seabed',
+            },
+    Damage = 19,        
+    MuzzleVelocity = 35,    
+    FiringRandomness = 1,
+    DamageFriendly = false,
+    DamageRadius = 2,
+    },
+    {
+    DamageRadius = 2,
+    },
+ 	},
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="uaa0304",
+
+	Air = {
+        MaxAirspeed = 15,
+        MinAirspeed = 12, 	
+        PredictAheadForBombDrop = 3,
+	},	
+	Economy = {
+	    BuildCostEnergy = 72000,
+        BuildCostMass = 2160,
+        BuildTime = 14400,
+    },		
+	Defense = {
+        Health = 405,
+        MaxHealth = 405,
+    },
+	SizeSphere = 1.3,
+    Weapon = {
+    {
+    MaxRadius = 62,
+    FiringTolerance = 3,
+    Damage = 7000,
+    DamageRadius = 4.5,
+    },
+    {
+    DamageRadius = 2,
+    },
+    }
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="uea0304",
+
+	Air = {
+        MaxAirspeed = 15,
+        MinAirspeed = 12, 	
+        PredictAheadForBombDrop = 3,
+	},	
+	Economy = {
+	    BuildCostEnergy = 76000,
+        BuildCostMass = 2300,
+        BuildTime = 14800,
+    },		
+	Defense = {
+        Health = 450,
+        MaxHealth = 450,
+    },
+	SizeSphere = 1.3,
+    Weapon = {
+    {
+    MaxRadius = 62,
+    FiringTolerance = 3,
+    Damage = 6500,
+    DamageRadius = 5.0,
+    },
+    {
+    Damage = 6,
+    },
+    {
+    Damage = 6,
+    },  
+    {
+    DamageRadius = 2,
+    },  
+    }    
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="ura0304",
+
+	Air = {
+        MaxAirspeed = 15,
+        MinAirspeed = 12,
+        PredictAheadForBombDrop = 3, 	
+	},	
+	Economy = {
+	    BuildCostEnergy = 72000,
+        BuildCostMass = 2160,
+        BuildTime = 14400,
+    },		
+	Defense = {
+        Health = 370,
+        MaxHealth = 370,
+    },
+	SizeSphere = 1.3,
+    Weapon = {
+    {
+    MaxRadius = 62,
+    FiringTolerance = 3,
+    Damage = 6000,
+    DamageRadius = 6.0,
+    },
+    {
+    },     
+    {
+    },    
+    {
+    DamageRadius = 2,
+    },    
+    }      
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="uea0305",
+	
+	Air = {
+        MaxAirspeed = 9,
+        MinAirspeed = 3, 	
+	},
+	Economy = {
+	    BuildCostEnergy = 22500,
+        BuildCostMass = 2100,
+        BuildTime = 9000,
+    },		
+	Defense = {
+        Health = 705,
+        MaxHealth = 705,
+    },	
+	SizeSphere = 1.2,
+	Weapon = {
+    {
+    FireTargetLayerCapsTable = {
+                Air = 'Land|Water|Seabed',
+                Land = 'Land|Water|Seabed',
+            },
+    MuzzleVelocity = 35,
+    FiringRandomness = 1.4,
+    },
+    {
+    MuzzleVelocity = 45,    
+    Damage = 10,    
+    },
+    {
+    DamageRadius = 2,
+    },            
+ 	},
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="uaa0302",
+
+	Air = {	
+		MinAirspeed = 16,
+		MaxAirspeed = 22,
+    },	
+    Intel = {
+        VisionRadius = 90,
+    },	
+	Economy = {
+	    BuildCostEnergy = 4400,
+        BuildCostMass = 160,
+        BuildTime = 1400,
+    },			
+	Defense = {
+        Health = 65,
+        MaxHealth = 65,
+    },
+	SizeSphere = 1.0,
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="uea0302",
+
+	Air = {	
+		MinAirspeed = 16,
+		MaxAirspeed = 22,
+    },	
+    Intel = {
+        VisionRadius = 90,
+    },	
+	Economy = {
+	    BuildCostEnergy = 4600,
+        BuildCostMass = 170,
+        BuildTime = 1480,
+    },			
+	Defense = {
+        Health = 70,
+        MaxHealth = 70,
+    },
+	SizeSphere = 1.0,
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="ura0302",
+
+	Air = {	
+		MinAirspeed = 16,
+		MaxAirspeed = 22,
+    },	
+    Intel = {
+        VisionRadius = 90,
+    },	
+	Economy = {
+	    BuildCostEnergy = 4400,
+        BuildCostMass = 150,
+        BuildTime = 1400,
+    },				
+	Defense = {
+        Health = 62,
+        MaxHealth = 62,
+    },
+	SizeSphere = 1.0,
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="uaa0303",
+
+	Economy = {
+	    BuildCostEnergy = 24000,
+        BuildCostMass = 360,
+        BuildTime = 7200,
+    },		
+	Defense = {
+        Health = 275,
+        MaxHealth = 275,
+    },		   
+	SizeSphere = 1.0,
+    Weapon = {
+    {
+    Damage = 39,
+    TurretPitchRange = 25,
+    TurretYawRange = 25,    
+    },  
+    {
+    DamageRadius = 2,
+    },
+ 	},
+}
+
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="uea0303",
+
+	Economy = {
+	    BuildCostEnergy = 24000,
+        BuildCostMass = 360,
+        BuildTime = 7200,
+    },		
+	Defense = {
+        Health = 300,
+        MaxHealth = 300,
+    }, 		
+	SizeSphere = 1.0,
+    Weapon = {
+    {
+    DamageRadius = 0.0,      
+    BeamCollisionDelay = 0.01,    
+    MaxRadius = 30,       
+    RateOfFire = 3,
+    Damage = 20,
+    MuzzleVelocity = 85,
+    ProjectileLifetime = 1.6,
+    TurretPitchRange = 25,
+    TurretYawRange = 25,      
+    },
+    {
+    DamageRadius = 0.0,      
+    BeamCollisionDelay = 0.01,    
+    MaxRadius = 30,      
+    RateOfFire = 3,
+    Damage = 20,
+    MuzzleVelocity = 85,
+    ProjectileLifetime = 1.6,  
+    TurretPitchRange = 25,
+    TurretYawRange = 25,          
+    },    
+    {
+    DamageRadius = 2,
+    },
+ 	},
+}
+
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="ura0303",
+	
+    SizeY = 0.4,
+
+	Economy = {
+	    BuildCostEnergy = 22000,
+        BuildCostMass = 330,
+        BuildTime = 6800,
+    },		
+	Defense = {
+        Health = 250,
+        MaxHealth = 250,
+    },        	
+	SizeSphere = 1.0,	
+    Weapon = {
+    {
+    RateOfFire = 0.4,
+    Damage = 30,
+    ProjectileLifetime = 2,
+    MuzzleVelocity = 40,
+    TurretPitchRange = 35,
+    TurretYawRange = 35,      
+    },
+    {
+    RateOfFire = 0.4,
+    Damage = 30,
+    ProjectileLifetime = 2,
+    MuzzleVelocity = 40,
+    TurretPitchRange = 35,
+    TurretYawRange = 35,      
+    },   
+    {
+    DamageRadius = 2,
+    },
+ 	},
+}
+
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="ura0401",
+
+	Economy = {
+    BuildCostEnergy = 600000,
+    BuildCostMass = 24000,
+    BuildTime = 16000,
+    },
+	Defense = {
+        Health = 18000,
+        MaxHealth = 18000,
+        RegenRate = 5,
+    },  
+        		
+	Weapon = {
+    {
+    },
+    {
+    },
+    {
+    Damage = 8,
+    },
+    {
+    Damage = 8,
+    },
+    {
+    FiringRandomness = 0.6,
+ 	Damage = 200,
+ 	},
+    {
+    FiringRandomness = 0.6,
+    Damage = 200,
+    },
+ 	{
+	Damage = 5000,
+    DamageRadius = 5,	
+    },
+    }
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="uaa0104",
+
+	Economy = {
+    	BuildCostEnergy = 12800,
+    	BuildCostMass = 420,
+    	BuildTime = 3200,
+    },	
+	Defense = {
+        Health = 350,
+        MaxHealth = 350,        
+        RegenRate = 2,
+    },
+	Weapon = {
+	{
+	Damage = 1,
+	},
+	{
+	Damage = 1,
+	},	
+	{
+	Damage = 1,
+	},
+	{
+	Damage = 1,
+	},	
+    }	    	
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="uea0104",
+	
+    Economy = {
+    	BuildCostEnergy = 15000,
+    	BuildCostMass = 500,
+    	BuildTime = 3600,
+    },	
+	Defense = {
+        Health = 420,
+        MaxHealth = 420,
+        RegenRate = 2,        
+    },	
+	Weapon = {
+	{
+	Damage = 3,
+	MuzzleVelocity = 30,
+	},
+	{
+	Damage = 3,
+	MuzzleVelocity = 30,
+	},	
+	{
+	Damage = 2,
+	MuzzleVelocity = 40,
+	},
+	{
+	Damage = 2,
+	MuzzleVelocity = 40,
+	},	
+    }    
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="ura0104",
+
+	Economy = {
+    	BuildCostEnergy = 12800,
+    	BuildCostMass = 420,
+    	BuildTime = 3200,
+    },		
+	Defense = {
+        Health = 350,
+        MaxHealth = 350,
+        RegenRate = 3,        
+    },   	
+	Weapon = {
+	{
+	Damage = 4;
+	},
+	{
+	Damage = 2;
+	},	
+    }    	
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="uaa0310",
+   
+	Air = {
+        MaxAirspeed = 2,
+    }, 
+	Defense = {
+        Health = 20000,
+        MaxHealth = 20000,
+        RegenRate = 10,
+    },
+    Economy = {
+    BuildCostEnergy = 960000,
+    BuildCostMass = 60480,
+    BuildTime = 31600,
+    },
+    General = {
+        ToggleCaps = {
+            RULEUTC_ProductionToggle = true, 
+        },
+    },
+    Physics = {
+    Elevation = 20,
+    },
+    Intel = {
+        RadarRadius = 200,
+        ShowIntelOnSelect = true,
+    },    
+    Weapon = {
+    {
+    Damage = 1650,
+    },
+    {
+    Damage = 15,
+    MuzzleVelocity = 30, 
+    },
+    {
+    Damage = 15,
+    MuzzleVelocity = 30,     
+    },
+    {
+    Damage = 15,
+    MuzzleVelocity = 30,     
+    },
+    {
+    Damage = 15,
+    MuzzleVelocity = 30,     
+    },
+    {
+    Damage = 300,
+    },
+    {
+    Damage = 300,
+    },
+    {
+    Damage = 40,  
+    DamageRadius = 0,  
+    HeadingArcRange = 110,      
+    MuzzleVelocity = 45,   
+    },
+    {
+    Damage = 40,   
+    DamageRadius = 0,
+    HeadingArcRange = 110,      
+    MuzzleVelocity = 45,     
+    },
+    {
+    Damage = 12000,
+    DamageRadius = 12,
+    },
+	}
+}
+
+#================================================= buildings =================================================#
+
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="uab1103",
+
+	CollisionOffsetY = 0.25,
+	SizeX = 0.65,
+	SizeY = 0.8,
+	SizeZ = 0.65,
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="ueb1103",
+
+	CollisionOffsetY = 0.25,
+	SizeX = 0.65,
+	SizeY = 0.8,
+	SizeZ = 0.65,
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="urb1103",
+
+	CollisionOffsetY = 0.25,
+	SizeX = 0.65,
+	SizeY = 0.8,
+	SizeZ = 0.65,
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="xsb1103",
+
+	CollisionOffsetY = 0.25,
+	SizeX = 0.65,
+	SizeY = 0.8,
+	SizeZ = 0.65,
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="uab1202",
+
+	CollisionOffsetY = 0.25,
+	SizeX = 0.65,
+	SizeY = 0.8,
+	SizeZ = 0.65,
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="ueb1202",
+
+	CollisionOffsetY = 0.25,
+	SizeX = 0.65,
+	SizeY = 0.8,
+	SizeZ = 0.65,
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="urb1202",
+
+	CollisionOffsetY = 0.25,
+	SizeX = 0.65,
+	SizeY = 0.8,
+	SizeZ = 0.65,
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="xsb1202",
+
+	CollisionOffsetY = 0.25,
+	SizeX = 0.65,
+	SizeY = 0.8,
+	SizeZ = 0.65,
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="uab1302",
+
+	CollisionOffsetY = 0.25,
+	SizeX = 0.65,
+	SizeY = 0.8,
+	SizeZ = 0.65,
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="ueb1302",
+
+	CollisionOffsetY = 0.25,
+	SizeX = 0.65,
+	SizeY = 0.8,
+	SizeZ = 0.65,
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="urb1302",
+
+	CollisionOffsetY = 0.25,
+	SizeX = 0.65,
+	SizeY = 0.8,
+	SizeZ = 0.65,
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="xsb1302",
+
+	CollisionOffsetY = 0.25,
+	SizeX = 0.65,
+	SizeY = 0.8,
+	SizeZ = 0.65,
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="xsb0101",
+    Economy = {
+        StorageEnergy = 100,       
+    },
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="xsb0102",
+    Economy = {
+        StorageEnergy = 100,       
+    },
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="xsb0103",
+    Economy = {
+        StorageEnergy = 100,      
+    },
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="xsb0201",
+    Economy = {
+        StorageEnergy = 100,    
+    },
+    Economy = {
+        StorageEnergy = 100,   
+        BuildCostEnergy = 7600,
+        BuildCostMass = 950,
+        BuildTime = 1900,    
+    },    
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="xsb0202",
+    Economy = {
+        StorageEnergy = 100,     
+        BuildCostEnergy = 19200,
+        BuildCostMass = 720,
+        BuildTime = 2400,     
+    },
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="xsb0203",
+    Economy = {
+        StorageEnergy = 100,     
+        BuildCostEnergy = 7600,
+        BuildCostMass = 950,
+        BuildTime = 1900,            
+    },
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="xsb0301",
+    Economy = {
+    	BuildRate = 80,
+        BuildCostEnergy = 37800,
+        BuildCostMass = 5400,
+        BuildTime = 10800,  
+        StorageEnergy = 100,            
+    },
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="xsb0302",
+    Economy = {
+        BuildCostEnergy = 70000,
+        BuildCostMass = 4200,
+        BuildTime = 14000,   
+        StorageEnergy = 100,        
+    },
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="xsb0303",
+    Economy = {
+        BuildCostEnergy = 41600,
+        BuildCostMass = 5720,
+        BuildTime = 10400, 
+        StorageEnergy = 100,       
+    },
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="xsb0304",
+    Economy = {
+        BuildCostEnergy = 36000,
+        BuildCostMass = 3600,
+        BuildTime = 3600,      
+        BuildRate = 300,   
+        MinConsumptionPerSecondEnergy = 1000,          
+    },
+    Weapon = {
+    {               
+    Damage = 2000,
+    DamageFriendly = true,
+    DamageRadius = 5,
+    DamageType = 'Normal',
+    DummyWeapon = true,
+    Label = 'DeathWeapon',
+    },
+    }    
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="xsb2101",
+    
+    Weapon = {
+        {
+        MaxRadius = 30,
+        },
+    },                         	 
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="xsb2104",
+
+    Weapon = {
+        {
+        Damage = 3,
+  		MuzzleVelocity = 60,
+		FiringRandomness = 3.7,
+        },
+    },            	 
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="xsb2204",
+
+    Weapon = {
+        {
+            MuzzleVelocity = 65,            
+            Damage = 8.4,
+            DamageRadius = 1.1,
+			LeadTarget = true, 
+            FiringRandomness = 3.5,
+        },
+        {
+    	Damage = 450,
+    	DamageFriendly = true,
+    	DamageRadius = 2,
+    	DamageType = 'Normal',
+    	DummyWeapon = true,
+    	Label = 'DeathWeapon',
+    	},        
+    },            	 
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="xsb2304",
+
+    Weapon = {
+        {
+    	Damage = 260,
+    	RateOfFire = 0.194,
+    	MuzzleVelocity = 65,
+        },
+        {
+    	Damage = 1050,
+    	DamageFriendly = true,
+    	DamageRadius = 2,
+    	DamageType = 'Normal',
+    	DummyWeapon = true,
+    	Label = 'DeathWeapon',
+    	},  
+    },            	 
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="xsb2305",
+	
+	Economy = {
+    		BuildCostEnergy = 625000,
+    		BuildCostMass = 65000,
+    		BuildTime = 37500,
+    },	
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="xea0002",
+		
+    Weapon = {
+        {
+        	EnergyDrainPerSecond = 2000,
+            EnergyRequired = 6000,
+        	Damage = 125,
+        },
+    },            	 
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="xeb2306",
+
+    Economy = {
+        BuildCostEnergy = 16000,
+        BuildCostMass = 1800,
+        BuildTime = 1500,
+    },	
+ 	Weapon = {
+    {
+            Audio = {
+                Fire = Sound {
+                    Bank = 'UELWeapon',
+                    Cue = 'UEL0106_MachineGun',
+                    LodCutoff = 'Weapon_LodCutoff',
+                },
+            },
+    		Damage = 105,
+    		DamageRadius = 0.1,
+    		MaxRadius = 60,
+    		MuzzleVelocity = 55,
+    		MuzzleSalvoSize = 5,
+    		RackSalvoChargeTime = 0.5,
+            RackSalvoReloadTime = 0.5,
+            TurretPitchSpeed = 30,
+            TurretYawSpeed = 35,    
+    },
+    {
+    Damage = 2500,
+    DamageFriendly = true,
+    DamageRadius = 3.5,
+    DamageType = 'Normal',
+    DummyWeapon = true,
+    Label = 'DeathWeapon',
+    },    
+    },	   
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="xeb2402",
+
+	Economy = {
+        BuildCostMass = 64200,
+        BuildTime = 33800,
+    },
+    Defense = {
+        Health = 14000,
+        MaxHealth = 14000,
+    },	   
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="xab2307",
+
+    Defense = {
+        Health = 16000,
+        MaxHealth = 16000,
+    },
+ 	Weapon = {
+    {
+            EnergyDrainPerSecond = 15000,
+            EnergyRequired = 30000,  
+            FiringRandomness = 0.5,
+            Damage = 160,
+    },
+    {
+    Damage = 4500,
+    DamageFriendly = true,
+    DamageRadius = 6,
+    DamageType = 'Normal',
+    DummyWeapon = true,
+    Label = 'DeathWeapon',
+    },    
+    },	   
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="xrb2308",
+
+	Defense = {
+        Health = 16000,
+        MaxHealth = 16000,
+    },		
+    Weapon = {
+    {
+    },
+    {
+    Damage = 2000,
+    DamageFriendly = true,
+    DamageRadius = 4,
+    DamageType = 'Normal',
+    DummyWeapon = true,
+    Label = 'DeathWeapon',
+    },
+ 	}
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="urb4201",
+
+    Weapon = {
+        {
+        RateOfFire = 1.6,	
+        TargetCheckInterval = 0.2,
+        },
+    },            	 
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="ueb4201",
+
+    Economy = {
+        BuildCostEnergy = 3400,
+        BuildCostMass = 300,
+        BuildTime = 410,
+    },	
+    Weapon = {
+        {
+        RateOfFire = 2.0,
+        TargetCheckInterval = 0.2,
+        },
+    },            	 
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="ueb2108",
+
+    Weapon = {
+    	{
+    	ProjectileId = '/mods/4th_Dimension_212/hook/projectiles/TIFMissileCruise01/TIFMissileCruise01_proj.bp',
+    	},                    
+    },            	 
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="urb2108",
+
+    Weapon = {
+    	{
+    	ProjectileId = '/mods/4th_Dimension_212/hook/projectiles/CIFMissileTactical03/CIFMissileTactical03_proj.bp',
+    	},                    
+    },            	 
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="uab2302",
+
+    Economy = {
+    BuildCostEnergy = 1136500,
+    BuildCostMass = 115500,
+    BuildTime = 31050,
+    },	
+ 	Weapon = {
+    {
+    Damage = 5500,
+    MuzzleVelocity = 80,
+    BallisticArc = 'RULEUBA_LowArc',
+    },
+    {
+    Damage = 2500,
+    DamageFriendly = true,
+    DamageRadius = 7,
+    DamageType = 'Normal',
+    DummyWeapon = true,
+    Label = 'DeathWeapon',
+    },    
+    },	   
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="ueb2302",
+
+    Economy = {
+    BuildCostEnergy = 1113750,
+    BuildCostMass = 113400,
+    BuildTime = 30375,
+    },	
+ 	Weapon = {
+    {
+    Damage = 9100,
+    RateOfFire = 0.0625,
+    MuzzleVelocity = 80,
+    BallisticArc = 'RULEUBA_LowArc',    
+    },
+    {
+    Damage = 2500,
+    DamageFriendly = true,
+    DamageRadius = 7,
+    DamageType = 'Normal',
+    DummyWeapon = true,
+    Label = 'DeathWeapon',
+    },
+    },	   
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="urb2302",
+
+    Economy = {
+    BuildCostEnergy = 1184625,
+    BuildCostMass = 99500,
+    BuildTime = 29000,
+    },	
+ 	Weapon = {
+    {
+    Damage = 7000,
+    RateOfFire = 0.0625,
+    MuzzleVelocity = 80,
+    BallisticArc = 'RULEUBA_LowArc',    
+    },
+    {
+    Damage = 2500,
+    DamageFriendly = true,
+    DamageRadius = 7,
+    DamageType = 'Normal',
+    DummyWeapon = true,
+    Label = 'DeathWeapon',
+    },    
+    },	   
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="ueb2401",
+
+    Defense = {
+        Health = 24000,
+        MaxHealth = 24000,
+    },	
+ 	Weapon = {
+    {
+    EnergyDrainPerSecond = 10000,
+    EnergyRequired = 40000,
+    FiringRandomness = 1.3,
+    MuzzleVelocity = 140,
+	DamageRadius = 5,
+  
+    },
+    },	   
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="xsb1101",
+
+ 	Weapon = {
+    {
+    Damage = 500,
+    DamageFriendly = true,
+    DamageRadius = 4,
+    DamageType = 'Normal',
+    DummyWeapon = true,
+    Label = 'DeathWeapon',
+    },
+    },	   
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="uab1101",
+
+ 	Weapon = {
+    {
+    Damage = 500,
+    DamageFriendly = true,
+    DamageRadius = 4,
+    DamageType = 'Normal',
+    DummyWeapon = true,
+    Label = 'DeathWeapon',
+    },
+    },	   
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="ueb1101",
+
+ 	Weapon = {
+    {
+    Damage = 500,
+    DamageFriendly = true,
+    DamageRadius = 4,
+    DamageType = 'Normal',
+    DummyWeapon = true,
+    Label = 'DeathWeapon',
+    },
+    },	   
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="urb1101",
+
+ 	Weapon = {
+    {
+    Damage = 500,
+    DamageFriendly = true,
+    DamageRadius = 4,
+    DamageType = 'Normal',
+    DummyWeapon = true,
+    Label = 'DeathWeapon',
+    },
+    },	   
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="xsb1201",
+
+ 	Weapon = {
+    {
+    Damage = 1800,
+    DamageFriendly = true,
+    DamageRadius = 6,
+    DamageType = 'Normal',
+    DummyWeapon = true,
+    Label = 'DeathWeapon',
+    },
+    },	   
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="uab1201",
+
+ 	Weapon = {
+    {
+    Damage = 1800,
+    DamageFriendly = true,
+    DamageRadius = 6,
+    DamageType = 'Normal',
+    DummyWeapon = true,
+    Label = 'DeathWeapon',
+    },
+    },	   
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="ueb1201",
+
+ 	Weapon = {
+    {
+    Damage = 1800,
+    DamageFriendly = true,
+    DamageRadius = 6,
+    DamageType = 'Normal',
+    DummyWeapon = true,
+    Label = 'DeathWeapon',
+    },
+    },	   
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="urb1201",
+
+ 	Weapon = {
+    {
+    Damage = 1800,
+    DamageFriendly = true,
+    DamageRadius = 6,
+    DamageType = 'Normal',
+    DummyWeapon = true,
+    Label = 'DeathWeapon',
+    },
+    },	   
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="uab1103",
+
+   Display = {
+        Tarmacs = {
+            {
+                Albedo = 'Tarmacs/Tar6x_aeon_01_albedo',
+                DeathLifetime = 300,
+                FadeOut = 1,
+                Length = 0.4,
+                Normal = 'Tarmacs/Tar6x_aeon_01_normals',
+                Orientations = {
+                    0,
+                    90,
+                    180,
+                    270,
+                },
+                RemoveWhenDead = false,
+                Width = 0.4,
+            },
+        },
+    },
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="ueb1103",
+
+   Display = {
+        Tarmacs = {
+            {
+                Albedo = 'Tarmacs/Tar6x_01_albedo',
+                DeathLifetime = 300,
+                FadeOut = 1,
+                Length = 0.4,
+                Normal = 'Tarmacs/Tar6x_aeon_01_normals',
+                Orientations = {
+                    0,
+                    90,
+                    180,
+                    270,
+                },
+                RemoveWhenDead = false,
+                Width = 0.4,
+            },
+        },
+    },
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="urb1103",
+
+   Display = {
+        Tarmacs = {
+            {
+                Albedo = 'Tarmacs/Tar6x_cybran_01_albedo',
+                DeathLifetime = 300,
+                FadeOut = 1,
+                Length = 0.4,
+                Normal = 'Tarmacs/Tar6x_aeon_01_normals',
+                Orientations = {
+                    0,
+                    90,
+                    180,
+                    270,
+                },
+                RemoveWhenDead = false,
+                Width = 0.4,
+            },
+        },
+    },
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="uab1202",
+
+   Display = {
+        Tarmacs = {
+            {
+                Albedo = 'Tarmacs/Tar6x_aeon_01_albedo',
+                DeathLifetime = 300,
+                FadeOut = 1,
+                Length = 0.4,
+                Normal = 'Tarmacs/Tar6x_aeon_01_normals',
+                Orientations = {
+                    0,
+                    90,
+                    180,
+                    270,
+                },
+                RemoveWhenDead = false,
+                Width = 0.4,
+            },
+        },
+    },
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="ueb1202",
+
+   Display = {
+        Tarmacs = {
+            {
+                Albedo = 'Tarmacs/Tar6x_01_albedo',
+                DeathLifetime = 300,
+                FadeOut = 1,
+                Length = 0.4,
+                Normal = 'Tarmacs/Tar6x_aeon_01_normals',
+                Orientations = {
+                    0,
+                    90,
+                    180,
+                    270,
+                },
+                RemoveWhenDead = false,
+                Width = 0.4,
+            },
+        },
+    },
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="urb1202",
+
+   Display = {
+        Tarmacs = {
+            {
+                Albedo = 'Tarmacs/Tar6x_cybran_01_albedo',
+                DeathLifetime = 300,
+                FadeOut = 1,
+                Length = 0.4,
+                Normal = 'Tarmacs/Tar6x_aeon_01_normals',
+                Orientations = {
+                    0,
+                    90,
+                    180,
+                    270,
+                },
+                RemoveWhenDead = false,
+                Width = 0.4,
+            },
+        },
+    },
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="uab1302",
+
+   Display = {
+        Tarmacs = {
+            {
+                Albedo = 'Tarmacs/Tar6x_aeon_01_albedo',
+                DeathLifetime = 300,
+                FadeOut = 1,
+                Length = 0.4,
+                Normal = 'Tarmacs/Tar6x_aeon_01_normals',
+                Orientations = {
+                    0,
+                    90,
+                    180,
+                    270,
+                },
+                RemoveWhenDead = false,
+                Width = 0.4,
+            },
+        },
+    },
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="ueb1302",
+
+   Display = {
+        Tarmacs = {
+            {
+                Albedo = 'Tarmacs/Tar6x_01_albedo',
+                DeathLifetime = 300,
+                FadeOut = 1,
+                Length = 0.4,
+                Normal = 'Tarmacs/Tar6x_aeon_01_normals',
+                Orientations = {
+                    0,
+                    90,
+                    180,
+                    270,
+                },
+                RemoveWhenDead = false,
+                Width = 0.4,
+            },
+        },
+    },
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="urb1302",
+
+   Display = {
+        Tarmacs = {
+            {
+                Albedo = 'Tarmacs/Tar6x_cybran_01_albedo',
+                DeathLifetime = 300,
+                FadeOut = 1,
+                Length = 0.4,
+                Normal = 'Tarmacs/Tar6x_aeon_01_normals',
+                Orientations = {
+                    0,
+                    90,
+                    180,
+                    270,
+                },
+                RemoveWhenDead = false,
+                Width = 0.4,
+            },
+        },
+    },
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="urb4207",
+
+    Defense = {
+        Shield = {
+            ShieldMaxHealth = 16000,
+        },
+    },
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="uab2304",
+
+    Defense = {
+        Health = 8000,
+        MaxHealth = 8000,
+    },		
+   	Weapon = {
+    {
+    Damage = 260,
+    RateOfFire = 0.164,
+    MuzzleVelocity = 28,
+    },
+    {
+    Damage = 1050,
+    DamageFriendly = true,
+    DamageRadius = 2,
+    DamageType = 'Normal',
+    DummyWeapon = true,
+    Label = 'DeathWeapon',
+    },    
+    },	
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="ueb2304",
+
+    Defense = {
+        Health = 8500,
+        MaxHealth = 8500,
+    },		
+   	Weapon = {
+        {
+            Damage = 170,
+            RateOfFire = 0.182,
+            MuzzleVelocity = 28,
+            MuzzleSalvoDelay = 0.3,
+            MuzzleSalvoSize = 3,
+        },
+    {
+    Damage = 1050,
+    DamageFriendly = true,
+    DamageRadius = 2,
+    DamageType = 'Normal',
+    DummyWeapon = true,
+    Label = 'DeathWeapon',
+    },        
+    },	
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="urb2304",
+
+    Defense = {
+        Health = 8000,
+        MaxHealth = 8000,
+    },		
+	SizeZ = 0.6,
+   	Weapon = {
+        {
+            ProjectilesPerOnFire = 4,            
+            Damage = 130,
+            RateOfFire = 0.173,
+            MuzzleVelocity = 28,
+        },
+    {
+    Damage = 1050,
+    DamageFriendly = true,
+    DamageRadius = 2,
+    DamageType = 'Normal',
+    DummyWeapon = true,
+    Label = 'DeathWeapon',
+    },
+    },	
+}
+
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="uab3104",
+    Intel = {
+        OmniRadius = 130,
+        RadarRadius = 500,
+        ReactivateTime = 5,
+        ShowIntelOnSelect = true,
+        SonarRadius = 0,
+        VisionRadius = 30,
+    },
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="ueb3104",
+    Intel = {
+        OmniRadius = 130,
+        RadarRadius = 500,
+        ReactivateTime = 5,
+        ShowIntelOnSelect = true,
+        SonarRadius = 0,
+        VisionRadius = 30,
+    },
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="urb3104",
+    Intel = {
+        OmniRadius = 130,
+        RadarRadius = 500,
+        ReactivateTime = 5,
+        ShowIntelOnSelect = true,
+        SonarRadius = 0,
+        VisionRadius = 30,
+    },
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="uab4203",
+    Intel = {
+        RadarStealthFieldRadius = 24,
+    },
+    Economy = {
+        MaintenanceConsumptionPerSecondEnergy = 400,
+    },    
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="ueb4203",
+    Intel = {
+        RadarStealthFieldRadius = 24,
+    },
+    Economy = {
+        MaintenanceConsumptionPerSecondEnergy = 350,
+    },
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="urb4203",
+    Intel = {
+        RadarStealthFieldRadius = 32,
+    },
+    Economy = {
+        MaintenanceConsumptionPerSecondEnergy = 450,
+    },
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="xrb3301",
+
+    Economy = {
+        BuildTime = 4000,     
+    },	
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="xsb1105",
+    Economy = {
+        BuildCostEnergy = 4200,
+        BuildCostMass = 300,
+        BuildTime = 300,     
+    },
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="uab1105",
+    Economy = {
+        BuildCostEnergy = 4200,
+        BuildCostMass = 300,
+        BuildTime = 300,     
+    },
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="ueb1105",
+    Economy = {
+        BuildCostEnergy = 4200,
+        BuildCostMass = 300,
+        BuildTime = 300,     
+    },
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="urb1105",
+    Economy = {
+        BuildCostEnergy = 4200,
+        BuildCostMass = 300,
+        BuildTime = 300,     
+    },
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="uab0101",
+    Economy = {
+        StorageEnergy = 100,        
+    },
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="ueb0101",
+    Economy = {
+        StorageEnergy = 100,     
+    },
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="urb0101",
+    Economy = {
+        StorageEnergy = 100,       
+    },
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="uab0102",
+    Economy = {
+        StorageEnergy = 100,       
+    },
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="ueb0102",
+    Economy = {
+        StorageEnergy = 100,    
+    },
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="urb0102",
+    Economy = {
+        StorageEnergy = 100,      
+    },
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="uab0103",
+    Economy = {
+        StorageEnergy = 100,       
+    },
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="ueb0103",
+    Economy = {
+    	BuildableCategory = {
+        'BUILTBYTIER1FACTORY UEF MOBILE HOVER',
+     	},
+        StorageEnergy = 100,    
+    },
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="urb0103",
+    Economy = {
+        StorageEnergy = 100,      
+    },
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="uab0201",
+    Economy = {
+        StorageEnergy = 100,       
+    },
+    Economy = {
+        StorageEnergy = 100,   
+        BuildCostEnergy = 7600,
+        BuildCostMass = 950,
+        BuildTime = 1900,    
+    },    
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="ueb0201",
+    Economy = {
+        StorageEnergy = 100,    
+    },
+    Economy = {
+        StorageEnergy = 100,   
+        BuildCostEnergy = 7600,
+        BuildCostMass = 950,
+        BuildTime = 1900,    
+    },    
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="urb0201",
+    Economy = {
+        StorageEnergy = 100,      
+    },
+    Economy = {
+        StorageEnergy = 100,   
+        BuildCostEnergy = 7600,
+        BuildCostMass = 950,
+        BuildTime = 1900,    
+    },    
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="uab0202",
+    Economy = {
+        StorageEnergy = 100,     
+        BuildCostEnergy = 19200,
+        BuildCostMass = 720,
+        BuildTime = 2400,     
+    },
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="ueb0202",
+    Economy = {
+        StorageEnergy = 100, 
+        BuildCostEnergy = 19200,
+        BuildCostMass = 720,
+        BuildTime = 2400,             
+    },
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="urb0202",
+    Economy = {
+        StorageEnergy = 100,     
+        BuildCostEnergy = 19200,
+        BuildCostMass = 720,
+        BuildTime = 2400,           
+    },
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="uab0203",
+    Economy = {
+        StorageEnergy = 100,     
+        BuildCostEnergy = 7600,
+        BuildCostMass = 950,
+        BuildTime = 1900,            
+    },
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="ueb0203",
+    Economy = {
+        StorageEnergy = 100,
+        BuildCostEnergy = 7600,
+        BuildCostMass = 950,
+        BuildTime = 1900,  
+        BuildableCategory = { 
+          'BUILTBYTIER2FACTORY UEF MOBILE HOVER', 
+      	},              
+    },
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="urb0203",
+    Economy = {
+        StorageEnergy = 100,  
+        BuildCostEnergy = 7600,
+        BuildCostMass = 950,
+        BuildTime = 1900,               
+    },
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="uab0304",
+    Economy = {
+        BuildCostEnergy = 36000,
+        BuildCostMass = 3600,
+        BuildTime = 3600,        
+        BuildRate = 300,     
+        MinConsumptionPerSecondEnergy = 1000,
+    },
+    Weapon = {
+    {
+    Damage = 2000,
+    DamageFriendly = true,
+    DamageRadius = 5,
+    DamageType = 'Normal',
+    DummyWeapon = true,
+    Label = 'DeathWeapon',
+    },
+    }    
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="ueb0304",
+    Economy = {
+        BuildCostEnergy = 36000,
+        BuildCostMass = 3600,
+        BuildTime = 3600,      
+        BuildRate = 300,   
+        MinConsumptionPerSecondEnergy = 1000,          
+    },
+    Weapon = {
+    {               
+    Damage = 2000,
+    DamageFriendly = true,
+    DamageRadius = 5,
+    DamageType = 'Normal',
+    DummyWeapon = true,
+    Label = 'DeathWeapon',
+    },
+    }    
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="urb0304",
+    Economy = {          
+        BuildCostEnergy = 36000,
+        BuildCostMass = 3600,
+        BuildTime = 3600,     
+        BuildRate = 300,  
+        MinConsumptionPerSecondEnergy = 1000,                          
+    },
+    Weapon = {
+    {              
+    Damage = 2000,
+    DamageFriendly = true,
+    DamageRadius = 5,
+    DamageType = 'Normal',
+    DummyWeapon = true,
+    Label = 'DeathWeapon',
+    },
+    }    
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="uab0303",
+    Economy = {
+        BuildCostEnergy = 44800,
+        BuildCostMass = 6160,
+        BuildTime = 11200,  
+        StorageEnergy = 100,              
+    },
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="ueb0303",
+    Economy = {
+        BuildCostEnergy = 41600,
+        BuildCostMass = 5720,
+        BuildTime = 10400, 
+        StorageEnergy = 100, 
+        BuildableCategory = { 
+          'BUILTBYTIER3FACTORY UEF MOBILE HOVER', 
+      	},       
+    },
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="urb0303",
+    Economy = {
+        BuildCostEnergy = 43200,
+        BuildCostMass = 5880,
+        BuildTime = 10800,   
+        StorageEnergy = 100,           
+    },
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="uab0301",
+    Economy = {
+    	BuildRate = 80,
+        BuildCostEnergy = 39200,
+        BuildCostMass = 5600,
+        BuildTime = 11200,   
+        StorageEnergy = 100,        
+    },
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="ueb0301",
+    Economy = {
+    	BuildRate = 80,
+        BuildCostEnergy = 36400,
+        BuildCostMass = 5200,
+        BuildTime = 10400,  
+        StorageEnergy = 100,         
+    },
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="urb0301",
+    Economy = {
+    	BuildRate = 80,
+        BuildCostEnergy = 37800,
+        BuildCostMass = 5400,
+        BuildTime = 10800,  
+        StorageEnergy = 100,            
+    },
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="uab0302",
+    Economy = {
+        BuildCostEnergy = 70000,
+        BuildCostMass = 4200,
+        BuildTime = 14000,   
+        StorageEnergy = 100,        
+    },
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="ueb0302",
+    Economy = {
+        BuildCostEnergy = 65000,
+        BuildCostMass = 3900,
+        BuildTime = 13000,   
+        StorageEnergy = 100,        
+    },
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="urb0302",
+    Economy = {
+        BuildCostEnergy = 67000,
+        BuildCostMass = 4020,
+        BuildTime = 13400,  
+        StorageEnergy = 100,         
+    },
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="xsb1104",
+    Economy = {
+        MaintenanceConsumptionPerSecondEnergy = 100,
+        ProductionPerSecondMass = 1,
+    },
+    Weapon = {
+    {
+    Damage = 520,
+    DamageRadius = 5,
+    },
+ 	}
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="uab1104",
+    Economy = {
+        MaintenanceConsumptionPerSecondEnergy = 100,
+        ProductionPerSecondMass = 1,
+    },
+    Weapon = {
+    {
+    Damage = 520,
+    DamageRadius = 5,
+    },
+ 	}
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="ueb1104",
+    Economy = {
+        MaintenanceConsumptionPerSecondEnergy = 100,
+        ProductionPerSecondMass = 1,
+    },
+    Weapon = {
+    {
+    Damage = 520,
+    DamageRadius = 5,
+    },
+ 	}
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="urb1104",
+    Economy = {
+        MaintenanceConsumptionPerSecondEnergy = 100,
+        ProductionPerSecondMass = 1,
+    },
+    Weapon = {
+    {
+    Damage = 520,
+    DamageRadius = 5,
+    },
+ 	} 
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="xsb1303",
+    Economy = {
+    	BuildCostEnergy = 100000,
+        BuildCostMass = 800,
+        BuildTime = 3000,
+        MaintenanceConsumptionPerSecondEnergy = 1875,
+        ProductionPerSecondMass = 15,
+    },
+    Defense = {
+        Health = 6000,
+        MaxHealth = 6000,
+    },    
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="uab1303",
+    Economy = {
+    	BuildCostEnergy = 100000,
+        BuildCostMass = 800,
+        BuildTime = 3000,
+        MaintenanceConsumptionPerSecondEnergy = 1875,
+        ProductionPerSecondMass = 15,
+    },
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="ueb1303",
+    Economy = {
+    	BuildCostEnergy = 105000,
+        BuildCostMass = 840,
+        BuildTime = 3150,
+        MaintenanceConsumptionPerSecondEnergy = 1875,
+        ProductionPerSecondMass = 15,
+    },
+    Defense = {
+        Health = 6900,
+        MaxHealth = 6900,
+    },    
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="urb1303",
+    Economy = {
+        BuildCostEnergy = 120000,
+        BuildCostMass = 960,
+        BuildTime = 3600,
+        MaintenanceConsumptionPerSecondEnergy = 2250,
+        ProductionPerSecondMass = 18,
+    },
+    Defense = {
+        Health = 7200,
+        MaxHealth = 7200,
+    },    
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="xsb1301",
+
+    Economy = {
+        BuildCostMass = 4240,
+    },		
+    Weapon = {
+    {
+    Damage = 8200,
+    },
+ 	}
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="uab1301",
+
+    Economy = {
+        BuildCostMass = 4240,
+    },		
+    Weapon = {
+    {
+    Damage = 8200,
+    },
+ 	}
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="urb1301",
+    Economy = {
+        BuildCostEnergy = 69120,
+        BuildCostMass = 5088,
+        BuildTime = 6480,
+        ProductionPerSecondEnergy = 3000,
+    },
+    Defense = {
+        Health = 11664,
+        MaxHealth = 11664,
+    },    
+    Weapon = {
+    {
+    Damage = 8200,
+    },
+ 	}     
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="ueb1301",
+
+    Economy = {
+        BuildCostEnergy = 60480,
+        BuildCostMass = 4452,
+        BuildTime = 5670,
+    },
+    Defense = {
+        Health = 10692,
+        MaxHealth = 10692,
+    },	
+    Weapon = {
+    {
+    Damage = 8200,
+    },
+ 	}    
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="uab1105",
+
+	Display = {
+	UniformScale = 0.15,
+	},	
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="xsb1106",
+
+    Economy = {
+        StorageMass = 1000,
+    },	
+	Display = {
+	},	
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="uab1106",
+
+    Economy = {
+        StorageMass = 1000,
+    },	
+	Display = {
+	UniformScale = 0.16,
+	},	
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="ueb1106",
+
+    Economy = {
+        StorageMass = 1000,
+    },	
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="urb1106",
+
+	Economy = {
+        StorageMass = 1000,
+    },	
+	Display = {
+	UniformScale = 0.42,
+	},	
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="xsb1102",
+
+    Defense = {
+        Health = 4880,
+        MaxHealth = 4880,
+    },		
+    Economy = {
+        BuildCostEnergy = 1600,
+        BuildCostMass = 320,
+        BuildTime = 800,
+        ProductionPerSecondEnergy = 250,
+    },	
+    Weapon = {
+    {
+    Damage = 1600,
+    DamageFriendly = true,
+    DamageRadius = 5,
+    DamageType = 'Normal',
+    DummyWeapon = true,
+    Label = 'DeathWeapon',
+    },
+    }
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="uab1102",
+
+    Defense = {
+        Health = 4880,
+        MaxHealth = 4880,
+    },		
+    Economy = {
+        BuildCostEnergy = 1600,
+        BuildCostMass = 320,
+        BuildTime = 800,
+        ProductionPerSecondEnergy = 250,
+    },	
+    Weapon = {
+    {
+    Damage = 4600,
+    DamageFriendly = true,
+    DamageRadius = 5,
+    DamageType = 'Normal',
+    DummyWeapon = true,
+    Label = 'DeathWeapon',
+    },
+    }
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="ueb1102",
+
+    Defense = {
+        Health = 5500,
+        MaxHealth = 5500,
+    },		
+    Economy = {
+        BuildCostEnergy = 1700,
+        BuildCostMass = 340,
+        BuildTime = 850,
+        ProductionPerSecondEnergy = 250,
+    },	
+    Weapon = {
+    {
+    Damage = 1600,
+    DamageFriendly = true,
+    DamageRadius = 5,
+    DamageType = 'Normal',
+    DummyWeapon = true,
+    Label = 'DeathWeapon',
+    },
+    }
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="urb1102",
+
+    Defense = {
+        Health = 4880,
+        MaxHealth = 4880,
+    },		
+    Economy = {
+        BuildCostEnergy = 1600,
+        BuildCostMass = 320,
+        BuildTime = 800,
+        ProductionPerSecondEnergy = 250,
+    },	
+    Weapon = {
+    {
+    Damage = 1600,
+    DamageFriendly = true,
+    DamageRadius = 5,
+    DamageType = 'Normal',
+    DummyWeapon = true,
+    Label = 'DeathWeapon',
+    },
+    }
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="uab2303",
+
+    Economy = {
+        BuildCostEnergy = 29700,
+        BuildCostMass = 4058,
+        BuildTime = 2970,
+    },			
+    Weapon = {
+    {
+    EnergyDrainPerSecond = 500,
+    Damage = 400,
+    },
+    {
+    Damage = 1600,
+    DamageFriendly = true,
+    DamageRadius = 3,
+    DamageType = 'Normal',
+    DummyWeapon = true,
+    Label = 'DeathWeapon',
+    },
+    }
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="ueb2303",
+
+    Economy = {
+        BuildCostEnergy = 27000,
+        BuildCostMass = 3780,
+        BuildTime = 2700,
+    },			
+    Weapon = {
+    {
+    EnergyDrainPerSecond = 500,
+    DamageRadius = 2.5,    
+    },
+    {
+    Damage = 1600,
+    DamageFriendly = true,
+    DamageRadius = 3,
+    DamageType = 'Normal',
+    DummyWeapon = true,
+    Label = 'DeathWeapon',
+    },    
+	}
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="urb2303",
+
+    Economy = {
+        BuildCostEnergy = 24000,
+        BuildCostMass = 3360,
+        BuildTime = 2400,
+    },				
+    Weapon = {
+    {
+    EnergyDrainPerSecond = 500,
+    DamageRadius = 3.5,
+    },
+    {
+    Damage = 1600,
+    DamageFriendly = true,
+    DamageRadius = 3,
+    DamageType = 'Normal',
+    DummyWeapon = true,
+    Label = 'DeathWeapon',
+    },
+ 	}
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="xsb2303",
+
+	Economy = {
+        BuildCostEnergy = 28500,
+        BuildCostMass = 3990,
+        BuildTime = 2850,
+    },			
+    Weapon = {
+    {
+    EnergyDrainPerSecond = 500,
+    },
+    {
+    Damage = 1600,
+    DamageFriendly = true,
+    DamageRadius = 3,
+    DamageType = 'Normal',
+    DummyWeapon = true,
+    Label = 'DeathWeapon',
+    },    
+	}
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="uab2101",
+	
+    Weapon = {
+    {
+    Damage = 100,
+    RateOfFire = 1.5,    
+    MaxRadius = 30,
+    MuzzleVelocity = 40, 
+    FiringRandomness = 0.3,
+    },
+    {
+    Damage = 200,
+    DamageFriendly = true,
+    DamageRadius = 1.5,
+    DamageType = 'Normal',
+    DummyWeapon = true,
+    Label = 'DeathWeapon',
+    },
+ 	}
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="ueb2101",
+	
+    Weapon = {
+    {
+    Damage = 75,
+    RateOfFire = 2,
+    MaxRadius = 30,
+	#ProjectileId = '/projectiles/LaserBotTerran01/LaserBotTerran01_proj.bp',    
+    MuzzleVelocity = 50,    
+    FiringRandomness = 0.3,
+    },
+    {
+    Damage = 200,
+    DamageFriendly = true,
+    DamageRadius = 1.5,
+    DamageType = 'Normal',
+    DummyWeapon = true,
+    Label = 'DeathWeapon',
+    },
+ 	}
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="urb2101",
+	
+    Weapon = {
+    {
+    MaxRadius = 30,
+    MuzzleVelocity = 48,    
+    FiringRandomness = 0.3,
+    },
+    {
+    
+    Damage = 200,
+    DamageFriendly = true,
+    DamageRadius = 1.5,
+    DamageType = 'Normal',
+    DummyWeapon = true,
+    Label = 'DeathWeapon',
+    },
+ 	}
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="uab2108",
+
+    Weapon = {
+	    {
+	    MaxRadius = 200,
+	    },
+	},
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="ueb2108",
+
+    Weapon = {
+	    {
+	    MaxRadius = 200,
+	    },
+	},
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="urb2108",
+
+    Weapon = {
+	    {
+	    MaxRadius = 200,
+	    },
+	},
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="xsb2108",
+
+    Weapon = {
+	    {
+	    MaxRadius = 200,
+	    },
+	},
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="uab2109",
+
+	Defense = {
+        Health = 4000,
+        MaxHealth = 4000,
+    },		
+    Weapon = {
+    {
+    Damage = 150,
+    RateOfFire = 0.35,
+    MaxRadius = 40,
+    },
+    {
+    Damage = 200,
+    DamageFriendly = true,
+    DamageRadius = 1.5,
+    DamageType = 'Normal',
+    DummyWeapon = true,
+    Label = 'DeathWeapon',
+    },
+ 	}
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="ueb2109",
+
+	Defense = {
+        Health = 4000,
+        MaxHealth = 4000,
+    },		
+    Weapon = {
+    {
+    Damage = 200,
+    RateOfFire = 0.26,
+    MaxRadius = 40,
+    },
+    {
+    Damage = 200,
+    DamageFriendly = true,
+    DamageRadius = 1.5,
+    DamageType = 'Normal',
+    DummyWeapon = true,
+    Label = 'DeathWeapon',
+    },
+ 	}
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="urb2109",
+
+	Defense = {
+        Health = 3400,
+        MaxHealth = 3400,
+    },		
+    Weapon = {
+    {
+    Damage = 30,
+    },
+    {
+    Damage = 200,
+    DamageFriendly = true,
+    DamageRadius = 1.5,
+    DamageType = 'Normal',
+    DummyWeapon = true,
+    Label = 'DeathWeapon',
+    },
+ 	}
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="uab2205",
+
+	Defense = {
+        Health = 10000,
+        MaxHealth = 10000,
+    },		
+    Weapon = {
+    {
+    Damage = 240,
+    },
+    {
+    Damage = 2000,
+    DamageFriendly = true,
+    DamageRadius = 4,
+    DamageType = 'Normal',
+    DummyWeapon = true,
+    Label = 'DeathWeapon',
+    },
+ 	}
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="ueb2205",
+
+	Defense = {
+        Health = 12000,
+        MaxHealth = 12000,
+    },		
+    Weapon = {
+    {
+    Damage = 225,
+    },
+    {
+    Damage = 2000,
+    DamageFriendly = true,
+    DamageRadius = 4,
+    DamageType = 'Normal',
+    DummyWeapon = true,
+    Label = 'DeathWeapon',
+    },
+ 	}
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="urb2205",
+
+	Defense = {
+        Health = 11000,
+        MaxHealth = 11000,
+    },		
+    Weapon = {
+    {
+    Damage = 70,
+    },
+    {
+    Damage = 2000,
+    DamageFriendly = true,
+    DamageRadius = 4,
+    DamageType = 'Normal',
+    DummyWeapon = true,
+    Label = 'DeathWeapon',
+    },
+ 	}
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="uab2301",
+
+    Weapon = {
+    {
+    Damage = 700,       
+    ProjectileLifetime = 1.7,    
+    LeadTarget = true,    
+    DamageRadius = 1.3,    
+    FiringRandomness = 0.8,
+    },
+    {
+    Damage = 400,
+    DamageFriendly = true,
+    DamageRadius = 2.5,
+    DamageType = 'Normal',
+    DummyWeapon = true,
+    Label = 'DeathWeapon',
+    },
+ 	}
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="ueb2301",
+	
+    Weapon = {
+    {   
+    MuzzleVelocity = 55,
+    Damage = 93,
+    DamageRadius = 1.0,    
+    ProjectileLifetime = 0.87,    
+    LeadTarget = true,
+    FiringRandomness = 0.8,
+    RateOfFire = 0.45,
+    },
+    {
+    Damage = 400,
+    DamageFriendly = true,
+    DamageRadius = 2.5,
+    DamageType = 'Normal',
+    DummyWeapon = true,
+    Label = 'DeathWeapon',
+    },
+ 	}
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="urb2301",
+	
+    Weapon = {
+    {
+    BeamLifetime = 0.8,
+    MuzzleSalvoSize = 10,
+    Damage = 35,
+    RateOfFire = 0.3,    
+    RackReloadTimeout = 10,
+    },
+    {
+    Damage = 400,
+    DamageFriendly = true,
+    DamageRadius = 2.5,
+    DamageType = 'Normal',
+    DummyWeapon = true,
+    Label = 'DeathWeapon',
+    },
+ 	}
+}
+
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="uab2104",
+	
+    Weapon = {
+    {
+    Damage = 3,
+  	MuzzleVelocity = 60,
+	FiringRandomness = 3.7,
+    },
+    {
+    Damage = 150,
+    DamageFriendly = true,
+    DamageRadius = 1,
+    DamageType = 'Normal',
+    DummyWeapon = true,
+    Label = 'DeathWeapon',
+    },
+ 	}
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="ueb2104",
+	
+    Weapon = {
+	{
+	Damage = 5,
+	MuzzleVelocity = 60,
+	FiringRandomness = 3.5,
+    },
+    {
+    Damage = 150,
+    DamageFriendly = true,
+    DamageRadius = 1,
+    DamageType = 'Normal',
+    DummyWeapon = true,
+    Label = 'DeathWeapon',
+    },
+ 	}
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="urb2104",
+	
+    Weapon = {
+	{
+	RateOfFire = 1.5,
+	Damage = 5,
+	MuzzleVelocity = 60,	
+	FiringRandomness = 3.5,
+    },
+    {
+    Damage = 150,
+    DamageFriendly = true,
+    DamageRadius = 1,
+    DamageType = 'Normal',
+    DummyWeapon = true,
+    Label = 'DeathWeapon',
+    },
+ 	}
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="uab2204",
+	
+    Weapon = {
+	{
+            MuzzleVelocity = 65,            
+            CollideFriendly = false,
+            Damage = 5,
+            DamageRadius = 1.0,
+			LeadTarget = true, 
+            RackSalvoReloadTime = 0.75,
+            RateOfFire = 4.6,
+            FiringRandomness = 3.5,
+    },
+    {
+    Damage = 650,
+    DamageFriendly = true,
+    DamageRadius = 2,
+    DamageType = 'Normal',
+    DummyWeapon = true,
+    Label = 'DeathWeapon',
+    },
+ 	}
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="ueb2204",
+	
+    Weapon = {
+	 {
+	   	Audio = {
+                Fire = Sound {
+                    Bank = 'UELWeapon',
+                    Cue = 'UEB2104_Railgun',
+                    LodCutoff = 'Weapon_LodCutoff',
+                },
+        },
+        	ProjectileId = '/projectiles/CAABurstCloud01/CAABurstCloud01_proj.bp',
+            MuzzleVelocity = 65,            
+            CollideFriendly = false,
+            Damage = 5.5,
+            DamageRadius = 1.2,
+			LeadTarget = true, 
+            RateOfFire = 4,
+            FiringRandomness = 3.5,
+        },
+    {
+    Damage = 650,
+    DamageFriendly = true,
+    DamageRadius = 2,
+    DamageType = 'Normal',
+    DummyWeapon = true,
+    Label = 'DeathWeapon',
+    },
+ 	}
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="urb2204",
+	
+    Weapon = {
+	{
+            MuzzleVelocity = 65,
+            CollideFriendly = false,
+            Damage = 4.0,
+            DamageRadius = 1.1,
+			LeadTarget = true, 
+            RateOfFire = 3.3,
+            FiringRandomness = 3.5,
+        },
+    {
+    Damage = 650,
+    DamageFriendly = true,
+    DamageRadius = 2,
+    DamageType = 'Normal',
+    DummyWeapon = true,
+    Label = 'DeathWeapon',
+    },
+ 	}
+}
+
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="uab1303",
+	
+    Weapon = {
+    {
+    Damage = 4000,
+    DamageRadius = 8,
+    },
+ 	}
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="ueb1303",
+	
+    Weapon = {
+    {
+    Damage = 4000,
+    DamageRadius = 8,
+    },
+ 	}
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="urb1303",
+	
+    Weapon = {
+    {
+    Damage = 4000,
+    DamageRadius = 8,
+    },
+ 	}
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="uab5101",
+	
+	Display = {
+	UniformScale = 0.16,
+	},
+	Defense = {
+        Health = 5000,
+        MaxHealth = 5000,
+    },
+	Economy = {
+    		BuildCostEnergy = 40,
+    		BuildCostMass = 34,
+    		BuildTime = 50,
+    },
+    Physics = {
+        MeshExtentsX = 1.0,
+        MeshExtentsY = 0.8,
+        MeshExtentsZ = 1.0,
+        SkirtSizeX = 1,
+        SkirtSizeZ = 1,
+    },
+    SelectionSizeX = 1,
+    SelectionSizeZ = 1,
+    SizeX = 1,
+    SizeY = 0.8,
+    SizeZ = 1,
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="ueb5101",
+	
+	Display = {
+	UniformScale = 0.16,
+	},
+	Defense = {
+        Health = 5000,
+        MaxHealth = 5000,
+    },
+	Economy = {
+    		BuildCostEnergy = 40,
+    		BuildCostMass = 34,
+    		BuildTime = 50,
+    },
+    Physics = {
+        MeshExtentsX = 1.0,
+        MeshExtentsY = 0.8,
+        MeshExtentsZ = 1.0,
+        SkirtSizeX = 1,
+        SkirtSizeZ = 1,
+    },
+    SelectionSizeX = 1,
+    SelectionSizeZ = 1,
+    SizeX = 1,
+    SizeY = 0.8,
+    SizeZ = 1,
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="urb5101",
+	
+	Display = {
+	UniformScale = 0.16,
+	},
+	Defense = {
+        Health = 5000,
+        MaxHealth = 5000,
+    },
+	Economy = {
+    		BuildCostEnergy = 40,
+    		BuildCostMass = 34,
+    		BuildTime = 50,
+    },
+    Physics = {
+        MeshExtentsX = 1.0,
+        MeshExtentsY = 0.8,
+        MeshExtentsZ = 1.0,
+        SkirtSizeX = 1,
+        SkirtSizeZ = 1,
+    },
+    SelectionSizeX = 1,
+    SelectionSizeZ = 1,
+    SizeX = 1,
+    SizeY = 0.8,
+    SizeZ = 1,
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="xsb5101",
+	
+	Display = {
+	UniformScale = 0.16,
+	},
+	Defense = {
+        Health = 5000,
+        MaxHealth = 5000,
+    },
+	Economy = {
+    		BuildCostEnergy = 40,
+    		BuildCostMass = 34,
+    		BuildTime = 50,
+    },
+    Physics = {
+        MeshExtentsX = 1.0,
+        MeshExtentsY = 0.8,
+        MeshExtentsZ = 1.0,
+        SkirtSizeX = 1,
+        SkirtSizeZ = 1,
+    },
+    SelectionSizeX = 1,
+    SelectionSizeZ = 1,
+    SizeX = 1,
+    SizeY = 0.8,
+    SizeZ = 1,
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="ueb2305",
+	
+	Economy = {
+    		BuildCostEnergy = 625000,
+    		BuildCostMass = 65000,
+    		BuildTime = 37500,
+    },	
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="urb2305",
+
+	Economy = {
+    		BuildCostEnergy = 625000,
+    		BuildCostMass = 65000,
+    		BuildTime = 37500,
+    },	
+    Weapon = {
+    {
+	ProjectileId = '/projectiles/TIFMissileNuke01/TIFMissileNuke01_proj.bp',
+    },
+ 	}
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="uab2305",
+
+	Economy = {
+    		BuildCostEnergy = 625000,
+    		BuildCostMass = 65000,
+    		BuildTime = 37500,
+    },		
+    Weapon = {
+    {
+	ProjectileId = '/projectiles/TIFMissileNuke01/TIFMissileNuke01_proj.bp',
+    },
+ 	}
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="uab4302",
+
+	Economy = {
+    		BuildCostEnergy = 240000,
+    		BuildCostMass = 21000,
+    		BuildTime = 9000,
+    },		
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="ueb4302",
+
+	Economy = {
+    		BuildCostEnergy = 240000,
+    		BuildCostMass = 21000,
+    		BuildTime = 9000,
+    },		
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="urb4302",
+
+	Economy = {
+    		BuildCostEnergy = 240000,
+    		BuildCostMass = 21000,
+    		BuildTime = 9000,
+    },		
+}
+
+#================================================= civilians =================================================#
+
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="uec0001",
+
+    Categories = {
+        'UEF',
+        'CIVILIAN',
+        'SELECTABLE',
+        'LAND',
+        'VISIBLETORECON',
+    },	
+		
+	Defense = {
+        Health = 245,
+        MaxHealth = 245,
+        RegenRate = 20,        
+    },
+	Economy = {
+    BuildCostEnergy = 0,
+    BuildCostMass = 1024,
+    BuildTime = 1000,
+    },    
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="uec1101",
+
+    Categories = {
+        'UEF',
+        'STRUCTURE',
+        'CIVILIAN',
+        'SELECTABLE',
+        'LAND',
+        'VISIBLETORECON',
+    },	
+			
+	Defense = {
+        Health = 5000,
+        MaxHealth = 5000,
+        RegenRate = 100,
+    },
+	Economy = {
+    BuildCostEnergy = 0,
+    BuildCostMass = 25000,
+    BuildTime = 10000,
+    },
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="uec1201",
+
+    Categories = {
+        'UEF',
+        'STRUCTURE',
+        'CIVILIAN',
+        'SELECTABLE',
+        'LAND',
+        'VISIBLETORECON',
+    },	
+			
+	Defense = {
+        Health = 5000,
+        MaxHealth = 5000,
+        RegenRate = 100,
+    },
+	Economy = {
+    BuildCostEnergy = 0,
+    BuildCostMass = 22400,
+    BuildTime = 10000,
+    },
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="uec1301",
+
+    Categories = {
+        'UEF',
+        'STRUCTURE',
+        'CIVILIAN',
+        'SELECTABLE',
+        'LAND',
+        'VISIBLETORECON',
+    },		
+		
+	Defense = {
+        Health = 5000,
+        MaxHealth = 5000,
+        RegenRate = 100,
+    },
+	Economy = {
+    BuildCostEnergy = 0,
+    BuildCostMass = 22400,
+    BuildTime = 10000,
+    },
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="uec1401",
+
+    Categories = {
+        'UEF',
+        'STRUCTURE',
+        'CIVILIAN',
+        'SELECTABLE',
+        'LAND',
+        'VISIBLETORECON',
+    },	
+			
+	Defense = {
+        Health = 5000,
+        MaxHealth = 5000,
+        RegenRate = 100,
+    },
+	Economy = {
+    BuildCostEnergy = 0,
+    BuildCostMass = 22400,
+    BuildTime = 10000,
+    },
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="uec1501",
+
+    Categories = {
+        'UEF',
+        'STRUCTURE',
+        'CIVILIAN',
+        'SELECTABLE',
+        'LAND',
+        'VISIBLETORECON',
+    },		
+		
+	Defense = {
+        Health = 5000,
+        MaxHealth = 5000,
+        RegenRate = 100,
+    },
+	Economy = {
+    BuildCostEnergy = 0,
+    BuildCostMass = 22400,
+    BuildTime = 10000,
+    },
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="uec1901",
+
+    Categories = {
+        'UEF',
+        'STRUCTURE',
+        'CIVILIAN',
+        'SELECTABLE',
+        'LAND',
+        'VISIBLETORECON',
+    },		
+		
+	Defense = {
+        Health = 150000,
+        MaxHealth = 150000,
+        RegenRate = 100,
+    },
+	Economy = {
+    BuildCostEnergy = 0,
+    BuildCostMass = 224000,
+    BuildTime = 100000,
+    },
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="uec1902",
+
+    Categories = {
+        'UEF',
+        'STRUCTURE',
+        'CIVILIAN',
+        'SELECTABLE',
+        'LAND',
+        'VISIBLETORECON',
+    },		
+		
+	Defense = {
+        Health = 5000,
+        MaxHealth = 5000,
+        RegenRate = 100,
+    },
+	Economy = {
+    BuildCostEnergy = 0,
+    BuildCostMass = 22400,
+    BuildTime = 10000,
+    },
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="uec1903",
+
+    Categories = {
+        'UEF',
+        'STRUCTURE',
+        'CIVILIAN',
+        'SELECTABLE',
+        'LAND',
+        'VISIBLETORECON',
+    },		
+		
+	Defense = {
+        Health = 5000,
+        MaxHealth = 5000,
+        RegenRate = 100,
+    },
+	Economy = {
+    BuildCostEnergy = 0,
+    BuildCostMass = 22400,
+    BuildTime = 10000,
+    },
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="uec1904",
+
+    Categories = {
+        'UEF',
+        'STRUCTURE',
+        'CIVILIAN',
+        'SELECTABLE',
+        'LAND',
+        'VISIBLETORECON',
+    },		
+		
+	Defense = {
+        Health = 5000,
+        MaxHealth = 5000,
+        RegenRate = 100,
+    },
+	Economy = {
+    BuildCostEnergy = 0,
+    BuildCostMass = 22400,
+    BuildTime = 10000,
+    },
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="uec1905",
+
+    Categories = {
+        'UEF',
+        'STRUCTURE',
+        'CIVILIAN',
+        'SELECTABLE',
+        'LAND',
+        'VISIBLETORECON',
+    },		
+		
+	Defense = {
+        Health = 5000,
+        MaxHealth = 5000,
+        RegenRate = 100,
+    },
+	Economy = {
+    BuildCostEnergy = 0,
+    BuildCostMass = 22400,
+    BuildTime = 10000,
+    },
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="uec1906",
+
+    Categories = {
+        'UEF',
+        'STRUCTURE',
+        'CIVILIAN',
+        'SELECTABLE',
+        'LAND',
+        'VISIBLETORECON',
+    },		
+		
+	Defense = {
+        Health = 5000,
+        MaxHealth = 5000,
+        RegenRate = 100,
+    },
+	Economy = {
+    BuildCostEnergy = 0,
+    BuildCostMass = 22400,
+    BuildTime = 10000,
+    },
+}
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="uec1907",
+
+    Categories = {
+        'UEF',
+        'STRUCTURE',
+        'CIVILIAN',
+        'SELECTABLE',
+        'LAND',
+        'VISIBLETORECON',
+    },		
+		
+	Defense = {
+        Health = 5000,
+        MaxHealth = 5000,
+        RegenRate = 100,
+    },
+	Economy = {
+    BuildCostEnergy = 0,
+    BuildCostMass = 22400,
+    BuildTime = 10000,
+    },
+}
